@@ -1,0 +1,4748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:2
+msgid "tepkit.core.atom.AtomicNumber"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:6
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:6
+msgid "Bases: :py:obj:`int`, :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:10
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:10
+msgid "int([x]) -> integer int(x, base=10) -> integer"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:13
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:13
+msgid ""
+"Convert a number or string to an integer, or return 0 if no arguments are"
+" given.  If x is a number, return x.__int__().  For floating point "
+"numbers, this truncates towards zero."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:17
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:17
+msgid ""
+"If x is not a number or if base is given, then x must be a string, bytes,"
+" or bytearray instance representing an integer literal in the given base."
+"  The literal can be preceded by '+' or '-' and be surrounded by "
+"whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36. Base 0"
+" means to interpret the base from the string as an integer literal. >>> "
+"int('0b100', base=0) 4"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:28
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:9
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:9
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:8
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:12
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:8
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:28
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:16
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:15
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:15
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:9
+#: ../../source/autoapi/tepkit/core/symmetry_data/index.rst:8
+#: ../../source/autoapi/tepkit/io/File.rst:12
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:15
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:16
+#: ../../source/autoapi/tepkit/io/index.rst:26
+#: ../../source/autoapi/tepkit/io/indices/index.rst:8
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:15
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:15
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:15
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:17
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:20
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:19
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:15
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:8
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:17
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:15
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:20
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:19
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:22
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:15
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:15
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:22
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/index.rst:8
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:16
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:17
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:15
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:21
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:8
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:15
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:15
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:8
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:15
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:24
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:9
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:21
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:9
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:9
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:12
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:15
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:9
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:18
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:9
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:8
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:9
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``H``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``1``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``He``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``2``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Li``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``3``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Be``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``4``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:1
+msgid "``B``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``5``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``C``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``6``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``N``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``7``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``O``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``8``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``F``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``9``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ne``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``10``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Na``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``11``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Mg``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``12``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Al``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``13``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Si``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``14``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``P``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``15``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``S``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``16``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cl``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``17``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ar``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``18``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``K``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``19``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ca``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``20``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Sc``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``21``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ti``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``22``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``V``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``23``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cr``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``24``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Mn``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``25``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Fe``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``26``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Co``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``27``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ni``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``28``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cu``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``29``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Zn``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``30``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ga``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``31``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ge``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``32``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``As``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``33``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Se``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``34``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Br``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``35``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Kr``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``36``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Rb``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``37``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Sr``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``38``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Y``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``39``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Zr``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``40``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Nb``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``41``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Mo``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``42``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Tc``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``43``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ru``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``44``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Rh``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``45``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Pd``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``46``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ag``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``47``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cd``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``48``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``In``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``49``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Sn``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``50``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Sb``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``51``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Te``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``52``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``I``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``53``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Xe``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``54``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cs``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``55``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ba``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``56``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``La``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``57``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ce``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``58``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Pr``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``59``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Nd``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``60``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Pm``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``61``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Sm``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``62``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Eu``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``63``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Gd``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``64``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Tb``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``65``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Dy``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``66``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ho``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``67``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Er``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``68``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Tm``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``69``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Yb``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``70``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Lu``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``71``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Hf``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``72``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ta``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``73``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``W``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``74``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Re``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``75``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Os``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``76``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ir``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``77``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Pt``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``78``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Au``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``79``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Hg``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``80``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Tl``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``81``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Pb``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``82``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Bi``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``83``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Po``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``84``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``At``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``85``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Rn``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``86``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Fr``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``87``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ra``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``88``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ac``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``89``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Th``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``90``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Pa``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``91``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``U``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``92``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Np``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``93``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Pu``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``94``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Am``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``95``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cm``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``96``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Bk``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``97``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cf``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``98``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Es``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``99``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Fm``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``100``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Md``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``101``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``No``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``102``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Lr``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``103``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Rf``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``104``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Db``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``105``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Sg``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``106``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Bh``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``107``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Hs``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``108``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Mt``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``109``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ds``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``110``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Rg``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``111``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Cn``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``112``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Nh``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``113``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Fl``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``114``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Mc``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``115``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Lv``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``116``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Ts``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``117``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``Og``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:1
+msgid "``118``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/AtomicNumber.rst:161
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:44
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:38
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:65
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:46
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:56
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:34
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:36
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:42
+#: ../../source/autoapi/tepkit/io/File.rst:39
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:48
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:41
+#: ../../source/autoapi/tepkit/io/TextFile.rst:16
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:39
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:39
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:49
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:33
+#: ../../source/autoapi/tepkit/io/shengbte/NticksLengthFile.rst:23
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:39
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaShapedFile.rst:37
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:37
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:36
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:49
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:33
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/NticksLengthFile.rst:23
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:39
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaShapedFile.rst:37
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:38
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:37
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:36
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:62
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:46
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:75
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:62
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:56
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:33
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:43
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:52
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:46
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:40
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:75
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:46
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:38
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:49
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:38
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:30
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:46
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:30
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:39
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:49
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:38
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:38
+msgid "All Members"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/index.rst:2
+msgid "tepkit.core.atom"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/index.rst:8
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:17
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:17
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:8
+#: ../../source/autoapi/tepkit/io/index.rst:35
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/index.rst:8
+#: ../../source/autoapi/tepkit/io/phonopy/index.rst:17
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:16
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:8
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:18
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/index.rst:16
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:20
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:34
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:16
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:16
+#: ../../source/autoapi/tepkit/io/vasp/poscar/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:32
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:27
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.rst:8
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:24
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/index.rst:19:<autosummary>:1
+msgid ":py:obj:`AtomicNumber <tepkit.core.atom.AtomicNumber>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/atom/index.rst:19:<autosummary>:1
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid "int([x]) -> integer"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:2
+msgid "tepkit.core.geometry.Line2D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:1
+msgid "``A``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:1
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:20
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:34
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:29
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:18
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:25
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:27
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:27
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:36
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:24
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:39
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:36
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:29
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:24
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:39
+msgid "Properties"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:31:<autosummary>:1
+msgid ":py:obj:`k <tepkit.core.geometry.Line2D.k>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:31:<autosummary>:1
+msgid ":py:obj:`a <tepkit.core.geometry.Line2D.a>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:31:<autosummary>:1
+msgid ":py:obj:`b <tepkit.core.geometry.Line2D.b>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:33
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:23
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:45
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:40
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:29
+#: ../../source/autoapi/tepkit/io/File.rst:27
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:36
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:31
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:29
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:29
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:38
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:29
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaShapedFile.rst:27
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:38
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:29
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaShapedFile.rst:27
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:28
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:51
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:35
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:53
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:51
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:41
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:33
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:42
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:35
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:30
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:53
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:25
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:32
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:28
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:20
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:31
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:20
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:29
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:32
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:28
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:25
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`from_pp <tepkit.core.geometry.Line2D.from_pp>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Line2D.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`from_pk <tepkit.core.geometry.Line2D.from_pk>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:2
+msgid "tepkit.core.geometry.Point2D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``x``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``y``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ":py:obj:`__iter__ <tepkit.core.geometry.Point2D.__iter__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__add__ <tepkit.core.geometry.Point2D.__add__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__sub__ <tepkit.core.geometry.Point2D.__sub__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__pos__ <tepkit.core.geometry.Point2D.__pos__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__neg__ <tepkit.core.geometry.Point2D.__neg__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__truediv__ <tepkit.core.geometry.Point2D.__truediv__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:2
+msgid "tepkit.core.geometry"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:15:<autosummary>:1
+msgid ":py:obj:`mid_line <tepkit.core.geometry.mid_line>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:15:<autosummary>:1
+msgid ":py:obj:`cross_point <tepkit.core.geometry.cross_point>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:30:<autosummary>:1
+msgid ":py:obj:`Point2D <tepkit.core.geometry.Point2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:30:<autosummary>:1
+msgid ":py:obj:`Line2D <tepkit.core.geometry.Line2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:32
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:30
+#: ../../source/autoapi/tepkit/core/structure/index.rst:8
+#: ../../source/autoapi/tepkit/io/index.rst:54
+#: ../../source/autoapi/tepkit/io/output/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:16
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:22
+#: ../../source/autoapi/tepkit/utils/mpl_tools/formatters/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:45
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.rst:21
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:50
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:17
+#: ../../source/autoapi/tepkit/utils/rich_tools/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`perpendicular_bisector "
+"<tepkit.core.geometry.perpendicular_bisector>`\\ \\(→ Line2D\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:46
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:40:<autosummary>:1
+msgid "返回两点的中垂线"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`intersection_point <tepkit.core.geometry.intersection_point>`\\ "
+"\\(→ Point2D \\| None\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:51
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:40:<autosummary>:1
+msgid "返回两线的交点"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`rotate_matrix_2d <tepkit.core.geometry.rotate_matrix_2d>`\\ "
+"\\(degree\\[\\, to\\_3d\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/index.rst:42
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:39
+#: ../../source/autoapi/tepkit/core/structure/index.rst:17
+#: ../../source/autoapi/tepkit/core/symmetry_data/index.rst:17
+#: ../../source/autoapi/tepkit/io/indices/index.rst:24
+#: ../../source/autoapi/tepkit/io/output/index.rst:16
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:29
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/index.rst:29
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:33
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:31
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:20
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:27
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:32
+#: ../../source/autoapi/tepkit/utils/mpl_tools/formatters/index.rst:16
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.rst:29
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:30
+#: ../../source/autoapi/tepkit/utils/rich_tools/index.rst:18
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:37
+msgid "Module Contents"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:2
+msgid "tepkit.core.high_symmetry_points.HighSymmetryPoints2D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:7
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:28:<autosummary>:1
+msgid "A class to manage the high symmetry points of a 2D material."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``edge_tokens_dict``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``half_edge_tokens_dict``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:77
+msgid "Used for get_2d_bz_kpoints() method."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``right_angle_precision``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``0.001``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``default_text_style``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``'Setyawan2010_tex'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``default_path_style``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``'Setyawan2010'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``_lattice``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:104
+msgid ""
+"obj._lattice can only be assigned a value during init. Modifying it at "
+"any other time may produce incorrect results."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``path_style``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:113
+msgid ""
+"The style of the choices of the high symmetry paths. obj.path_style = "
+"Setyawan2010 / Tepkit2024"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``text_style``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:122
+msgid ""
+"The style of the names of the high symmetry points. obj.text_style = "
+"Setyawan2010 / Setyawan2010_tex / Tepkit2024 / Tepkit2024_tex"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+msgid "``df``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:131
+msgid "obj.df = pd.DataFrame"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``bravais_lattice_2d``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+msgid "``_gamma_type``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:1
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:145
+msgid "obj._gamma_type = right / acute / obtuse"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`lattice_gamma_type "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.lattice_gamma_type>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.from_poscar>`\\ "
+"\\(poscar\\[\\, with\\_2pi\\, text\\_style\\, path\\_style\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:159
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:119
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:119
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid "Instantiation a Plotter by a Poscar."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`add_token_texts "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.add_token_texts>`\\"
+" \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_gamma_angle_type "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_gamma_angle_type>`\\"
+" \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:172
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid "计算晶格 gamma 角的类型"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_edge_tokens "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_edge_tokens>`\\"
+" \\(→ list\\[str\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_edge_df "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_edge_df>`\\ "
+"\\(\\[style\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_pathes_tokens "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_pathes_tokens>`\\"
+" \\(→ list\\[list\\[str\\]\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_pathes_df "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_pathes_df>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_df_by_tokens "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_df_by_tokens>`\\"
+" \\(\\[tokens\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_dict "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_dict>`\\ \\(→ "
+"dict\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_list "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_list>`\\ \\(→ "
+"list\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/HighSymmetryPoints2D.rst:63:<autosummary>:1
+msgid ""
+":py:obj:`get_texts "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D.get_texts>`\\ "
+"\\(tokens\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:2
+msgid "tepkit.core.high_symmetry_points"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`high_symmetry_points_2d_tokens "
+"<tepkit.core.high_symmetry_points.high_symmetry_points_2d_tokens>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`high_symmetry_points_2d_tokens_v2 "
+"<tepkit.core.high_symmetry_points.high_symmetry_points_2d_tokens_v2>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`HighSymmetryPoints2D "
+"<tepkit.core.high_symmetry_points.HighSymmetryPoints2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`get_high_symmetry_points_2d "
+"<tepkit.core.high_symmetry_points.get_high_symmetry_points_2d>`\\ \\(→ "
+"pandas.DataFrame\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:51
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:37:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:270
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:270
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+"Get the absolute and relative coordinates of all possible high symmetry "
+"points of a 2D material."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:37:<autosummary>:1
+msgid ":py:obj:`test <tepkit.core.high_symmetry_points.test>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst
+#: ../../source/autoapi/tepkit/core/structure/index.rst
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:53
+msgid "The reciprocal lattice of the strcture."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:54
+msgid "Used to eliminate minor errors caused by binary. (like 0.9999 or 1e-11)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/high_symmetry_points/index.rst:55
+msgid ""
+"Whether to return the coordinates in the cobine basis. - True: The "
+"columns will be [\"k_abc\", \"k_xyz\"] More suitable for geometry "
+"operations. - False: The columns will be [\"k_a\", \"k_b\", \"k_c\", "
+"\"k_x\", \"k_y\", \"k_z\"] (Default) More suitable for serialization to "
+"string or table file."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/index.rst:2
+msgid "tepkit.core"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/index.rst:8
+#: ../../source/autoapi/tepkit/io/index.rst:13
+#: ../../source/autoapi/tepkit/io/phonopy/index.rst:8
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:8
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:8
+#: ../../source/autoapi/tepkit/utils/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:8
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:8
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:2
+msgid "tepkit.core.structure"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:15:<autosummary>:1
+msgid ":py:obj:`abc_to_xyz <tepkit.core.structure.abc_to_xyz>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:22
+#: ../../source/autoapi/tepkit/core/structure/index.rst:37
+#: ../../source/autoapi/tepkit/core/structure/index.rst:15:<autosummary>:1
+msgid "Usage"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:15:<autosummary>:1
+msgid ":py:obj:`xyz_to_abc <tepkit.core.structure.xyz_to_abc>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:31
+msgid "Cartesian coordinates"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:32
+msgid "Lattice vectors"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:33
+msgid "Number of decimal places to round to, default is 15 (for float64)."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:34
+msgid "Fractional coordinates"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:2
+msgid "tepkit.core.symmetry.Axis"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``a1``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "``0``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``a2``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``a3``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:2
+msgid "tepkit.core.symmetry.BravaisLattice2D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:6
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:6
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:6
+msgid "Bases: :py:obj:`enum.StrEnum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``mp``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``'mp'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:64
+msgid "Oblique"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``op``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``'op'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:73
+msgid "Rectangular"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``oc``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``'oc'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:82
+msgid "Centered-Rectangular"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``tp``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``'tp'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:91
+msgid "Square"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``hp``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+msgid "``'hp'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:100
+msgid "Hexagonal"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:38:<autosummary>:1
+msgid ":py:obj:`long_name <tepkit.core.symmetry.BravaisLattice2D.long_name>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`from_string "
+"<tepkit.core.symmetry.BravaisLattice2D.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`keys <tepkit.core.symmetry.BravaisLattice2D.keys>`\\ \\(→ "
+"list\\[str\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`to_string <tepkit.core.symmetry.BravaisLattice2D.to_string>`\\ "
+"\\(→ str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`differentiate_rectangular_lattice "
+"<tepkit.core.symmetry.BravaisLattice2D.differentiate_rectangular_lattice>`\\"
+" \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`from_bravais_system_2d "
+"<tepkit.core.symmetry.BravaisLattice2D.from_bravais_system_2d>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`from_file <tepkit.core.symmetry.BravaisLattice2D.from_file>`\\ "
+"\\(→ tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisLattice2D.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar "
+"<tepkit.core.symmetry.BravaisLattice2D.from_poscar>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:2
+msgid "tepkit.core.symmetry.BravaisSystem2D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:10
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:10
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid "Enum where members are also (and must be) strings"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+msgid "``Oblique``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+msgid "``'Oblique (m)'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+msgid "``Rectangular``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+msgid "``'Rectangular (o)'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+msgid "``Square``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+msgid "``'Square (t)'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Hexagonal``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/BravaisSystem2D.rst:1
+msgid "``'Hexagonal (h)'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:2
+msgid "tepkit.core.symmetry.CrystalSystem3D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Triclinic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Triclinic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Monoclinic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Monoclinic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Orthorhombic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Orthorhombic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Tetragonal``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Tetragonal'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Trigonal``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Trigonal'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Hexagonal'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:2
+msgid "tepkit.core.symmetry.LayerGroup"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``data``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:27:<autosummary>:1
+msgid ":py:obj:`number <tepkit.core.symmetry.LayerGroup.number>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`from_file <tepkit.core.symmetry.LayerGroup.from_file>`\\ "
+"\\(path\\, fmt\\[\\, aperiodic\\_axis\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar <tepkit.core.symmetry.LayerGroup.from_poscar>`\\ "
+"\\(poscar\\[\\, aperiodic\\_axis\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`get_data_from_spglib "
+"<tepkit.core.symmetry.LayerGroup.get_data_from_spglib>`\\ \\(cell\\[\\, "
+"aperiodic\\_axis\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`add_additional_data "
+"<tepkit.core.symmetry.LayerGroup.add_additional_data>`\\ \\(→ None\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:2
+msgid "tepkit.core.symmetry"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`Axis <tepkit.core.symmetry.Axis>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`BravaisSystem2D <tepkit.core.symmetry.BravaisSystem2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`BravaisLattice2D <tepkit.core.symmetry.BravaisLattice2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`CrystalSystem3D <tepkit.core.symmetry.CrystalSystem3D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`LayerGroup <tepkit.core.symmetry.LayerGroup>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry_data/index.rst:2
+msgid "tepkit.core.symmetry_data"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry_data/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`high_symmetry_paths_data "
+"<tepkit.core.symmetry_data.high_symmetry_paths_data>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry_data/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`high_symmetry_points_text_data "
+"<tepkit.core.symmetry_data.high_symmetry_points_text_data>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:2
+msgid "tepkit.io.File"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:7
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid "The base class for all files."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``default_dir_path``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``'./'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:48
+msgid "The default path of located directory of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``default_file_name``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:58
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:47
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:47
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:41
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:45
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:44
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:41
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:45
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:44
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:70
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:54
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:83
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:70
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:41
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:60
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:54
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:83
+msgid "The default name of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``source_path``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:68
+msgid "Record the path of the file when use ``from_file()`` or ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`from_file <tepkit.io.File.from_file>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:77
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:66
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:39:<autosummary>:1
+msgid "Read a file by its ``path`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`from_dir <tepkit.io.File.from_dir>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:89
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ""
+"Read a file named ``cls.default_file_name`` in the "
+"``cls.default_dir_path``."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ":py:obj:`to_file <tepkit.io.File.to_file>`\\ \\(path\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:107
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:92
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid "Write the data of the object to a file."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:93
+msgid "You can also specify the dirctory path or the file name:"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:2
+msgid "tepkit.io.StructuredTextFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:6
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:6
+msgid "Bases: :py:obj:`TextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:10
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:10
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:10
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/index.rst:19:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/phonopy/index.rst:28:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:35:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:29:<autosummary>:1
+msgid "The class for text file with special structure."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "``content``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "``_lines``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:34:<autosummary>:1
+msgid ":py:obj:`lines <tepkit.io.StructuredTextFile.lines>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.StructuredTextFile.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:70
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:62
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:37:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:62
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:37:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:107
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:60:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:199
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:107
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:60:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:109
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:199
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid "从字符串中读取结构化数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`from_file <tepkit.io.StructuredTextFile.from_file>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:79
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid "从文件中读取文本，然后调用 from_string 读取数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid ":py:obj:`to_file <tepkit.io.StructuredTextFile.to_file>`\\ \\(→ None\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:2
+msgid "tepkit.io.TableTextFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:10
+#: ../../source/autoapi/tepkit/io/TextFile.rst:10
+msgid ""
+"The class for text files. The base class for `StructuredTextFile` and "
+"`TableTextFile` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:1
+msgid "``default_from_file_config``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "``column_indices``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/TableTextFile.rst:39:<autosummary>:1
+msgid ":py:obj:`from_file <tepkit.io.TableTextFile.from_file>`\\ \\(\\[path\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/TextFile.rst:2
+msgid "tepkit.io.TextFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/TextFile.rst:6
+msgid "Bases: :py:obj:`File`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:2
+msgid "tepkit.io"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:8
+msgid "This package is used to read and write files of various formats."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:33:<autosummary>:1
+msgid ":py:obj:`PathLike <tepkit.io.PathLike>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:33:<autosummary>:1
+msgid ":py:obj:`Self <tepkit.io.Self>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`File <tepkit.io.File>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`TextFile <tepkit.io.TextFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid "The class for text files."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`StructuredTextFile <tepkit.io.StructuredTextFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`TableTextFile <tepkit.io.TableTextFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:61:<autosummary>:1
+msgid ":py:obj:`array_to_string <tepkit.io.array_to_string>`\\ \\(→ str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:61:<autosummary>:1
+msgid ":py:obj:`matrix_to_string <tepkit.io.matrix_to_string>`\\ \\(→ str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:63
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:53
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:58
+msgid "Package Contents"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:2
+msgid "tepkit.io.indices"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ":py:obj:`EMPTY_INDEX <tepkit.io.indices.EMPTY_INDEX>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ":py:obj:`VECTOR2D_INDICES <tepkit.io.indices.VECTOR2D_INDICES>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ":py:obj:`VECTOR3D_INDICES <tepkit.io.indices.VECTOR3D_INDICES>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`TENSOR2D_ORDER2_INDICES "
+"<tepkit.io.indices.TENSOR2D_ORDER2_INDICES>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`TENSOR3D_ORDER2_INDICES "
+"<tepkit.io.indices.TENSOR3D_ORDER2_INDICES>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ":py:obj:`VOIGT_NOTATION_2X2 <tepkit.io.indices.VOIGT_NOTATION_2X2>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ":py:obj:`VOIGT_NOTATION_3X3 <tepkit.io.indices.VOIGT_NOTATION_3X3>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ":py:obj:`V3D_INDICES <tepkit.io.indices.V3D_INDICES>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/indices/index.rst:22:<autosummary>:1
+msgid ":py:obj:`T3D_INDICES <tepkit.io.indices.T3D_INDICES>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/output/index.rst:2
+msgid "tepkit.io.output"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/output/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`save_df <tepkit.io.output.save_df>`\\ \\(df\\, to\\_path\\[\\, "
+"fmt\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:2
+msgid "tepkit.io.phonopy.ForceConstants"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:6
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:11
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:6
+msgid "Bases: :py:obj:`tepkit.io.StructuredTextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:1
+msgid "``'FORCE_CONSTANTS'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.phonopy.ForceConstants.from_string>`\\ "
+"\\(→ tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:2
+msgid "tepkit.io.phonopy.force_constants.ForceConstants"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/ForceConstants.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`from_string "
+"<tepkit.io.phonopy.force_constants.ForceConstants.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/index.rst:2
+msgid "tepkit.io.phonopy.force_constants"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/force_constants/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`ForceConstants "
+"<tepkit.io.phonopy.force_constants.ForceConstants>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/index.rst:2
+msgid "tepkit.io.phonopy"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/index.rst:28:<autosummary>:1
+msgid ":py:obj:`ForceConstants <tepkit.io.phonopy.ForceConstants>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:2
+msgid "tepkit.io.shengbte.Control"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:27:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid "the class of CONTROL file for ShengBTE"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+msgid "``scell``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+msgid "``ngrid``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+msgid "``temperature``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:1
+msgid "``300``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:36:<autosummary>:1
+msgid ":py:obj:`namelist <tepkit.io.shengbte.Control.namelist>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar <tepkit.io.shengbte.Control.from_poscar>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Control.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`write <tepkit.io.shengbte.Control.write>`\\ \\(\\[path\\, "
+"force\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:2
+msgid "tepkit.io.shengbte.Gruneisen"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:6
+msgid "Bases: :py:obj:`OmegaShapedFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:10
+msgid "--- Supported Files: - BTE.gruneisen"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/Gruneisen.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:1
+msgid "``'BTE.gruneisen'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/NticksLengthFile.rst:2
+msgid "tepkit.io.shengbte.NticksLengthFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/NticksLengthFile.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaShapedFile.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/NticksLengthFile.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaShapedFile.rst:6
+msgid "Bases: :py:obj:`tepkit.io.TableTextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/NticksLengthFile.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/NticksLengthFile.rst:10
+msgid ""
+"由 nticks (default=100) 决定行数的数据文件。 @shape: (n_qpoints * n_modes, [Any]) "
+"--- Supported Files: - BTE.dos - BTE.pdos - ``T*K``/"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/NticksLengthFile.rst:18
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/NticksLengthFile.rst:18
+msgid "``BTE.cumulative_kappa*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:2
+msgid "tepkit.io.shengbte.OmegaParalleledFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:10
+msgid ""
+"由 频率 和 数值 两列数据组成的数据文件。 @shape: (n_qpoints * n_modes, 2) --- Supported "
+"Files: - ``BTE.w*`` - ``T*K/``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:17
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:17
+msgid "``BTE.WP3*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:18
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:18
+msgid "``BTE.WP4*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:19
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:15
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:19
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:15
+msgid "``BTE.w*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`reshape_to "
+"<tepkit.io.shengbte.OmegaParalleledFile.reshape_to>`\\ \\(shape\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaShapedFile.rst:2
+msgid "tepkit.io.shengbte.OmegaShapedFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaShapedFile.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaShapedFile.rst:10
+msgid ""
+"与 BTE.omega 的数据形状相同的数据文件。 @shape: (n_qpoints, n_modes) --- Supported "
+"Files: - ``BTE.gruneisen`` - ``BTE.omega`` - ``BTE.P3*`` - ``BTE.P4*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaShapedFile.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`set_mode_names "
+"<tepkit.io.shengbte.OmegaShapedFile.set_mode_names>`\\ \\(\\[names\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:2
+msgid "tepkit.io.shengbte.W"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:6
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:6
+msgid "Bases: :py:obj:`OmegaParalleledFile`, :py:obj:`SubdirFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:10
+msgid "--- Supported Files: - ``BTE.w*`` - ``T*K/``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/W.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:1
+msgid "``'BTE.w_final'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:2
+msgid "tepkit.io.shengbte.WP3"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:10
+msgid "--- Supported Files: - ``T*K/``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:14
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:14
+msgid "``BTE.WP3``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "``'BTE.WP3'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:2
+msgid "tepkit.io.shengbte.control.Control"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:36:<autosummary>:1
+msgid ":py:obj:`namelist <tepkit.io.shengbte.control.Control.namelist>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar <tepkit.io.shengbte.control.Control.from_poscar>`\\ "
+"\\(→ tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/Control.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`write <tepkit.io.shengbte.control.Control.write>`\\ "
+"\\(\\[path\\, force\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:2
+msgid "tepkit.io.shengbte.control"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:14:<autosummary>:1
+msgid ":py:obj:`obj <tepkit.io.shengbte.control.obj>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:27:<autosummary>:1
+msgid ":py:obj:`Control <tepkit.io.shengbte.control.Control>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/Gruneisen.rst:2
+msgid "tepkit.io.shengbte.file_types.Gruneisen"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/NticksLengthFile.rst:2
+msgid "tepkit.io.shengbte.file_types.NticksLengthFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:2
+msgid "tepkit.io.shengbte.file_types.OmegaParalleledFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaParalleledFile.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`reshape_to "
+"<tepkit.io.shengbte.file_types.OmegaParalleledFile.reshape_to>`\\ "
+"\\(shape\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaShapedFile.rst:2
+msgid "tepkit.io.shengbte.file_types.OmegaShapedFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/OmegaShapedFile.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`set_mode_names "
+"<tepkit.io.shengbte.file_types.OmegaShapedFile.set_mode_names>`\\ "
+"\\(\\[names\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:2
+msgid "tepkit.io.shengbte.file_types.SubdirFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:6
+msgid "Bases: :py:obj:`tepkit.io.File`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:10
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid "ShengBTE 温度子文件夹中文件的文件类。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:1
+msgid "``t``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:47
+msgid "The temperature (K) of the subdir."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`from_dir <tepkit.io.shengbte.file_types.SubdirFile.from_dir>`\\ "
+"\\(→ tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:36:<autosummary>:1
+msgid "@override File.from_dir()"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/SubdirFile.rst:56
+msgid ""
+"@override File.from_dir() Add `t` (temperature) argument to specify the "
+"subdir f\"T{t}K\"."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/W.rst:2
+msgid "tepkit.io.shengbte.file_types.W"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:2
+msgid "tepkit.io.shengbte.file_types.WP3"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:2
+msgid "tepkit.io.shengbte.file_types"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`SubdirFile <tepkit.io.shengbte.file_types.SubdirFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`OmegaShapedFile "
+"<tepkit.io.shengbte.file_types.OmegaShapedFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid "与 BTE.omega 的数据形状相同的数据文件。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`OmegaParalleledFile "
+"<tepkit.io.shengbte.file_types.OmegaParalleledFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid "由 频率 和 数值 两列数据组成的数据文件。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`NticksLengthFile "
+"<tepkit.io.shengbte.file_types.NticksLengthFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid "由 nticks (default=100) 决定行数的数据文件。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`Gruneisen <tepkit.io.shengbte.file_types.Gruneisen>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`W <tepkit.io.shengbte.file_types.W>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`WP3 <tepkit.io.shengbte.file_types.WP3>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:2
+msgid "tepkit.io.shengbte"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid ":py:obj:`Control <tepkit.io.shengbte.Control>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid ":py:obj:`OmegaShapedFile <tepkit.io.shengbte.OmegaShapedFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid ":py:obj:`OmegaParalleledFile <tepkit.io.shengbte.OmegaParalleledFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid ":py:obj:`NticksLengthFile <tepkit.io.shengbte.NticksLengthFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid ":py:obj:`Gruneisen <tepkit.io.shengbte.Gruneisen>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid ":py:obj:`W <tepkit.io.shengbte.W>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/index.rst:41:<autosummary>:1
+msgid ":py:obj:`WP3 <tepkit.io.shengbte.WP3>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:2
+msgid "tepkit.io.vasp.Eigenval"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/index.rst:27:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:35:<autosummary>:1
+msgid "The class of EIGENVAL file for VASP."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:12
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:12
+msgid "**Refs:**"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:14
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:14
+msgid "https://www.vasp.at/wiki/index.php/EIGENVAL"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:15
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:15
+msgid "https://www.vasp.at/wiki/index.php/DOSCAR"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:16
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:16
+msgid "https://w.vasp.at/forum/viewtopic.php?p=20810"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:17
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:17
+msgid "https://sisl.readthedocs.io/en/latest/_modules/sisl/io/vasp/eigenval.html"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+msgid "``'EIGENVAL'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+msgid "``data_columns``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+msgid "``extra_data``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:1
+msgid "``soc``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`index_vbe <tepkit.io.vasp.Eigenval.index_vbe>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:49:<autosummary>:1
+msgid "Get the band index of the Valence Band Edge (VBE)."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`index_cbe <tepkit.io.vasp.Eigenval.index_cbe>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:49:<autosummary>:1
+msgid "Get the band index of the Conduction Band Edge (VBE)."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_vbm <tepkit.io.vasp.Eigenval.energy_vbm>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_cbm <tepkit.io.vasp.Eigenval.energy_cbm>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_midgap <tepkit.io.vasp.Eigenval.energy_midgap>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:60:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.vasp.Eigenval.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:60:<autosummary>:1
+msgid ":py:obj:`get_band <tepkit.io.vasp.Eigenval.get_band>`\\ \\(index\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:116
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:116
+msgid "Get the band index of the Valence Band Edge (VBE). (Start at 1)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:126
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:126
+msgid "Get the band index of the Conduction Band Edge (VBE). (Start at 1)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:2
+msgid "tepkit.io.vasp.Outcar"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:1
+msgid "``'OUTCAR'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:33:<autosummary>:1
+msgid ":py:obj:`fermi_energy <tepkit.io.vasp.Outcar.fermi_energy>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:44:<autosummary>:1
+msgid ":py:obj:`job_state <tepkit.io.vasp.Outcar.job_state>`\\ \\(→ VaspState\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Outcar.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`get_piezoelectric_stress_tensors "
+"<tepkit.io.vasp.Outcar.get_piezoelectric_stress_tensors>`\\ \\(→ dict\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:2
+msgid "tepkit.io.vasp.Poscar"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:35:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/poscar/index.rst:21:<autosummary>:1
+msgid "See: https://www.vasp.at/wiki/index.php/POSCAR"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``'POSCAR'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``comment``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:93
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:93
+msgid "The first line of POSCAR."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``scaling_factor``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``1.0``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``unscale_lattice``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``has_species_names``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``True``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``species_names``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``[]``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``ions_per_species``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``ion_coordinates_mode``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``ion_positions``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``has_selective_dynamics``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``False``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``selective_dynamics``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``has_lattice_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``lattice_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``has_ion_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``ion_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:1
+msgid "``md_extra``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`lattice <tepkit.io.vasp.Poscar.lattice>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`reciprocal_lattice <tepkit.io.vasp.Poscar.reciprocal_lattice>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`n_ions <tepkit.io.vasp.Poscar.n_ions>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`thickness_info <tepkit.io.vasp.Poscar.thickness_info>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:51:<autosummary>:1
+msgid "返回与厚度有关的数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.vasp.Poscar.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ":py:obj:`__str__ <tepkit.io.vasp.Poscar.__str__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`_translate_selective_dynamics_flag "
+"<tepkit.io.vasp.Poscar._translate_selective_dynamics_flag>`\\ \\(→ "
+"bool\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ":py:obj:`get_lattice <tepkit.io.vasp.Poscar.get_lattice>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_reciprocal_lattice "
+"<tepkit.io.vasp.Poscar.get_reciprocal_lattice>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_cartesian_ion_positions "
+"<tepkit.io.vasp.Poscar.get_cartesian_ion_positions>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_fractional_ion_positions "
+"<tepkit.io.vasp.Poscar.get_fractional_ion_positions>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_high_symmetry_points_2d "
+"<tepkit.io.vasp.Poscar.get_high_symmetry_points_2d>`\\ \\(decimal\\[\\, "
+"with\\_2pi\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_interatomic_distances "
+"<tepkit.io.vasp.Poscar.get_interatomic_distances>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:282
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:282
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid "Return the distances between ions."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_neighbor_distances "
+"<tepkit.io.vasp.Poscar.get_neighbor_distances>`\\ \\(→ list\\[float\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:290
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:290
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid "Return the distances of the n-th neighbors."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_atomic_numbers <tepkit.io.vasp.Poscar.get_atomic_numbers>`\\"
+" \\(→ list\\[int\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_pymatgen_poscar "
+"<tepkit.io.vasp.Poscar.get_pymatgen_poscar>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`to_supercell <tepkit.io.vasp.Poscar.to_supercell>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:223
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:273
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:223
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:273
+msgid "VASP Cartesian KPOINTS use with_2pi=False"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:251
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:251
+msgid "返回与厚度有关的数据。 如有效厚度，边缘原子的范德瓦耳斯半径等。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:2
+msgid "tepkit.io.vasp.eigenval.Eigenval"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`index_vbe <tepkit.io.vasp.eigenval.Eigenval.index_vbe>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`index_cbe <tepkit.io.vasp.eigenval.Eigenval.index_cbe>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_vbm <tepkit.io.vasp.eigenval.Eigenval.energy_vbm>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_cbm <tepkit.io.vasp.eigenval.Eigenval.energy_cbm>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_midgap <tepkit.io.vasp.eigenval.Eigenval.energy_midgap>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:60:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.vasp.eigenval.Eigenval.from_string>`\\ "
+"\\(→ tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/Eigenval.rst:60:<autosummary>:1
+msgid ""
+":py:obj:`get_band <tepkit.io.vasp.eigenval.Eigenval.get_band>`\\ "
+"\\(index\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/index.rst:2
+msgid "tepkit.io.vasp.eigenval"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/index.rst:14:<autosummary>:1
+msgid ":py:obj:`path <tepkit.io.vasp.eigenval.path>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/eigenval/index.rst:27:<autosummary>:1
+msgid ":py:obj:`Eigenval <tepkit.io.vasp.eigenval.Eigenval>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:2
+msgid "tepkit.io.vasp"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:35:<autosummary>:1
+msgid ":py:obj:`Poscar <tepkit.io.vasp.Poscar>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:35:<autosummary>:1
+msgid ":py:obj:`Eigenval <tepkit.io.vasp.Eigenval>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/index.rst:35:<autosummary>:1
+msgid ":py:obj:`Outcar <tepkit.io.vasp.Outcar>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:2
+msgid "tepkit.io.vasp.kpoints.ExplicitKpoints"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:6
+msgid "Bases: :py:obj:`Kpoints`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:15
+msgid "Ref: - https://www.vasp.at/wiki/index.php/KPOINTS"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:63
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:70
+msgid "The 1st line: The comment line."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``coordinates_mode``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:71
+msgid "The coordinate mode. Cartesian or Reciprocal."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``kpts``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``kpts_weights``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``b_lattice``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:39:<autosummary>:1
+msgid ":py:obj:`num_kpts <tepkit.io.vasp.kpoints.ExplicitKpoints.num_kpts>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:39:<autosummary>:1
+msgid ":py:obj:`df <tepkit.io.vasp.kpoints.ExplicitKpoints.df>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`from_string "
+"<tepkit.io.vasp.kpoints.ExplicitKpoints.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`__str__ <tepkit.io.vasp.kpoints.ExplicitKpoints.__str__>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`get_pymatgen_kpoints "
+"<tepkit.io.vasp.kpoints.ExplicitKpoints.get_pymatgen_kpoints>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`__add__ <tepkit.io.vasp.kpoints.ExplicitKpoints.__add__>`\\ "
+"\\(other\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`plot <tepkit.io.vasp.kpoints.ExplicitKpoints.plot>`\\ "
+"\\(\\[ax\\, show\\, save\\_path\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ":py:obj:`show <tepkit.io.vasp.kpoints.ExplicitKpoints.show>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:2
+msgid "tepkit.io.vasp.kpoints.Ibzkpt"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:6
+msgid "Bases: :py:obj:`ExplicitKpoints`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:10
+msgid ""
+"Ref: - https://www.vasp.at/wiki/index.php/KPOINTS - "
+"https://www.vasp.at/wiki/index.php/IBZKPT"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Ibzkpt.rst:1
+msgid "``'IBZKPT'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:2
+msgid "tepkit.io.vasp.kpoints.Kpoints"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:1
+msgid "``'KPOINTS'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:40:<autosummary>:1
+msgid ":py:obj:`Mode <tepkit.io.vasp.kpoints.Kpoints.Mode>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:40:<autosummary>:1
+msgid "The Enum of all supported KPOINTS modes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.rst:50:<autosummary>:1
+msgid ""
+":py:obj:`get_2d_bz_kpoints "
+"<tepkit.io.vasp.kpoints.Kpoints.get_2d_bz_kpoints>`\\ "
+"\\(b\\_lattice\\[\\, density\\, edge\\_density\\, ...\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:2
+msgid "tepkit.io.vasp.kpoints.Kpoints.Mode"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:6
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:6
+msgid "Bases: :py:obj:`str`, :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Automatic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Automatic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Gamma``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Gamma'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Monkhorst``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Monkhorst'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Cartesian``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``'Cartesian'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Fractional``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Fractional'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Line``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Line'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`to_pymatgen <tepkit.io.vasp.kpoints.Kpoints.Mode.to_pymatgen>`\\"
+" \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:2
+msgid "tepkit.io.vasp.kpoints"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:14:<autosummary>:1
+msgid ":py:obj:`dir <tepkit.io.vasp.kpoints.dir>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:31:<autosummary>:1
+msgid ":py:obj:`Kpoints <tepkit.io.vasp.kpoints.Kpoints>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:31:<autosummary>:1
+msgid "Ref:"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:31:<autosummary>:1
+msgid ":py:obj:`ExplicitKpoints <tepkit.io.vasp.kpoints.ExplicitKpoints>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/index.rst:31:<autosummary>:1
+msgid ":py:obj:`Ibzkpt <tepkit.io.vasp.kpoints.Ibzkpt>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:2
+msgid "tepkit.io.vasp.outcar.Outcar"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:33:<autosummary>:1
+msgid ":py:obj:`fermi_energy <tepkit.io.vasp.outcar.Outcar.fermi_energy>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`job_state <tepkit.io.vasp.outcar.Outcar.job_state>`\\ \\(→ "
+"VaspState\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/Outcar.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`get_piezoelectric_stress_tensors "
+"<tepkit.io.vasp.outcar.Outcar.get_piezoelectric_stress_tensors>`\\ \\(→ "
+"dict\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:2
+msgid "tepkit.io.vasp.outcar.VaspState"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:10
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:29:<autosummary>:1
+msgid "VASP State Enum."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``Unstarted``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``'Unstarted'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``Uncompleted``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``'Uncompleted'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``Finished``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``'Finished'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:38:<autosummary>:1
+msgid ":py:obj:`__bool__ <tepkit.io.vasp.outcar.VaspState.__bool__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:2
+msgid "tepkit.io.vasp.outcar"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:14:<autosummary>:1
+msgid ":py:obj:`outcar <tepkit.io.vasp.outcar.outcar>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:29:<autosummary>:1
+msgid ":py:obj:`VaspState <tepkit.io.vasp.outcar.VaspState>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/index.rst:29:<autosummary>:1
+msgid ":py:obj:`Outcar <tepkit.io.vasp.outcar.Outcar>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:2
+msgid "tepkit.io.vasp.poscar.Poscar"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`lattice <tepkit.io.vasp.poscar.Poscar.lattice>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`reciprocal_lattice "
+"<tepkit.io.vasp.poscar.Poscar.reciprocal_lattice>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`n_ions <tepkit.io.vasp.poscar.Poscar.n_ions>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`thickness_info <tepkit.io.vasp.poscar.Poscar.thickness_info>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.vasp.poscar.Poscar.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ":py:obj:`__str__ <tepkit.io.vasp.poscar.Poscar.__str__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`_translate_selective_dynamics_flag "
+"<tepkit.io.vasp.poscar.Poscar._translate_selective_dynamics_flag>`\\ \\(→"
+" bool\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_lattice <tepkit.io.vasp.poscar.Poscar.get_lattice>`\\ "
+"\\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_reciprocal_lattice "
+"<tepkit.io.vasp.poscar.Poscar.get_reciprocal_lattice>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_cartesian_ion_positions "
+"<tepkit.io.vasp.poscar.Poscar.get_cartesian_ion_positions>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_fractional_ion_positions "
+"<tepkit.io.vasp.poscar.Poscar.get_fractional_ion_positions>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_high_symmetry_points_2d "
+"<tepkit.io.vasp.poscar.Poscar.get_high_symmetry_points_2d>`\\ "
+"\\(decimal\\[\\, with\\_2pi\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_interatomic_distances "
+"<tepkit.io.vasp.poscar.Poscar.get_interatomic_distances>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_neighbor_distances "
+"<tepkit.io.vasp.poscar.Poscar.get_neighbor_distances>`\\ \\(→ "
+"list\\[float\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_atomic_numbers "
+"<tepkit.io.vasp.poscar.Poscar.get_atomic_numbers>`\\ \\(→ "
+"list\\[int\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_pymatgen_poscar "
+"<tepkit.io.vasp.poscar.Poscar.get_pymatgen_poscar>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`to_supercell <tepkit.io.vasp.poscar.Poscar.to_supercell>`\\ \\(→"
+" tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:2
+msgid "tepkit.io.vasp.poscar.VaspCoordinatesMode"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:10
+msgid "str(object='') -> str str(bytes_or_buffer[, encoding[, errors]]) -> str"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:13
+msgid ""
+"Create a new string object from the given object. If encoding or errors "
+"is specified, then the object must expose a data buffer that will be "
+"decoded using the given encoding and error handler. Otherwise, returns "
+"the result of object.__str__() (if defined) or repr(object). encoding "
+"defaults to sys.getdefaultencoding(). errors defaults to 'strict'."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Unknown``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``'Unknown'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``'Direct'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Direct``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``D``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/index.rst:2
+msgid "tepkit.io.vasp.poscar"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`VaspCoordinatesMode "
+"<tepkit.io.vasp.poscar.VaspCoordinatesMode>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/index.rst:21:<autosummary>:1
+msgid "str(object='') -> str"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/index.rst:21:<autosummary>:1
+msgid ":py:obj:`Poscar <tepkit.io.vasp.poscar.Poscar>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:2
+msgid "tepkit.utils.colors"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`tepkit_discrete_colormaps "
+"<tepkit.utils.colors.tepkit_discrete_colormaps>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:18:<autosummary>:1
+msgid ":py:obj:`tepkit_colors <tepkit.utils.colors.tepkit_colors>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`_tepkit_smooth_colormaps "
+"<tepkit.utils.colors._tepkit_smooth_colormaps>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`_tepkit_smooth_colormaps_r "
+"<tepkit.utils.colors._tepkit_smooth_colormaps_r>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/colors/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`tepkit_smooth_colormaps "
+"<tepkit.utils.colors.tepkit_smooth_colormaps>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/index.rst:2
+msgid "tepkit.utils"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:2
+msgid "tepkit.utils.mpl_tools.Figure"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``width``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``height``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``legend``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``colorbar``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`add_legend <tepkit.utils.mpl_tools.Figure.add_legend>`\\ "
+"\\(\\*args\\[\\, border\\_width\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`add_colorbar <tepkit.utils.mpl_tools.Figure.add_colorbar>`\\ "
+"\\(\\*args\\[\\, width\\, height\\, border\\_width\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`adjust_margin <tepkit.utils.mpl_tools.Figure.adjust_margin>`\\ "
+"\\(left\\, right\\, top\\, bottom\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ":py:obj:`save <tepkit.utils.mpl_tools.Figure.save>`\\ \\(\\[path\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:2
+msgid "tepkit.utils.mpl_tools.color_tools"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:14:<autosummary>:1
+msgid ":py:obj:`Colormap <tepkit.utils.mpl_tools.color_tools.Colormap>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`get_colormap "
+"<tepkit.utils.mpl_tools.color_tools.get_colormap>`\\ \\(→ Colormap\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:35
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:25:<autosummary>:1
+msgid "根据名称返回 Colormap"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`get_colors <tepkit.utils.mpl_tools.color_tools.get_colors>`\\ "
+"\\(→ list\\[str\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:40
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:25:<autosummary>:1
+msgid "根据风格名称返回颜色列表"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`get_color <tepkit.utils.mpl_tools.color_tools.get_color>`\\ \\(→"
+" str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:45
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:25:<autosummary>:1
+msgid "根据颜色名称返回颜色值"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/color_tools/index.rst:25:<autosummary>:1
+msgid ":py:obj:`test1 <tepkit.utils.mpl_tools.color_tools.test1>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:2
+msgid "tepkit.utils.mpl_tools.font_tools"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`RECOMMENDED_SERIF_FONTS "
+"<tepkit.utils.mpl_tools.font_tools.RECOMMENDED_SERIF_FONTS>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`RECOMMENDED_SANS_FONTS "
+"<tepkit.utils.mpl_tools.font_tools.RECOMMENDED_SANS_FONTS>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`RECOMMENDED_MONO_FONTS "
+"<tepkit.utils.mpl_tools.font_tools.RECOMMENDED_MONO_FONTS>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`RECOMMENDED_SERIF_FONTS_HANS "
+"<tepkit.utils.mpl_tools.font_tools.RECOMMENDED_SERIF_FONTS_HANS>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`RECOMMENDED_SANS_FONTS_HANS "
+"<tepkit.utils.mpl_tools.font_tools.RECOMMENDED_SANS_FONTS_HANS>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`STYLE_TO_RECOMMENDED_FONTS "
+"<tepkit.utils.mpl_tools.font_tools.STYLE_TO_RECOMMENDED_FONTS>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:20:<autosummary>:1
+msgid ":py:obj:`result <tepkit.utils.mpl_tools.font_tools.result>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`get_recommended_font "
+"<tepkit.utils.mpl_tools.font_tools.get_recommended_font>`\\ \\(→ str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`is_font_avalible "
+"<tepkit.utils.mpl_tools.font_tools.is_font_avalible>`\\ \\(→ bool\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`get_avalible_font_by_names "
+"<tepkit.utils.mpl_tools.font_tools.get_avalible_font_by_names>`\\ \\(→ "
+"str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:69
+#: ../../source/autoapi/tepkit/utils/mpl_tools/font_tools/index.rst:30:<autosummary>:1
+msgid "从一个字体列表中从前往后依次寻找可用字体"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/formatters/index.rst:2
+msgid "tepkit.utils.mpl_tools.formatters"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/formatters/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`get_decimal_formatter "
+"<tepkit.utils.mpl_tools.formatters.get_decimal_formatter>`\\ "
+"\\(\\[decimal\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:2
+msgid "tepkit.utils.mpl_tools"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`package_root <tepkit.utils.mpl_tools.package_root>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`style_dir <tepkit.utils.mpl_tools.style_dir>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`style_path <tepkit.utils.mpl_tools.style_path>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`figure <tepkit.utils.mpl_tools.figure>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:43:<autosummary>:1
+msgid ":py:obj:`Figure <tepkit.utils.mpl_tools.Figure>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`adjust_legend_linewidth "
+"<tepkit.utils.mpl_tools.adjust_legend_linewidth>`\\ \\(ax\\[\\, "
+"linewidth\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``edge_data``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``xytext_settings``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``hsps``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``plot_path_step``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``plot_point_step``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``plot_point_text_step``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``plot_base_vectors_step``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:1
+msgid "``base_vectors_length``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.from_poscar>`\\ "
+"\\(poscar\\[\\, with\\_2pi\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.plot>`\\ \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_edge "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.plot_edge>`\\ "
+"\\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:132
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:132
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid "Plot the edge of the first Brillouin zone."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_path "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.plot_path>`\\ "
+"\\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:140
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:140
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid "Plot the high-symmetriy paths."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_point "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.plot_point>`\\ "
+"\\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:148
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:148
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid "Plot the high-symmetriy points."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_point_text "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.plot_point_text>`\\"
+" \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:156
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:156
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid "Plot the name of the high-symmetriy points."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_base_vectors "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.plot_base_vectors>`\\"
+" \\(ax\\[\\, length\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:164
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:164
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+"Plot the base vectors of the reciprocal lattice as arrows with dashed "
+"lines and green color."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`to_png "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter.to_png>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``kpoints``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``color1``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``'orange'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``color0``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``'white'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``edge_color1``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``'#444444'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``edge_color0``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``'black'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``size1``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``2.5``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``size0``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:1
+msgid "``1.8``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ExplicitKpoints2DPlotter.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`plot "
+"<tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter.plot>`\\ "
+"\\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.LinePlotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:6
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:6
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:6
+msgid "Bases: :py:obj:`Plotter`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:10
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:7
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:10
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:10
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:48:<autosummary>:1
+msgid "docstring for Plotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`plot <tepkit.utils.mpl_tools.plotters.LinePlotter.plot>`\\ "
+"\\(\\[ax\\, label\\, settings\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:37
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/LinePlotter.rst:28:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:114
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:44:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:37
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:28:<autosummary>:1
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:57
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:37:<autosummary>:1
+msgid "plot something on the ax."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.Plotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``label``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``style``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``'tepkit'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``ax_settings``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``_fig``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:1
+msgid "``_ax``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`_ax_settings_process "
+"<tepkit.utils.mpl_tools.plotters.Plotter._ax_settings_process>`\\ "
+"\\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:44:<autosummary>:1
+msgid ":py:obj:`get_ax <tepkit.utils.mpl_tools.plotters.Plotter.get_ax>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`before_plot "
+"<tepkit.utils.mpl_tools.plotters.Plotter.before_plot>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`plot <tepkit.utils.mpl_tools.plotters.Plotter.plot>`\\ "
+"\\(\\[ax\\, label\\, settings\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`after_plot "
+"<tepkit.utils.mpl_tools.plotters.Plotter.after_plot>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/Plotter.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`set <tepkit.utils.mpl_tools.plotters.Plotter.set>`\\ "
+"\\(\\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.ScatterPlotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/ScatterPlotter.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`plot <tepkit.utils.mpl_tools.plotters.ScatterPlotter.plot>`\\ "
+"\\(\\[ax\\, label\\, settings\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.TricontourfPlotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:1
+msgid "``plot_dot``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:1
+msgid "``plot_dot_settings``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/TricontourfPlotter.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`plot "
+"<tepkit.utils.mpl_tools.plotters.TricontourfPlotter.plot>`\\ \\(\\[ax\\, "
+"label\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.from_poscar>`\\"
+" \\(poscar\\[\\, with\\_2pi\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.plot>`\\"
+" \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_edge "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.plot_edge>`\\"
+" \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_path "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.plot_path>`\\"
+" \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_point "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.plot_point>`\\"
+" \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_point_text "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.plot_point_text>`\\"
+" \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`plot_base_vectors "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.plot_base_vectors>`\\"
+" \\(ax\\[\\, length\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/BrillouinZone2DPlotter.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`to_png "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter.to_png>`\\"
+" \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`BrillouinZone2DPlotter "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.BrillouinZone2DPlotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/brillouin_zone_plotter/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`main "
+"<tepkit.utils.mpl_tools.plotters.brillouin_zone_plotter.main>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:2
+msgid "tepkit.utils.mpl_tools.plotters"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:25:<autosummary>:1
+msgid ":py:obj:`style_path <tepkit.utils.mpl_tools.plotters.style_path>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:25:<autosummary>:1
+msgid ":py:obj:`obj <tepkit.utils.mpl_tools.plotters.obj>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`BrillouinZone2DPlotter "
+"<tepkit.utils.mpl_tools.plotters.BrillouinZone2DPlotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`ExplicitKpoints2DPlotter "
+"<tepkit.utils.mpl_tools.plotters.ExplicitKpoints2DPlotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:48:<autosummary>:1
+msgid ":py:obj:`Plotter <tepkit.utils.mpl_tools.plotters.Plotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`ScatterPlotter "
+"<tepkit.utils.mpl_tools.plotters.ScatterPlotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:48:<autosummary>:1
+msgid ":py:obj:`LinePlotter <tepkit.utils.mpl_tools.plotters.LinePlotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`TricontourfPlotter "
+"<tepkit.utils.mpl_tools.plotters.TricontourfPlotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/index.rst:56:<autosummary>:1
+msgid ""
+":py:obj:`advance_plot <tepkit.utils.mpl_tools.plotters.advance_plot>`\\ "
+"\\(func\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.kpoints_plotter.ExplicitKpoints2DPlotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/ExplicitKpoints2DPlotter.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`plot "
+"<tepkit.utils.mpl_tools.plotters.kpoints_plotter.ExplicitKpoints2DPlotter.plot>`\\"
+" \\(ax\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.rst:2
+msgid "tepkit.utils.mpl_tools.plotters.kpoints_plotter"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/plotters/kpoints_plotter/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`ExplicitKpoints2DPlotter "
+"<tepkit.utils.mpl_tools.plotters.kpoints_plotter.ExplicitKpoints2DPlotter>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:2
+msgid "tepkit.utils.mpl_tools.ticker_tools"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`ticker_locators "
+"<tepkit.utils.mpl_tools.ticker_tools.ticker_locators>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`ticker_formatters "
+"<tepkit.utils.mpl_tools.ticker_tools.ticker_formatters>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`set_axis_ticker_locator "
+"<tepkit.utils.mpl_tools.ticker_tools.set_axis_ticker_locator>`\\ "
+"\\(axis\\, locator\\[\\, arg\\, minor\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`set_axes_ticker_locator "
+"<tepkit.utils.mpl_tools.ticker_tools.set_axes_ticker_locator>`\\ \\(ax\\,"
+" direction\\, locator\\[\\, arg\\, ...\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`set_ticker_locator "
+"<tepkit.utils.mpl_tools.ticker_tools.set_ticker_locator>`\\ \\(target\\, "
+"locator\\[\\, arg\\, minor\\, ...\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`set_axis_ticker_formatter "
+"<tepkit.utils.mpl_tools.ticker_tools.set_axis_ticker_formatter>`\\ "
+"\\(axis\\, formatter\\[\\, arg\\, minor\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`set_axes_ticker_formatter "
+"<tepkit.utils.mpl_tools.ticker_tools.set_axes_ticker_formatter>`\\ "
+"\\(ax\\, direction\\, formatter\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/ticker_tools/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`set_ticker_formatter "
+"<tepkit.utils.mpl_tools.ticker_tools.set_ticker_formatter>`\\ "
+"\\(target\\, formatter\\[\\, direction\\, ...\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/rich_tools/index.rst:2
+msgid "tepkit.utils.rich_tools"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/rich_tools/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`print_panel <tepkit.utils.rich_tools.print_panel>`\\ \\(→ "
+"rich.panel.Panel\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/rich_tools/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`print_table <tepkit.utils.rich_tools.print_table>`\\ \\(→ "
+"rich.table.Table\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/rich_tools/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`print_args <tepkit.utils.rich_tools.print_args>`\\ \\(→ "
+"rich.table.Table\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:2
+msgid "tepkit.utils.typing_tools.AutoClass"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "``repr_value``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "``'Auto'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "``str_value``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "``int_value``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:1
+msgid "``float_value``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:36:<autosummary>:1
+msgid ":py:obj:`__repr__ <tepkit.utils.typing_tools.AutoClass.__repr__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:36:<autosummary>:1
+msgid ":py:obj:`__str__ <tepkit.utils.typing_tools.AutoClass.__str__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:36:<autosummary>:1
+msgid ":py:obj:`__int__ <tepkit.utils.typing_tools.AutoClass.__int__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/AutoClass.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__float__ <tepkit.utils.typing_tools.AutoClass.__float__>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:2
+msgid "tepkit.utils.typing_tools"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`Self <tepkit.utils.typing_tools.Self>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`PathLike <tepkit.utils.typing_tools.PathLike>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`DataType <tepkit.utils.typing_tools.DataType>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`NumpyArray <tepkit.utils.typing_tools.NumpyArray>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`NumpyArray2D <tepkit.utils.typing_tools.NumpyArray2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`NumpyArray3x3 <tepkit.utils.typing_tools.NumpyArray3x3>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`NumpyArrayNx3 <tepkit.utils.typing_tools.NumpyArrayNx3>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`NumpyArrayNxN <tepkit.utils.typing_tools.NumpyArrayNxN>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:22:<autosummary>:1
+msgid ":py:obj:`AutoValue <tepkit.utils.typing_tools.AutoValue>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/typing_tools/index.rst:35:<autosummary>:1
+msgid ":py:obj:`AutoClass <tepkit.utils.typing_tools.AutoClass>`\\"
+msgstr ""
+

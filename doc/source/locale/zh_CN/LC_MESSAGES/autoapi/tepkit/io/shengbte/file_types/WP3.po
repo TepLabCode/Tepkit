@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:2
+msgid "tepkit.io.shengbte.file_types.WP3"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:6
+msgid "Bases: :py:obj:`OmegaParalleledFile`, :py:obj:`SubdirFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:10
+msgid "--- Supported Files: - ``T*K/``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:14
+msgid "``BTE.WP3``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:19
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "``default_file_name``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "``'BTE.WP3'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:44
+msgid "The default name of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "``column_indices``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/WP3.rst:36
+msgid "All Members"
+msgstr ""
+

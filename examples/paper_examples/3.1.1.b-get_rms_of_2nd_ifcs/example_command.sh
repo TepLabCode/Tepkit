@@ -1,0 +1,1 @@
+tepkit phonopy rms  --work-dir input --log --xlim -0.5 11.5 --ylim 1e-3 10 --save-name "ML-Bi2Te3-RMS"

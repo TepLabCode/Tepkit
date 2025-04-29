@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:2
+msgid "tepkit.core.symmetry.Axis"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:6
+msgid "Bases: :py:obj:`int`, :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:10
+msgid "int([x]) -> integer int(x, base=10) -> integer"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:13
+msgid ""
+"Convert a number or string to an integer, or return 0 if no arguments are"
+" given.  If x is a number, return x.__int__().  For floating point "
+"numbers, this truncates towards zero."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:17
+msgid ""
+"If x is not a number or if base is given, then x must be a string, bytes,"
+" or bytearray instance representing an integer literal in the given base."
+"  The literal can be preceded by '+' or '-' and be surrounded by "
+"whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36. Base 0"
+" means to interpret the base from the string as an integer literal. >>> "
+"int('0b100', base=0) 4"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:28
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``a1``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``0``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``a2``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``1``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``a3``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:1
+msgid "``2``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/Axis.rst:46
+msgid "All Members"
+msgstr ""
+

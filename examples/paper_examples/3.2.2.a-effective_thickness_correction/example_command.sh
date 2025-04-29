@@ -1,0 +1,1 @@
+tepkit vasp thickness --poscar ./input-boltztrap2/POSCAR

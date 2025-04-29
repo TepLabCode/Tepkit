@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:2
+msgid "tepkit.utils.mpl_tools"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:8
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:21
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`package_root <tepkit.utils.mpl_tools.package_root>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`style_dir <tepkit.utils.mpl_tools.style_dir>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`style_path <tepkit.utils.mpl_tools.style_path>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:30:<autosummary>:1
+msgid ":py:obj:`figure <tepkit.utils.mpl_tools.figure>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:32
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:43:<autosummary>:1
+msgid ":py:obj:`Figure <tepkit.utils.mpl_tools.Figure>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:45
+msgid "Functions"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`adjust_legend_linewidth "
+"<tepkit.utils.mpl_tools.adjust_legend_linewidth>`\\ \\(ax\\[\\, "
+"linewidth\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/index.rst:53
+msgid "Package Contents"
+msgstr ""
+

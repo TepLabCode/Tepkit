@@ -1,0 +1,162 @@
+#### Usage ####
+# >>> import matplotlib.pyplot as plt
+# >>> from tepkit import package_root
+# >>> plt.style.use(package_root / "utils/mpl_tools/styles/tepkit_basic.mplstyle")
+
+#### Reference ####
+# https://matplotlib.org/stable/users/explain/customizing.html#the-matplotlibrc-file
+
+#### Contents ####
+# - 线条粗细 & 散点大小
+# - 默认字体
+# - 刻度（开关 & 长度 & 方向）
+# - 网格虚线
+# - 图例
+# - DPI
+# - 子图边距
+####
+
+## BACKENDS ##
+## LINES ##
+
+# 线条粗细
+# lines.linewidth: 1.5
+lines.linewidth: 1
+
+# 散点大小
+# lines.markersize: 6
+lines.markersize: 4
+
+## PATCHES ##
+## HATCHES ##
+## BOXPLOT ##
+
+## FONT ##
+
+# 默认字体修改为衬线体
+# font.family: sans-serif
+font.family: serif
+
+# 修改默认衬线体
+# font.serif: DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
+font.serif: Times New Roman, FreeSerif, DejaVu Serif,
+
+# 修改默认非衬线体
+# font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+font.sans-serif: Helvetica, Arial, FreeSans, DejaVu Sans,
+
+##### TEXT #####
+##### LaTeX #####
+
+# 数学字体修改为衬线体
+# mathtext.fontset: dejavusans
+mathtext.fontset: cm
+
+##### AXES #####
+
+# 修改绘制顺序使得刻度线和网格线位于线条下方
+# axes.axisbelow: line
+axes.axisbelow: True
+
+##### DATES #####
+##### TICKS #####
+
+# 刻度开关
+# xtick.top:    False
+# xtick.bottom: True 
+# ytick.left:   True 
+# ytick.right:  False
+xtick.top:    True
+xtick.bottom: True
+ytick.left:   True
+ytick.right:  True
+
+# 刻度长度
+# xtick.major.size: 3.5
+# ytick.major.size: 3.5
+# xtick.minor.size: 2
+# ytick.minor.size: 2
+xtick.major.size: 5
+ytick.major.size: 5
+xtick.minor.size: 2.5
+ytick.minor.size: 2.5
+
+# 刻度方向
+# xtick.direction: out
+# ytick.direction: out
+xtick.direction: in
+ytick.direction: in
+
+## GRIDS ##
+
+# 修改网格为虚线
+# grid.linestyle: -
+grid.linestyle: --
+
+##### LEGEND #####
+##### 图例 #####
+
+# 图例背景完全不透明
+# legend.framealpha: 0.8
+legend.framealpha: 1
+
+# 图例边框完全不透明
+# legend.edgecolor: 0.8
+legend.edgecolor: 0
+
+# 图例关闭圆角框
+# legend.fancybox: True
+legend.fancybox: False
+
+# 图例字号
+# legend.fontsize: medium
+legend.fontsize: 8
+
+# 图例标题字号
+# legend.title_fontsize: None
+legend.title_fontsize: 8
+
+# 图例内边距
+# legend.borderpad: 0.4
+legend.borderpad: 0.5
+
+# 图例线条的长度
+# legend.handlelength: 2.0
+legend.handlelength: 1.8
+
+# 图例线条和文字的间距
+# legend.handletextpad: 0.8
+legend.handletextpad: 0.5
+
+# 图例到轴的距离
+# legend.borderaxespad: 0.5
+legend.borderaxespad: 1.0
+
+## FIGURE ##
+
+# 修改默认画布大小（2000 x 1800 px）
+# figure.figsize: 6.4, 4.8
+figure.figsize: 3.334, 3
+# figure.dpi: 100
+figure.dpi: 600
+
+# 调整边距
+# figure.subplot.left:   0.125
+# figure.subplot.right:  0.9
+# figure.subplot.bottom: 0.11
+# figure.subplot.top:    0.88
+figure.subplot.left:   0.20
+figure.subplot.right:  0.90
+figure.subplot.bottom: 0.20
+figure.subplot.top:    0.90
+
+## IMAGES ##
+## CONTOUR PLOTS ##
+## ERRORBAR PLOTS ##
+## HISTOGRAM PLOTS ##
+## SCATTER PLOTS ##
+## AGG RENDERING ##
+## PATHS ##
+## SAVING FIGURES ##
+## INTERACTIVE KEYMAPS ##
+## ANIMATION ##

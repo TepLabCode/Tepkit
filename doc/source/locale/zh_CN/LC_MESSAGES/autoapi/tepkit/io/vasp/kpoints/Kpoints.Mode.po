@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:2
+msgid "tepkit.io.vasp.kpoints.Kpoints.Mode"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:6
+msgid "Bases: :py:obj:`str`, :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:10
+msgid "The Enum of all supported KPOINTS modes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Automatic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Automatic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Gamma``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Gamma'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Monkhorst``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Monkhorst'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Cartesian``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Cartesian'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Fractional``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Fractional'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``Line``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:1
+msgid "``'Line'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:33
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`to_pymatgen <tepkit.io.vasp.kpoints.Kpoints.Mode.to_pymatgen>`\\"
+" \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/Kpoints.Mode.rst:43
+msgid "All Members"
+msgstr ""
+

@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:2
+msgid "tepkit.io.StructuredTextFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:6
+msgid "Bases: :py:obj:`TextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:10
+msgid "The class for text file with special structure."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "``content``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:1
+msgid "``_lines``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:25
+msgid "Properties"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:34:<autosummary>:1
+msgid ":py:obj:`lines <tepkit.io.StructuredTextFile.lines>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:36
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.StructuredTextFile.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:70
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid "从字符串中读取结构化数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`from_file <tepkit.io.StructuredTextFile.from_file>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:79
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid "从文件中读取文本，然后调用 from_string 读取数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid ":py:obj:`to_file <tepkit.io.StructuredTextFile.to_file>`\\ \\(→ None\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:92
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:46:<autosummary>:1
+msgid "Write the data of the object to a file."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/StructuredTextFile.rst:48
+msgid "All Members"
+msgstr ""
+

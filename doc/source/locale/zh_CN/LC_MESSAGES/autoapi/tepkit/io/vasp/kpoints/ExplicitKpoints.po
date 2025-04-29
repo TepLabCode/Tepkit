@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:2
+msgid "tepkit.io.vasp.kpoints.ExplicitKpoints"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:6
+msgid "Bases: :py:obj:`Kpoints`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:10
+msgid "Ref: - https://www.vasp.at/wiki/index.php/KPOINTS"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:16
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``comment``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:63
+msgid "The 1st line: The comment line."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``coordinates_mode``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:71
+msgid "The coordinate mode. Cartesian or Reciprocal."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``kpts``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``kpts_weights``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:1
+msgid "``b_lattice``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:29
+msgid "Properties"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:39:<autosummary>:1
+msgid ":py:obj:`num_kpts <tepkit.io.vasp.kpoints.ExplicitKpoints.num_kpts>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:39:<autosummary>:1
+msgid ":py:obj:`df <tepkit.io.vasp.kpoints.ExplicitKpoints.df>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:41
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`from_string "
+"<tepkit.io.vasp.kpoints.ExplicitKpoints.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:109
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid "从字符串中读取结构化数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`__str__ <tepkit.io.vasp.kpoints.ExplicitKpoints.__str__>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`get_pymatgen_kpoints "
+"<tepkit.io.vasp.kpoints.ExplicitKpoints.get_pymatgen_kpoints>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`__add__ <tepkit.io.vasp.kpoints.ExplicitKpoints.__add__>`\\ "
+"\\(other\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ""
+":py:obj:`plot <tepkit.io.vasp.kpoints.ExplicitKpoints.plot>`\\ "
+"\\(\\[ax\\, show\\, save\\_path\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:54:<autosummary>:1
+msgid ":py:obj:`show <tepkit.io.vasp.kpoints.ExplicitKpoints.show>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/kpoints/ExplicitKpoints.rst:56
+msgid "All Members"
+msgstr ""
+

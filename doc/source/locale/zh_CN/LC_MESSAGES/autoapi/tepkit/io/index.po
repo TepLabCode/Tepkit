@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/index.rst:2
+msgid "tepkit.io"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:8
+msgid "This package is used to read and write files of various formats."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:13
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:26
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:33:<autosummary>:1
+msgid ":py:obj:`PathLike <tepkit.io.PathLike>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:33:<autosummary>:1
+msgid ":py:obj:`Self <tepkit.io.Self>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:35
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`File <tepkit.io.File>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid "The base class for all files."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`TextFile <tepkit.io.TextFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid "The class for text files."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`StructuredTextFile <tepkit.io.StructuredTextFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid "The class for text file with special structure."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:52:<autosummary>:1
+msgid ":py:obj:`TableTextFile <tepkit.io.TableTextFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:54
+msgid "Functions"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:61:<autosummary>:1
+msgid ":py:obj:`array_to_string <tepkit.io.array_to_string>`\\ \\(→ str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:61:<autosummary>:1
+msgid ":py:obj:`matrix_to_string <tepkit.io.matrix_to_string>`\\ \\(→ str\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/index.rst:63
+msgid "Package Contents"
+msgstr ""
+

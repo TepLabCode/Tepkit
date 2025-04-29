@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:2
+msgid "tepkit.core.symmetry.LayerGroup"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:9
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+msgid "``data``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:18
+msgid "Properties"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:27:<autosummary>:1
+msgid ":py:obj:`number <tepkit.core.symmetry.LayerGroup.number>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:29
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`from_file <tepkit.core.symmetry.LayerGroup.from_file>`\\ "
+"\\(path\\, fmt\\[\\, aperiodic\\_axis\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`from_poscar <tepkit.core.symmetry.LayerGroup.from_poscar>`\\ "
+"\\(poscar\\[\\, aperiodic\\_axis\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`get_data_from_spglib "
+"<tepkit.core.symmetry.LayerGroup.get_data_from_spglib>`\\ \\(cell\\[\\, "
+"aperiodic\\_axis\\, sym\\_prec\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`add_additional_data "
+"<tepkit.core.symmetry.LayerGroup.add_additional_data>`\\ \\(→ None\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/LayerGroup.rst:42
+msgid "All Members"
+msgstr ""
+

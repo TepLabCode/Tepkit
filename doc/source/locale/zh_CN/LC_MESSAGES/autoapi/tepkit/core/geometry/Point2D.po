@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:2
+msgid "tepkit.core.geometry.Point2D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:9
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+msgid "``x``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:1
+msgid "``y``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:23
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ":py:obj:`__iter__ <tepkit.core.geometry.Point2D.__iter__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__add__ <tepkit.core.geometry.Point2D.__add__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__sub__ <tepkit.core.geometry.Point2D.__sub__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__pos__ <tepkit.core.geometry.Point2D.__pos__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__neg__ <tepkit.core.geometry.Point2D.__neg__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`__truediv__ <tepkit.core.geometry.Point2D.__truediv__>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/geometry/Point2D.rst:38
+msgid "All Members"
+msgstr ""
+

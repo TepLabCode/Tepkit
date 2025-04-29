@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:2
+msgid "tepkit.io.vasp.Eigenval"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:6
+msgid "Bases: :py:obj:`tepkit.io.StructuredTextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:10
+msgid "The class of EIGENVAL file for VASP."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:12
+msgid "**Refs:**"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:14
+msgid "https://www.vasp.at/wiki/index.php/EIGENVAL"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:15
+msgid "https://www.vasp.at/wiki/index.php/DOSCAR"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:16
+msgid "https://w.vasp.at/forum/viewtopic.php?p=20810"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:17
+msgid "https://sisl.readthedocs.io/en/latest/_modules/sisl/io/vasp/eigenval.html"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:22
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``default_file_name``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``'EIGENVAL'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:70
+msgid "The default name of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``data_columns``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``data``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``extra_data``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``df``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:1
+msgid "``soc``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:36
+msgid "Properties"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`index_vbe <tepkit.io.vasp.Eigenval.index_vbe>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid "Get the band index of the Valence Band Edge (VBE)."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`index_cbe <tepkit.io.vasp.Eigenval.index_cbe>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid "Get the band index of the Conduction Band Edge (VBE)."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_vbm <tepkit.io.vasp.Eigenval.energy_vbm>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_cbm <tepkit.io.vasp.Eigenval.energy_cbm>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:49:<autosummary>:1
+msgid ":py:obj:`energy_midgap <tepkit.io.vasp.Eigenval.energy_midgap>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:51
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:60:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.vasp.Eigenval.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:107
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:60:<autosummary>:1
+msgid "从字符串中读取结构化数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:60:<autosummary>:1
+msgid ":py:obj:`get_band <tepkit.io.vasp.Eigenval.get_band>`\\ \\(index\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:62
+msgid "All Members"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:116
+msgid "Get the band index of the Valence Band Edge (VBE). (Start at 1)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Eigenval.rst:126
+msgid "Get the band index of the Conduction Band Edge (VBE). (Start at 1)"
+msgstr ""
+

@@ -1,0 +1,44 @@
+# You should NOT DELETE or MODIFY this file !
+# Do your own settings in tepkit.custom.config.toml
+
+
+[typer]
+# Remove default parameter options
+add_completion = false
+# Run callback function when there is no subcommand
+invoke_without_command = true
+# Enable rich advanced traceback
+pretty_exceptions_enable = true
+# Do not show local variables to prevent traceback from being too long
+pretty_exceptions_show_locals = false
+
+[loguru]
+format = "<cyan>{time:YYYY-MM-DD HH:mm:ss}</cyan> | <level>{level}</level> | {message}"
+log_level = 18
+
+[mpi]
+default_mpi_command = "mpirun"
+default_ppn = 2
+
+[vasp]
+default_vasp_command = "vasp_std"
+default_vasp_ncore = 1
+default_vasp_logfile = "vasp.log"
+
+[pbs]
+nodes = 1
+ppn = 8
+pre_commands = [
+"cd ${PBS_O_WORKDIR}",
+]
+post_commands = [
+]
+
+[python]
+python_command = "python"
+
+[thirdorder]
+thirdorder_vasp_path = "/path/to/thirdorder_vasp.py"
+
+[fourthorder]
+fourthorder_vasp_path = "/path/to/Fourthorder_vasp.py"

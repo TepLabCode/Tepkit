@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:2
+msgid "tepkit.io.shengbte.OmegaParalleledFile"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:6
+msgid "Bases: :py:obj:`tepkit.io.TableTextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:10
+msgid ""
+"由 频率 和 数值 两列数据组成的数据文件。 @shape: (n_qpoints * n_modes, 2) --- Supported "
+"Files: - ``BTE.w*`` - ``T*K/``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:17
+msgid "``BTE.WP3*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:18
+msgid "``BTE.WP4*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:19
+msgid "``BTE.w*``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:29
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`reshape_to "
+"<tepkit.io.shengbte.OmegaParalleledFile.reshape_to>`\\ \\(shape\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/OmegaParalleledFile.rst:39
+msgid "All Members"
+msgstr ""
+

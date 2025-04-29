@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:2
+msgid "tepkit.core.symmetry"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`Axis <tepkit.core.symmetry.Axis>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid "int([x]) -> integer"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`BravaisSystem2D <tepkit.core.symmetry.BravaisSystem2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid "Enum where members are also (and must be) strings"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`BravaisLattice2D <tepkit.core.symmetry.BravaisLattice2D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`CrystalSystem3D <tepkit.core.symmetry.CrystalSystem3D>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/index.rst:27:<autosummary>:1
+msgid ":py:obj:`LayerGroup <tepkit.core.symmetry.LayerGroup>`\\"
+msgstr ""
+

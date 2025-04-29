@@ -1,0 +1,1 @@
+tepkit thirdorder check_dupl --dir jobs

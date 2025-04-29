@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:2
+msgid "tepkit.io.shengbte.control"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:14:<autosummary>:1
+msgid ":py:obj:`obj <tepkit.io.shengbte.control.obj>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:27:<autosummary>:1
+msgid ":py:obj:`Control <tepkit.io.shengbte.control.Control>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:27:<autosummary>:1
+msgid "the class of CONTROL file for ShengBTE"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/control/index.rst:29
+msgid "Module Contents"
+msgstr ""
+

@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:2
+msgid "tepkit.io.vasp.outcar.VaspState"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:6
+msgid "Bases: :py:obj:`str`, :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:10
+msgid "VASP State Enum."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``Unstarted``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``'Unstarted'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``Uncompleted``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``'Uncompleted'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``Finished``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:1
+msgid "``'Finished'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:30
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:38:<autosummary>:1
+msgid ":py:obj:`__bool__ <tepkit.io.vasp.outcar.VaspState.__bool__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/outcar/VaspState.rst:40
+msgid "All Members"
+msgstr ""
+

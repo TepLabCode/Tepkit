@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:2
+msgid "tepkit.io.phonopy.ForceConstants"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:6
+msgid "Bases: :py:obj:`tepkit.io.StructuredTextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:10
+msgid "The class for text file with special structure."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+msgid "``default_file_name``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+msgid "``'FORCE_CONSTANTS'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:47
+msgid "The default name of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+msgid "``df``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:29
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.phonopy.ForceConstants.from_string>`\\ "
+"\\(→ tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:62
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:37:<autosummary>:1
+msgid "从字符串中读取结构化数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/phonopy/ForceConstants.rst:39
+msgid "All Members"
+msgstr ""
+

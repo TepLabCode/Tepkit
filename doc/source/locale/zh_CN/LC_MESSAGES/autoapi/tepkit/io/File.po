@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/File.rst:2
+msgid "tepkit.io.File"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:7
+msgid "The base class for all files."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:12
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``default_dir_path``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``'./'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:48
+msgid "The default path of located directory of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``default_file_name``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:58
+msgid "The default name of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+msgid "``source_path``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:1
+#: ../../source/autoapi/tepkit/io/File.rst:68
+msgid "Record the path of the file when use ``from_file()`` or ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:27
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`from_file <tepkit.io.File.from_file>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:77
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid "Read a file by its ``path`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`from_dir <tepkit.io.File.from_dir>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:89
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ""
+"Read a file named ``cls.default_file_name`` in the "
+"``cls.default_dir_path``."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid ":py:obj:`to_file <tepkit.io.File.to_file>`\\ \\(path\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:107
+#: ../../source/autoapi/tepkit/io/File.rst:37:<autosummary>:1
+msgid "Write the data of the object to a file."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:39
+msgid "All Members"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/File.rst:93
+msgid "You can also specify the dirctory path or the file name:"
+msgstr ""
+
