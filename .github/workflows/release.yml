@@ -1,0 +1,48 @@
+name: Manual Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (e.g., 1.0.0)"
+        required: true
+
+jobs:
+  release:
+    name: Release version ${{ github.event.inputs.version }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Pack tepkit package as tar.gz
+      run: |
+        mkdir tepkit_release
+        cp -r src/tepkit tepkit_release/
+        cp -r tools tepkit_release/
+        cp LICENSE tepkit_release/
+        cp README.md tepkit_release/
+        cp pyproject.toml tepkit_release/
+        tar -czf tepkit-${{ github.event.inputs.version }}.tar.gz -C tepkit_release .
+
+    - name: Pack tepkit examples as zip
+      run: |
+        zip -r tepkit-examples-${{ github.event.inputs.version }}.zip examples
+
+    - name: Upload to GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v${{ github.event.inputs.version }}
+        name: Tepkit v${{ github.event.inputs.version }}
+        body: |
+          Manual release for Tepkit ${{ github.event.inputs.version }}.
+
+          Included:
+          - `tepkit-${{ github.event.inputs.version }}.tar.gz` – Main Python Package
+          - `tepkit-examples-${{ github.event.inputs.version }}.zip` – Example Files
+        files: |
+          tepkit-${{ github.event.inputs.version }}.tar.gz
+          tepkit-examples-${{ github.event.inputs.version }}.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

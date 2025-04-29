@@ -1,0 +1,50 @@
+html[data-theme=light] {
+   --pst-color-table-heading-bg: #EEE;
+   }
+
+
+.table thead tr {
+    border-bottom: 1px solid #DDD;
+    }
+
+h1 {
+    padding-bottom: 13px;
+    border-bottom: 4px solid #CCC;
+    }
+
+h2 {
+    padding-bottom: 9px;
+    border-bottom: 2px solid #CCC;
+    }
+
+.table thead tr:last-child {
+    border-bottom: 2px solid #AAE;
+   }
+
+dt {
+   font-weight: unset;
+   }
+
+ul dd {
+   margin-left: 0 !important;
+   }
+
+code {
+   margin: 0rem  0.1rem;
+}
+
+:is(section[id="methods"], section[id="functions"]) table.autosummary tr td:first-child p{
+   font-size: 0;
+}
+
+:is(section[id="methods"], section[id="functions"]) table.autosummary tr td:first-child p code{
+   font-size: 1rem;
+}
+
+:is(section[id="methods"], section[id="functions"]) table.autosummary tr td:first-child p code::before{
+   content:"."
+}
+
+:is(section[id="methods"], section[id="functions"]) table.autosummary tr td:first-child p code::after{
+   content:"(…)"
+}

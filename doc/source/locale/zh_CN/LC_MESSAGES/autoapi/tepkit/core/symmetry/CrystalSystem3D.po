@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:2
+msgid "tepkit.core.symmetry.CrystalSystem3D"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:6
+msgid "Bases: :py:obj:`enum.StrEnum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:10
+msgid "Enum where members are also (and must be) strings"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Triclinic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Triclinic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Monoclinic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Monoclinic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Orthorhombic``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Orthorhombic'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Tetragonal``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Tetragonal'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Trigonal``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Trigonal'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``Hexagonal``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:1
+msgid "``'Hexagonal'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/symmetry/CrystalSystem3D.rst:36
+msgid "All Members"
+msgstr ""
+

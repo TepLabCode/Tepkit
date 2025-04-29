@@ -1,0 +1,22 @@
+# Git
+
+
+# PyCharm
+.idea
+
+# Python
+__pycache__
+
+# FreeFileSync
+sync.ffs_db
+
+# Documentation
+doc/build
+doc/source/autoapi
+
+# Development
+_beta_*
+_develop_*
+_bak_files
+tepkit.develop.config.toml
+tests

@@ -1,0 +1,294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:2
+msgid "tepkit.io.vasp.Poscar"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:6
+msgid "Bases: :py:obj:`tepkit.io.StructuredTextFile`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:10
+msgid "See: https://www.vasp.at/wiki/index.php/POSCAR"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``default_file_name``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``'POSCAR'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:83
+msgid "The default name of file when use ``from_dir()`` ."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``comment``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:93
+msgid "The first line of POSCAR."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``scaling_factor``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``1.0``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``unscale_lattice``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``has_species_names``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``True``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``species_names``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``[]``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``ions_per_species``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``ion_coordinates_mode``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``ion_positions``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``has_selective_dynamics``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``False``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``selective_dynamics``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``has_lattice_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``lattice_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``has_ion_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``ion_velocities``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:1
+msgid "``md_extra``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:39
+msgid "Properties"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`lattice <tepkit.io.vasp.Poscar.lattice>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`reciprocal_lattice <tepkit.io.vasp.Poscar.reciprocal_lattice>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`n_ions <tepkit.io.vasp.Poscar.n_ions>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid ":py:obj:`thickness_info <tepkit.io.vasp.Poscar.thickness_info>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:51:<autosummary>:1
+msgid "返回与厚度有关的数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:53
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`from_string <tepkit.io.vasp.Poscar.from_string>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:199
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid "从字符串中读取结构化数据。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ":py:obj:`__str__ <tepkit.io.vasp.Poscar.__str__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`_translate_selective_dynamics_flag "
+"<tepkit.io.vasp.Poscar._translate_selective_dynamics_flag>`\\ \\(→ "
+"bool\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ":py:obj:`get_lattice <tepkit.io.vasp.Poscar.get_lattice>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_reciprocal_lattice "
+"<tepkit.io.vasp.Poscar.get_reciprocal_lattice>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_cartesian_ion_positions "
+"<tepkit.io.vasp.Poscar.get_cartesian_ion_positions>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_fractional_ion_positions "
+"<tepkit.io.vasp.Poscar.get_fractional_ion_positions>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_high_symmetry_points_2d "
+"<tepkit.io.vasp.Poscar.get_high_symmetry_points_2d>`\\ \\(decimal\\[\\, "
+"with\\_2pi\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:270
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+"Get the absolute and relative coordinates of all possible high symmetry "
+"points of a 2D material."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_interatomic_distances "
+"<tepkit.io.vasp.Poscar.get_interatomic_distances>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:282
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid "Return the distances between ions."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_neighbor_distances "
+"<tepkit.io.vasp.Poscar.get_neighbor_distances>`\\ \\(→ list\\[float\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:290
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid "Return the distances of the n-th neighbors."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_atomic_numbers <tepkit.io.vasp.Poscar.get_atomic_numbers>`\\"
+" \\(→ list\\[int\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`get_pymatgen_poscar "
+"<tepkit.io.vasp.Poscar.get_pymatgen_poscar>`\\ \\(\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:73:<autosummary>:1
+msgid ""
+":py:obj:`to_supercell <tepkit.io.vasp.Poscar.to_supercell>`\\ \\(→ "
+"tepkit.utils.typing\\_tools.Self\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:75
+msgid "All Members"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:223
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:273
+msgid "VASP Cartesian KPOINTS use with_2pi=False"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/Poscar.rst:251
+msgid "返回与厚度有关的数据。 如有效厚度，边缘原子的范德瓦耳斯半径等。"
+msgstr ""
+

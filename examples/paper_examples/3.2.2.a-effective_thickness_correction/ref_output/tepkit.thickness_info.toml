@@ -1,0 +1,9 @@
+unit = "Angstrom"
+cell_thickness = 30.0
+thickness = 7.568653916630245
+element_top = "Te"
+element_bottom = "Te"
+vdw_radius_top = 2.06
+vdw_radius_bottom = 2.06
+effective_thickness = 11.688653916630246
+effective_thickness_proportion = 0.3896217972210082

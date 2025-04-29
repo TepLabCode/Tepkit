@@ -1,0 +1,47 @@
+[project]
+name = "tepkit"
+version = "0.1.0"
+description = """A user-friendly program for accelerating the calculation and analysis processes of \
+transport, electronic, and thermoelectric properties of materials."""
+authors = [
+    {name = "Shu-Hao Cao", email = "csh.academic@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+# Minimum
+dependencies = [
+    "loguru",
+    "toml",
+    "typer",
+    "docstring_parser",
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+# pip install .[full]
+all = [
+    "mendeleev",
+    "pymatgen",
+    "f90nml",
+    "rich",
+    "spglib",
+]
+# pip install .[doc]
+doc = [
+    "sphinx",
+    "sphinx-autoapi",
+    "sphinx-book-theme",
+    "sphinxcontrib-mermaid",
+    "myst-parser",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+tepkit = "tepkit.cli.typer.entry:main"

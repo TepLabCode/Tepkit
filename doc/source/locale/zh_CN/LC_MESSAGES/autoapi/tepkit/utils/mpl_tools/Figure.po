@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:2
+msgid "tepkit.utils.mpl_tools.Figure"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:9
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``width``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``None``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``height``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``legend``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:1
+msgid "``colorbar``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:25
+msgid "Methods"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`add_legend <tepkit.utils.mpl_tools.Figure.add_legend>`\\ "
+"\\(\\*args\\[\\, border\\_width\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`add_colorbar <tepkit.utils.mpl_tools.Figure.add_colorbar>`\\ "
+"\\(\\*args\\[\\, width\\, height\\, border\\_width\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`adjust_margin <tepkit.utils.mpl_tools.Figure.adjust_margin>`\\ "
+"\\(left\\, right\\, top\\, bottom\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:36:<autosummary>:1
+msgid ":py:obj:`save <tepkit.utils.mpl_tools.Figure.save>`\\ \\(\\[path\\]\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/utils/mpl_tools/Figure.rst:38
+msgid "All Members"
+msgstr ""
+

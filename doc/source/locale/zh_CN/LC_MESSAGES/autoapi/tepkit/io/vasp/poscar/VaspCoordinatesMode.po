@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:2
+msgid "tepkit.io.vasp.poscar.VaspCoordinatesMode"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:6
+msgid "Bases: :py:obj:`str`, :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:10
+msgid "str(object='') -> str str(bytes_or_buffer[, encoding[, errors]]) -> str"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:13
+msgid ""
+"Create a new string object from the given object. If encoding or errors "
+"is specified, then the object must expose a data buffer that will be "
+"decoded using the given encoding and error handler. Otherwise, returns "
+"the result of object.__str__() (if defined) or repr(object). encoding "
+"defaults to sys.getdefaultencoding(). errors defaults to 'strict'."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:24
+msgid "Attributes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "Attribute"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Unknown``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``'Unknown'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Fractional``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``'Direct'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Direct``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``Cartesian``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``'Cartesian'``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``F``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``D``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:1
+msgid "``C``"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/vasp/poscar/VaspCoordinatesMode.rst:46
+msgid "All Members"
+msgstr ""
+

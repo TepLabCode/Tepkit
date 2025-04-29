@@ -1,0 +1,17 @@
+2025-04-24 17:19:30 | INFO | Calculating distances for each atom ...
+2025-04-24 17:19:30 | SUCCESS | Done.
+2025-04-24 17:19:30 | INFO | The distances are:
+ Neighborn    Distance 
+  (n-th)    (Angstrom) 
+     0          0.7122 
+     1          1.9458 
+     2          2.6581 
+     3          3.3088 
+     4          4.0211 
+     5          4.6039 
+     6          5.0352 
+     7          5.4169 
+     8          5.9535 
+     9          6.3684 
+    10          6.8250 
+    11          7.8345 

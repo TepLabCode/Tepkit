@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:2
+msgid "tepkit.io.shengbte.file_types"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`SubdirFile <tepkit.io.shengbte.file_types.SubdirFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid "ShengBTE 温度子文件夹中文件的文件类。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`OmegaShapedFile "
+"<tepkit.io.shengbte.file_types.OmegaShapedFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid "与 BTE.omega 的数据形状相同的数据文件。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`OmegaParalleledFile "
+"<tepkit.io.shengbte.file_types.OmegaParalleledFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid "由 频率 和 数值 两列数据组成的数据文件。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`NticksLengthFile "
+"<tepkit.io.shengbte.file_types.NticksLengthFile>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid "由 nticks (default=100) 决定行数的数据文件。"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`Gruneisen <tepkit.io.shengbte.file_types.Gruneisen>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`W <tepkit.io.shengbte.file_types.W>`\\"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/io/shengbte/file_types/index.rst:31:<autosummary>:1
+msgid ":py:obj:`WP3 <tepkit.io.shengbte.file_types.WP3>`\\"
+msgstr ""
+

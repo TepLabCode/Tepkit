@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, TepLab
+# This file is distributed under the same license as the Tepkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tepkit \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-09 21:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:2
+msgid "tepkit.core.structure"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:15:<autosummary>:1
+msgid ":py:obj:`abc_to_xyz <tepkit.core.structure.abc_to_xyz>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:22
+#: ../../source/autoapi/tepkit/core/structure/index.rst:37
+#: ../../source/autoapi/tepkit/core/structure/index.rst:15:<autosummary>:1
+msgid "Usage"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:15:<autosummary>:1
+msgid ":py:obj:`xyz_to_abc <tepkit.core.structure.xyz_to_abc>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:31
+msgid "Cartesian coordinates"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:32
+msgid "Lattice vectors"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:33
+msgid "Number of decimal places to round to, default is 15 (for float64)."
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/autoapi/tepkit/core/structure/index.rst:34
+msgid "Fractional coordinates"
+msgstr ""
+

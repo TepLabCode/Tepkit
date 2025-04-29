@@ -1,0 +1,36 @@
+name: Pylint
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint
+    - name: Install Package
+      run: |
+        pip install .
+    - name: Analysing the code with pylint
+      run: |
+        # C0103: Used when the name doesn't conform to naming rules associated to its type.
+        # C0114: Used when a module has no docstring.
+        # C0115: Used when a class has no docstring.
+        # C0116: Used when a function or method has no docstring.
+        # C0301: Used when a line is longer than a given number of characters.
+        # C0413: Used when code and imports are mixed.
+        # C0415: Used when an import statement is used anywhere other than the module toplevel.
+        # R0913: Used when a function or method takes too many arguments.
+        # R0917: Used when a function has too many positional arguments.
+        pylint --disable=C0103,C0114,C0115,C0116,C0301,C0413,C0415,R0913,R0917 $(git ls-files '*.py')

@@ -1,0 +1,31 @@
+# You can create this file by `tepkit dp --init`
+[input]
+dimension   = 2     # 2 or 3
+temperature = 300   # Unit: K
+
+[input.2D]
+# Ref: https://link.aps.org/doi/10.1103/PhysRevB.94.235306
+#      Table 1. HP
+data = """
+Direction  Carrier  E_1       C_2D      m_eff
+x          e        1.40      49.7      0.69
+x          h        1.26      49.7      1.24
+y          e        0.66      49.9      3.58
+y          h        0.18      49.9      2.45
+"""  # Unit:        eV        N/m       m_0
+
+method = "lang"  # "lang" / "lang_simplified" / "dp_2d"
+
+[input.3D]
+data = """
+Direction  Carrier  E_1       C_2D      m_eff
+x          e        NaN       NaN       NaN
+x          h        NaN       NaN       NaN
+y          e        NaN       NaN       NaN
+y          h        NaN       NaN       NaN
+z          e        NaN       NaN       NaN
+z          h        NaN       NaN       NaN
+"""  # Unit:        eV        GPa       m_0
+
+method = "dp_3d" # "dp_3d"
+
