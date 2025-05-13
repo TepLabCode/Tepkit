@@ -1,5 +1,8 @@
 # Tepkit
 
+[![Python](https://img.shields.io/pypi/pyversions/tepkit.svg)](https://pypi.org/project/tepkit/)
+[![PyPI](https://img.shields.io/pypi/v/tepkit.svg)](https://pypi.org/project/tepkit/)
+
 **Tepkit** is a user-friendly program for accelerating
 the calculation and analysis processes of 
 transport, electronic, and thermoelectric properties of materials.
@@ -11,6 +14,28 @@ transport, electronic, and thermoelectric properties of materials.
 
 If you have used Tepkit in your work, please cite our paper
 which indeed helps the Tepkit project to continue:
+
+### BibTex (As a software)
+
+```
+@software{Tepkit_2025,
+  shorttitle = {Tepkit},
+  title      = {{Tepkit: A user-friendly program for accelerating
+                 the calculation and analysis processes of
+                 transport and thermoelectric properties of
+                 materials}},
+  author     = {Cao, Shu-Hao},
+  license    = {GPL-3.0},
+  url        = {https://github.com/TepLabCode/Tepkit},
+  year       = {2025}
+}
+```
+
+How to use it in [Zotero](https://www.zotero.org) :
+
+- Copy the BibTex text ➜ Open Zotero ➜ Menu Bar ➜ File ➜ Import from Clipboard
+
+### Paper
 
 - *In preparation*
 
@@ -33,7 +58,7 @@ The following libraries are required to run basic functions and will be installe
 
 ### Step 1 — Prepare the Environment
 
-#### Method A: In conda environment (Recommended)
+#### *Method A: In conda environment* (Recommended)
 
 You can use conda to create a virtual environment with Python 3.11 for Tepkit.
 
@@ -48,25 +73,30 @@ If you have not installed it, check one of the following:
 - [Conda](https://docs.conda.io/projects/conda/en/latest/index.html)
 - [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)
 
-#### Method B: In native environment
+#### *Method B: In native environment*
 
 Cheak if you have installed [Python](https://www.python.org), and check if the version is **at least 3.11** by:
 
+```bash
+python --version
+# Python 3.11.x
+```
+
 ### Step 2 — Install Tepkit
 
-#### Method A: Form PyPI (Recommended)
+#### *Method A: Form PyPI* (Recommended)
 
 ```bash
 pip install tepkit
 ```
 
-#### Method B: From GitHub
+#### *Method B: From GitHub*
 
 ```bash
 pip install git+https://github.com/TepLabCode/Tepkit.git
 ```
 
-#### Method C: From Releases
+#### *Method C: From Releases*
 
 1. **Download**:  
    Go to the [releases page](https://github.com/TepLabCode/Tepkit/releases),
@@ -95,7 +125,7 @@ pip install tepkit[all]
 
 ### Step 3 — Test
 
-#### A. As a Command-line Interface (CLI)
+#### *A. As a Command-line Interface (CLI)*
 
 You can test if Tepkit is installed correctly by running the `tepkit` command in the console.
 
@@ -110,7 +140,7 @@ If you installed Tepkit in conda, you need to activate the environment before ru
 > tepkit
 ```
 
-#### B. As a Python Module
+#### *B. As a Python Module*
 
 You can test if Tepkit can be imported correctly by the following code in Python:
 
