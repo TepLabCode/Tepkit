@@ -1,62 +1,87 @@
 # Installation
 
-## Steps
+## Step 1 — Prepare the Environment
 
-### 1. Download the package
+### Method A: In conda environment (Recommended)
 
-Go to the [releases page](https://github.com/TepLabCode/Tepkit/releases), and download the latest release:
-
-`tepkit-<version>.tar.gz`
-
-### 2. Extract
-
-Use the command or any other tool to extract the file.
-
-```bash
-tar -xvf tepkit-*.tar.gz
-```
-
-### 3. (Optional) Create Conda Environment
+You can use conda to create a virtual environment with Python 3.11 for Tepkit.
 
 ```bash
 conda create --name tepkit python=3.11
 conda activate tepkit
 ```
 
-### 4. Install Tepkit
+If you have not installed it, check one of the following:
 
-Cheak your Python version by:
+- [Anaconda](https://www.anaconda.com/download)
+- [Conda](https://docs.conda.io/projects/conda/en/latest/index.html)
+- [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)
 
- ```bash
- python --version
- # Python 3.11.x
- ```
+### Method B: In native environment
 
-If your Python version is less than 3.11, and you do not want to change it, check step 3.
+Cheak if you have installed [Python](https://www.python.org), and check if the version is **at least 3.11** by:
 
-Go to the extracted directory and install the package by pip:
+## Step 2 — Install Tepkit
+
+### Method A: Form PyPI (Recommended)
 
 ```bash
-cd tepkit-*
-pip install .
+pip install tepkit
 ```
 
-## Test
+### Method B: From GitHub
 
-You can use Tepkit as a command-line interface (CLI) in the console.
+```bash
+pip install git+https://github.com/TepLabCode/Tepkit.git
+```
+
+### Method C: From Releases
+
+1. **Download**:  
+   Go to the [releases page](https://github.com/TepLabCode/Tepkit/releases),
+   and download the latest released package:  
+   `tepkit-<version>.tar.gz`
+2. **Extract**:  
+   Extract the package by command or any other tool you like.  
+   ( Example command: `tar -xvf tepkit-*.tar.gz` )
+3. **Install**:
+   Go to the extracted directory and install the package:  
+   ```bash
+   cd tepkit-*
+   pip install .
+   ```
+### (Optional) Install All Dependencies
+
+By default, Tepkit will only install the basic dependencies,  
+so you may meet `ModuleNotFoundError` when running some commands or using some functions.
+
+If you want to install all dependencies at once,  
+you can add the `[all]` option to the installation command, like:
+
+```bash
+pip install tepkit[all]
+```
+
+## Step 3 — Test
+
+### A. As a Command-line Interface (CLI)
+
+You can test if Tepkit is installed correctly by running the `tepkit` command in the console.
 
 ```bash
 > tepkit
 ```
 
-If you installed Tepkit in conda:
+If you installed Tepkit in conda, you need to activate the environment before running the command:
 
 ```bash
 > conda activate tepkit
 > tepkit
 ```
 
-Or you can use Tepkit as a Python module:
+### B. As a Python Module
+
+You can test if Tepkit can be imported correctly by the following code in Python:
 
 ```python
 import tepkit
