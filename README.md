@@ -1,7 +1,14 @@
 # Tepkit
 
-[![Python](https://img.shields.io/pypi/pyversions/tepkit.svg)](https://pypi.org/project/tepkit/)
-[![PyPI](https://img.shields.io/pypi/v/tepkit.svg)](https://pypi.org/project/tepkit/)
+<p align="center">
+  <img src="doc/source/_static/logo.png" style="height:250px;">
+</p>
+<p align="center">
+  <a href="https://pypi.org/project/tepkit/">
+    <img src="https://img.shields.io/pypi/pyversions/tepkit.svg" alt="Python"></a>
+  <a href="https://pypi.org/project/tepkit/">
+    <img src="https://img.shields.io/pypi/v/tepkit.svg" alt="PyPI"></a>
+</p>
 
 **Tepkit** is a user-friendly program for accelerating
 the calculation and analysis processes of 
@@ -9,6 +16,8 @@ transport, electronic, and thermoelectric properties of materials.
 
 - Documentation: [Home | Tepkit Documentation](https://teplabcode.github.io/TepkitDoc/)
 - API Reference: [API Reference | Tepkit Documentation](https://teplabcode.github.io/TepkitDoc/others/api_reference_overview.html)
+
+---
 
 ## How To Cite
 
