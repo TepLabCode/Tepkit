@@ -197,7 +197,7 @@ class TableTextFile(TextFile):
 
 
 def array_to_string(
-    array,
+    array: list,
     fmt="% f",
     delimiter=" ",
     prefix="",
@@ -205,10 +205,13 @@ def array_to_string(
 ) -> str:
     if fmt:
         if fmt == "bool_TF":
+            # Convert bool to "T" and "F"
             formatted_array = ["T" if item else "F" for item in array]
         else:
+            # Apply the format to each element
             formatted_array = [fmt % element for element in array]
     else:
+        # No format, use str()
         formatted_array = [str(element) for element in array]
 
     result = prefix + delimiter.join(formatted_array) + suffix
