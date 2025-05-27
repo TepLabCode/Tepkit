@@ -7,6 +7,10 @@ from tepkit.utils.typing_tools import NumpyArray3x3, NumpyArrayNx3, NumpyArrayNx
 
 
 class VaspCoordinatesMode(str, Enum):
+    """
+    TODO: 重构为 StrEnum, 并且避免重复定义。
+    """
+
     Unknown = "Unknown"
     Fractional = "Direct"
     Direct = "Direct"
@@ -30,14 +34,17 @@ class Poscar(StructuredTextFile):
         "The first line of POSCAR."
 
         self.scaling_factor: float | list[float] = 1.0
-        self.unscale_lattice: Optional[NumpyArray3x3[float]] = None
+        self._unscale_lattice: NumpyArray3x3[float] = np.eye(3)
+        # ↑ or by input?
 
         self.has_species_names: bool = True
-        self.species_names: list[str] = []
-        self.ions_per_species: list[int] = []
+        self.species_names: list[str] = ["Unknown"]
+        self.ions_per_species: list[int] = [1]
 
-        self.ion_coordinates_mode: VaspCoordinatesMode = VaspCoordinatesMode.Unknown
-        self.ion_positions: Optional[NumpyArrayNx3[float]] = None
+        self.ion_coordinates_mode: VaspCoordinatesMode = VaspCoordinatesMode.Fractional
+        # TODO：切换默认为 Unknown
+        self._ion_positions: NumpyArrayNx3[float] = np.array([[0.0, 0.0, 0.0]])
+        # ↑ or by input?
 
         self.has_selective_dynamics: bool = False
         self.selective_dynamics: Optional[NumpyArrayNx3[bool]] = None
@@ -50,6 +57,32 @@ class Poscar(StructuredTextFile):
 
         self.md_extra: Optional[str] = None
 
+    # ===== Force `unscale_lattice` Type ===== #
+    @property
+    def unscale_lattice(self) -> NumpyArray3x3[float]:
+        return self._unscale_lattice
+
+    @unscale_lattice.setter
+    def unscale_lattice(self, value: NumpyArray3x3[float] | list[list[float]]):
+        array = np.array(value)
+        if array.shape != (3, 3):
+            raise ValueError(f"Lattice should be a 3x3 matrix, but got {array.shape}.")
+        self._unscale_lattice = array
+
+    # ===== Force `ion_positions` Type ===== #
+    @property
+    def ion_positions(self) -> NumpyArrayNx3[float]:
+        return self._ion_positions
+
+    @ion_positions.setter
+    def ion_positions(self, value: NumpyArrayNx3[float] | list[list[float]]):
+        array = np.array(value)
+        if array.shape[1] != 3:
+            raise ValueError(
+                f"Positions should be a Nx3 matrix, but got {array.shape}."
+            )
+        self._ion_positions = array
+
     @classmethod
     def from_string(cls, string: str) -> Self:
         poscar = cls()
@@ -61,7 +94,11 @@ class Poscar(StructuredTextFile):
         index += 1
 
         # Scaling factor
-        poscar.scaling_factor = np.array([float(x) for x in lines[index].split()])
+        scaling_factors: list[float] = [float(x) for x in lines[index].split()]
+        if len(scaling_factors) == 1:
+            poscar.scaling_factor: float = scaling_factors[0]
+        else:
+            poscar.scaling_factor: list[float] = scaling_factors
         index += 1
 
         # Lattice
@@ -131,9 +168,14 @@ class Poscar(StructuredTextFile):
                     self.selective_dynamics[i], fmt="bool_TF", prefix="  "
                 )
 
+        if isinstance(self.scaling_factor, float):
+            scaling_factor_line = "  " + str(self.scaling_factor)
+        else:
+            scaling_factor_line = array_to_string(self.scaling_factor, prefix="  ")
+
         blocks = [
             self.comment,
-            array_to_string(self.scaling_factor, prefix="  "),
+            scaling_factor_line,
             matrix_to_string(self.unscale_lattice, "%21.16f", line_prefix="  "),
             array_to_string(self.species_names, "%4s", prefix="  "),
             array_to_string(self.ions_per_species, "%4s", prefix="  "),
@@ -160,15 +202,15 @@ class Poscar(StructuredTextFile):
     def get_lattice(self) -> NumpyArray3x3[float]:
         sf = self.scaling_factor
         match sf:
-            case factor if len(sf) == 1 and sf >= 0:
+            case factor if isinstance(sf, float) and sf >= 0:
                 lattice = factor * self.unscale_lattice
-            case volume if len(sf) == 1 and sf < 0:
+            case volume if isinstance(sf, float) and sf < 0:
                 raise NotImplementedError(volume)
-            case factors if len(factors) == 3 and np.all(factors >= 0):
+            case factors if len(sf) == 3 and np.all(np.array(sf) >= 0):
                 lattice = (self.unscale_lattice * factors).T
             case _:
                 raise ValueError(
-                    f"Scaling factor can only be [+float], [-float], or [+float，+float +float], but not {sf}."
+                    f"Scaling factor can only be `+float`, `-float`, or `[+float，+float +float]`, but not {sf}."
                 )
         return lattice
 
@@ -240,24 +282,52 @@ class Poscar(StructuredTextFile):
         # Return
         return result
 
-    def get_cartesian_ion_positions(self) -> NumpyArrayNx3[float]:
+    def get_cartesian_ion_positions(
+        self,
+        *,
+        threshold: float | None = None,
+    ) -> NumpyArrayNx3[float]:
+        """
+        Return the Cartesian coordinates of ions.
+
+        :param threshold: The absolute values smaller than this value will be set to zero. (Recommended value: 1e-13)
+        """
         if self.ion_coordinates_mode == VaspCoordinatesMode.C:
-            # Cartesian → Cartesian
-            if self.scaling_factor == 1:
-                return self.ion_positions
-            else:
-                raise NotImplementedError
+            # Cartesian -> Cartesian
+            sf = self.scaling_factor
+            match sf:
+                case factor if isinstance(sf, float) and sf >= 0:
+                    positions = factor * self.ion_positions
+                case volume if isinstance(sf, float) and sf < 0:
+                    raise NotImplementedError(volume)
+                case factors if len(sf) == 3 and np.all(sf >= 0):
+                    positions = (self.ion_positions * factors).T
+                case _:
+                    raise ValueError(
+                        f"Scaling factor can only be `+float`, `-float`, or `[+float，+float +float]`, but not {sf}."
+                    )
         else:
             # Fractional -> Cartesian
-            return np.matmul(self.ion_positions, self.lattice)
+            positions = np.matmul(self.ion_positions, self.lattice)
+        # Fix extremely small values
+        if threshold:
+            positions[np.abs(positions) < threshold] = 0
+        # Return
+        return positions
 
     def get_fractional_ion_positions(self) -> NumpyArrayNx3[float]:
+        """
+        Return the fractional coordinates of ions.
+        """
+        # Get fractional positions
         if self.ion_coordinates_mode == VaspCoordinatesMode.F:
             # Fractional → Fractional
-            return self.ion_positions
+            positions = self.ion_positions
         else:
             # Cartesian -> Fractional
-            raise NotImplementedError
+            raise NotImplementedError(self.ion_coordinates_mode)
+        # Return
+        return positions
 
     def get_volume(self, unit: str = "Angstrom^3") -> float:
         volume = float(np.linalg.det(self.lattice))
@@ -378,16 +448,22 @@ class Poscar(StructuredTextFile):
         sc.unscale_lattice = self.unscale_lattice * (na, nb, nc)
         sc.has_species_names = self.has_species_names
         sc.species_names = self.species_names
-        sc.ions_per_species = self.ions_per_species * na * nb * nc
+        sc.ions_per_species = [x * na * nb * nc for x in self.ions_per_species]
         sc_positions = []
-        for i in range(self.n_ions):
-            uc_positions = self.ion_positions[i]
-            for c in range(nc):
-                for b in range(nb):
-                    for a in range(na):
-                        positions = (uc_positions + (a, b, c)) / (na, nb, nc)
-                        sc_positions.append(positions)
-        sc.ion_coordinates_mode = self.ion_coordinates_mode
+        if self.ion_coordinates_mode == VaspCoordinatesMode.Fractional:
+            sc.ion_coordinates_mode = self.ion_coordinates_mode
+            for i in range(self.n_ions):
+                # For each ion in sequence, get its position
+                uc_position = self.ion_positions[i]
+                # Add the positions in each duplicate cell to the supercell
+                for c in range(nc):
+                    for b in range(nb):
+                        for a in range(na):
+                            positions = (uc_position + (a, b, c)) / (na, nb, nc)
+                            sc_positions.append(positions)
+        else:
+            raise NotImplementedError(self.ion_coordinates_mode)
+        # 将 list[NumpyArray3] 转为 NumpyArrayNx3
         sc.ion_positions = np.vstack(sc_positions)
         return sc
 
