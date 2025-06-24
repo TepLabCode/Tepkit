@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from tepkit.io.vasp.outcar import Outcar
+from tepkit.io.vasp import Outcar
 
 
 def get_piezoelectric_stress_tensors(

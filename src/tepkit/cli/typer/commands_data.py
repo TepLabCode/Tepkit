@@ -73,7 +73,7 @@ builtin_groups_data = [
         "sub_commands": [
             {
                 "command_names": ["rms"],
-                "function_name": "rms",
+                "function_name": "rms_command",
             },
         ],
     },
@@ -111,6 +111,10 @@ builtin_groups_data = [
                 "command_names": ["f49", "vasp_reap"],
                 "function_name": "vasp_reap",
                 "command_panel": "thirdorder_vasp",
+            },
+            {
+                "command_names": ["rms"],
+                "function_name": "rms_command",
             },
         ],
     },

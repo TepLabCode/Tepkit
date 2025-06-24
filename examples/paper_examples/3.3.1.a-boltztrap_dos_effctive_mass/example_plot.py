@@ -60,3 +60,4 @@ if __name__ == "__main__":
         path=R"input-boltztrap2",
         xlim={"h": (5e11, 1e15), "e": (5e10, 1e14)},
     )
+    print("Done!")

@@ -1,4 +1,5 @@
 from enum import Enum
+from itertools import repeat
 from typing import Optional
 
 import numpy as np
@@ -241,6 +242,33 @@ class Poscar(StructuredTextFile):
             raise ValueError("sum(self.ions_per_species) != len(self.positions)")
 
     @property
+    def species_index_per_ion(self) -> list[int]:
+        """
+        Returns a list of species indexes for each ion.
+        e.g. [0, 0, 1, 1, 2] from Bi2Se2Te
+        """
+        return [
+            index
+            for i, num in enumerate(self.ions_per_species)
+            for index in repeat(i, num)
+        ]
+
+    def get_shengbte_types(self) -> list[int]:
+        """
+        Returns a list of integers for ShengBTE-CONTROL-crystal-types.
+        e.g. [1, 1, 2, 2, 3] from Bi2Se2Te
+        """
+        return [i + 1 for i in self.species_index_per_ion]
+
+    @property
+    def species_name_per_ion(self) -> list[str]:
+        """
+        Returns a list of species names for each ion.
+        e.g. ["Bi", "Bi", "Se", "Se", "Te"] from Bi2Se2Te
+        """
+        return [self.species_names[i] for i in self.species_index_per_ion]
+
+    @property
     def thickness_info(self) -> dict:
         """
         Returns thickness-related data.
@@ -251,11 +279,7 @@ class Poscar(StructuredTextFile):
 
         df = pd.DataFrame(self.get_cartesian_ion_positions())
         df.columns = ["x", "y", "z"]
-        df["species_name"] = [
-            self.species_names[i]
-            for i, num in enumerate(self.ions_per_species)
-            for _ in range(num)
-        ]
+        df["species_name"] = self.species_name_per_ion
         df = df.sort_values(by="z")
         cell_thickness = self.lattice[2][2]
         thickness = df["z"].max() - df["z"].min()
@@ -466,17 +490,6 @@ class Poscar(StructuredTextFile):
         # 将 list[NumpyArray3] 转为 NumpyArrayNx3
         sc.ion_positions = np.vstack(sc_positions)
         return sc
-
-    def get_shengbte_types(self, start=1):
-        """
-        返回每个原子的元素在元素列表的索引
-        例： [0, 0, 1, 1, 2]
-        """
-        result = []
-        for species in range(len(self.species_names)):
-            for _ in range(self.ions_per_species[species]):
-                result.append(species + start)
-        return result
 
 
 if __name__ == "__main__":

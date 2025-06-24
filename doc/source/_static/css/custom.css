@@ -48,3 +48,7 @@ code {
 :is(section[id="methods"], section[id="functions"]) table.autosummary tr td:first-child p code::after{
    content:"(…)"
 }
+
+dt {
+   display: block;
+}

@@ -1,24 +1,36 @@
 def update_config(dict1: dict, dict2: dict):
     """
-    将 dict2 合并到 dict1 中
+    Merge dict2 into dict1. All keys in dict2 must exist in dict1.
+    If the corresponding values are both dictionaries, merge them recursively.
     """
-    # 创建一个新字典，用于存储合并后的结果
+    # Create a copy of dict1 to avoid modifying it
     merged_dict = dict1.copy()
     for key, value in dict2.items():
+        # Raise an error if dict2 contains a key not in dict1
         if key not in merged_dict:
             raise KeyError(f"Key `{key}` not found.")
+        if isinstance(merged_dict[key], dict) and isinstance(value, dict):
+            # If both values are dictionaries, merge them recursively
+            merged_dict[key] = update_config(merged_dict[key], value)
         else:
-            if isinstance(merged_dict[key], dict) and isinstance(value, dict):
-                # 如果键已经存在，并且值都为词典，则递归合并
-                merged_dict[key] = update_config(merged_dict[key], value)
-            else:
-                merged_dict[key] = value
+            # Otherwise, simply update the value
+            merged_dict[key] = value
     return merged_dict
 
 
-class Plotter:
+class BasePlotter:
     def __init__(self):
         self.config: dict = {}
 
+    def get_config(self) -> dict:
+        """
+        Can be overridden to provide custom configuration for the plotter.
+        """
+        return self.config.copy()
+
     def update_config(self, config: dict):
         self.config = update_config(self.config, config)
+
+
+class Plotter(BasePlotter):
+    pass

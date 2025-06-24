@@ -231,9 +231,9 @@ if __name__ == "__main__":
         c_i=70, c_j=72, e1_i=8, e1_j=9, m_i=0.15, m_j=0.16, method="dp_2d", t=300
     )
     tau = relaxtion_time(mu=mu, m=0.15, unit={"tau": "fs"})
-    print(carrier_mobility_3d_i(c=72, m=0.18, e1=18.4, t=200))
-    print(carrier_mobility_3d_i(c=56, m=0.18, e1=21.6, t=200))
-    print(carrier_mobility_3d_i(c=72, m=0.18, e1=18.4, t=300))
-    print(carrier_mobility_3d_i(c=56, m=0.18, e1=21.6, t=300))
+    print(carrier_mobility_3d_i(c_i=72, m_i=0.18, e1_i=18.4, t=200))
+    print(carrier_mobility_3d_i(c_i=56, m_i=0.18, e1_i=21.6, t=200))
+    print(carrier_mobility_3d_i(c_i=72, m_i=0.18, e1_i=18.4, t=300))
+    print(carrier_mobility_3d_i(c_i=56, m_i=0.18, e1_i=21.6, t=300))
     print(f"mu = {mu} cm²·s⁻¹·V⁻¹")
     print(f"tau = {tau} fs")

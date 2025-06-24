@@ -45,7 +45,7 @@ class Control(StructuredTextFile):
         control.data["crystal"]["lfactor"] = 0.1
         control.data["crystal"]["lattvec"] = poscar.get_lattice()
         control.data["crystal"]["elements"] = poscar.species_names
-        control.data["crystal"]["types"] = poscar.get_shengbte_types(start=1)
+        control.data["crystal"]["types"] = poscar.get_shengbte_types()
         control.data["crystal"]["positions"] = poscar.ion_positions
         return control
 

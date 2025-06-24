@@ -50,6 +50,7 @@ class Condtens(TableTextFile):
         "m_e": R"$m_\text{e}$",
     }
     """You can change it to determine how to display the axis label."""
+    df: pd.DataFrame
 
     def __init__(self):
         super().__init__()

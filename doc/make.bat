@@ -14,6 +14,8 @@ if defined TepkitDocBuildDir (
     set BUILDDIR=build
 )
 
+echo Building documentation in `%BUILDDIR%` ...
+
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (

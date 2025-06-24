@@ -67,15 +67,18 @@ def set_axes_ticker_locator(
     Set the ticker locator of the given axes (ax).
     Usage:
     >>> set_axes_ticker_locator(ax, "x", "auto")
+    >>> set_axes_ticker_locator(ax, "x", "gap", 10)
     >>> set_axes_ticker_locator(ax, "y", "log", {"base": 10})
     """
     direction = direction.lower()
-    if direction not in ["x", "y", "both"]:
+    if direction not in ["x", "y", "z", "both"]:
         raise ValueError("direction must be 'x', 'y', or 'both'.")
     if direction in ["x", "both"]:
         set_axis_ticker_locator(ax.xaxis, locator, arg, minor)
     if direction in ["y", "both"]:
         set_axis_ticker_locator(ax.yaxis, locator, arg, minor)
+    if direction in ["z"]:
+        set_axis_ticker_locator(ax.zaxis, locator, arg, minor)
 
 
 def set_ticker_locator(

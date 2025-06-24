@@ -6,6 +6,11 @@ on:
       version:
         description: "Release version (e.g., 1.0.0)"
         required: true
+      prerelease:
+        description: "Mark as pre-release?"
+        required: true
+        default: false
+        type: boolean
 
 jobs:
   release:
@@ -28,7 +33,10 @@ jobs:
 
     - name: Pack tepkit examples as zip
       run: |
-        zip -r tepkit-examples-${{ github.event.inputs.version }}.zip examples
+        EXAMPLE_DIR=tepkit-examples-${{ github.event.inputs.version }}
+        cp -r examples "$EXAMPLE_DIR"
+        zip -r "$EXAMPLE_DIR.zip" "$EXAMPLE_DIR"
+        rm -r "$EXAMPLE_DIR"
 
     - name: Upload to GitHub Release
       uses: softprops/action-gh-release@v1
@@ -41,6 +49,7 @@ jobs:
           Included:
           - `tepkit-${{ github.event.inputs.version }}.tar.gz` – Main Python Package
           - `tepkit-examples-${{ github.event.inputs.version }}.zip` – Example Files
+        prerelease: ${{ github.event.inputs.prerelease }}
         files: |
           tepkit-${{ github.event.inputs.version }}.tar.gz
           tepkit-examples-${{ github.event.inputs.version }}.zip
