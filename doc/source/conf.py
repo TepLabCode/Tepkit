@@ -77,6 +77,7 @@ autoapi_options = [
     "imported-members",
 ]
 autoapi_add_toctree_entry = False
+autoapi_python_class_content = "both"
 autoapi_own_page_level = "class"
 autoapi_keep_files = True
 suppress_warnings += ["autoapi.python_import_resolution"]

@@ -1,4 +1,4 @@
+from ._eigenval import Eigenval
 from ._kpoints import ExplicitKpoints, Ibzkpt, Kpoints
-from .eigenval import Eigenval
-from .outcar import Outcar
-from .poscar import Poscar
+from ._outcar import Outcar
+from ._poscar import Poscar, VaspCoordinatesMode

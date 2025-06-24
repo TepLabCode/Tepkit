@@ -32,6 +32,8 @@ class Figure:
         font_size=None,
         # Style
         style="tepkit_basic",
+        # Projection
+        projection=None,
     ):
         plt.style.use(style_path[style.lower()])
         figsize = (3.334 * width, 3.334 * height)
@@ -45,7 +47,10 @@ class Figure:
         | The ratio to the recommended height (3.334 inch = 1000 px at 300 dpi ≈ 8.47 cm),
         | default set to 0.9.
         """
-        self.fig, self.ax = plt.subplots(figsize=figsize, dpi=dpi)
+        self.fig = plt.figure(figsize=figsize, dpi=dpi)
+        self.ax = self.fig.add_subplot(1, 1, 1, projection=projection)
+        if projection == "3d":
+            self.adjust_margin(left=20, right=250, bottom=200, top=20)
 
         self.legend = None
         """The latest legend added by ``.add_legend()``."""

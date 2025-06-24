@@ -8,8 +8,10 @@ from tepkit.utils.mpl_tools.plotters.plotter import Plotter
 
 class BrillouinZone2DPlotter(Plotter):
     """
-    绘制二维布里渊区的类。
-    可以绘制二维布里渊区的边界、高对称点、高对称路径、基矢量等。
+    The plotter to plot the Brillouin Zone of 2D materials.
+
+    [zh-CN]
+    用于绘制二维布里渊区的 Plotter。
     """
 
     def __init__(
@@ -17,6 +19,14 @@ class BrillouinZone2DPlotter(Plotter):
         b_lattice: NumpyArray3x3,
         bravais_lattice_2d: BravaisLattice2D | None = None,
     ):
+        """
+        :param b_lattice:
+            The base vectors of the reciprocal lattice,
+            used to get the shape of the Brillouin Zone.
+        :param bravais_lattice_2d:
+            The type of the 2D Bravais lattice,
+            used to determine the high-symmetry points.
+        """
         super().__init__()
         # Read Input Data
         self.b_lattice: NumpyArray3x3 = np.array(b_lattice)

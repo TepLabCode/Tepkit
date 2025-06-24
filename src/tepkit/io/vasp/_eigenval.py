@@ -7,7 +7,7 @@ class Eigenval(StructuredTextFile):
     """
     The class of EIGENVAL file for VASP.
 
-    **Refs:**
+    **Reference:**
 
     - https://www.vasp.at/wiki/index.php/EIGENVAL
     - https://www.vasp.at/wiki/index.php/DOSCAR

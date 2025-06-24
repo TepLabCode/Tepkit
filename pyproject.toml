@@ -1,6 +1,6 @@
 [project]
 name = "tepkit"
-version = "0.1.0"
+version = "0.2.0"
 description = """A user-friendly program for accelerating the calculation and analysis processes of \
 transport, electronic, and thermoelectric properties of materials."""
 authors = [

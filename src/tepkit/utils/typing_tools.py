@@ -18,6 +18,7 @@ from typing import Literal, TypeVar
 
 DataType = TypeVar("DataType")
 NumpyArray: TypeAlias = np.ndarray[Any, np.dtype[DataType]]
+NumpyArray3: TypeAlias = np.ndarray[(Literal[3],), np.dtype[DataType]]
 NumpyArray2D: TypeAlias = np.ndarray[(Any, Any), np.dtype[DataType]]
 NumpyArray3x3: TypeAlias = np.ndarray[(Literal[3], Literal[3]), np.dtype[DataType]]
 NumpyArrayNx3: TypeAlias = np.ndarray[(Literal["N"], Literal[3]), np.dtype[DataType]]

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 from tepkit.cli import logger
-from tepkit.io.phonopy import ForceConstants
+from tepkit.io.shengbte import ForceConstants3rd
 from tepkit.io.vasp import Poscar
 from tepkit.utils.mpl_tools.plotters.rms_plotter import RmsPlotter
 from tepkit.utils.typing_tools import AutoValue
@@ -13,30 +13,34 @@ from tepkit.utils.typing_tools import AutoValue
 
 def rms_command(
     work_dir: Path = "./",
-    fc_name: str = "FORCE_CONSTANTS",
-    sposcar_name: str = "SPOSCAR",
+    fc_name: str = "FORCE_CONSTANTS_3RD",
+    sposcar_name: str = "3RD.SPOSCAR",
+    poscar_name: str = "POSCAR",
     save_dir: Path = "./",
     save_name: str = "Auto",
     plot: bool = True,
     nth: bool = True,
-    log: bool = False,
+    log: bool = True,
     xlim: tuple[float, float] = (AutoValue, AutoValue),
     ylim: tuple[float, float] = (AutoValue, AutoValue),
+    distance: str = "d_min",
     fit: bool = False,
 ) -> None:
     """
-    Calculate and Plot the root-mean-square (RMS) of FORCE_CONSTANTS.
+    Calculate and Plot the root-mean-square (RMS) of FORCE_CONSTANTS_3RD.
 
     Required Files:
-    | FORCE_CONSTANTS
+    | FORCE_CONSTANTS_3RD
     | SPOSCAR
+    | POSCAR
     Output Files:
-    | tepkit.RMS_of_2ndIFCs.csv
-    | tepkit.RMS_of_2ndIFCs.png
+    | tepkit.RMS_of_3rdIFCs.csv
+    | tepkit.RMS_of_3rdIFCs.png
 
     :param work_dir : The directory where the required files is located.
     :param fc_name  : The name of the FORCE_CONSTANTS file.
     :param sposcar_name: The name of the SPOSCAR file.
+    :param poscar_name: The name of the unitcell POSCAR file.
     :param save_dir : The directory where the output files will be saved. &
                       (`--save-dir work_dir` will save the files to `work_dir`)
     :param save_name: The name of the output files.
@@ -49,6 +53,7 @@ def rms_command(
     :typer work_dir     flag: --work-dir, -d
     :typer fc_name      flag: --fc
     :typer sposcar_name flag: --sposcar, --sc
+    :typer poscar       flog: --poscar, --uc
     :typer save_name    flag: --save-name, -s
     :typer log          flag: --log/--linear
 
@@ -65,6 +70,7 @@ def rms_command(
         work_dir=work_dir,
         fc_name=fc_name,
         sposcar_name=sposcar_name,
+        poscar_name=poscar_name,
         save_dir=save_dir,
         save_name=save_name,
         plot=plot,
@@ -72,14 +78,16 @@ def rms_command(
         log=log,
         xlim=xlim,
         ylim=ylim,
+        distance=distance,
         fit=fit,
     )
 
 
 def rms(
     work_dir: Path | str = "./",
-    fc_name: str = "FORCE_CONSTANTS",
-    sposcar_name: str = "SPOSCAR",
+    fc_name: str = "FORCE_CONSTANTS_3RD",
+    sposcar_name: str = "3RD.SPOSCAR",
+    poscar_name: str = "POSCAR",
     save_dir: Path | str | Literal["work_dir"] = "./",
     save_name: str | Literal["Auto"] = "Auto",
     plot: bool = True,
@@ -87,16 +95,17 @@ def rms(
     log: bool = False,
     xlim: tuple[float, float] | None = None,
     ylim: tuple[float, float] | None = None,
+    distance: Literal["d_ab", "d_ac", "d_bc", "d_min", "d_max", "d_avg"] = "d_min",
     fit: bool = False,
 ) -> pd.DataFrame:
     """
-    Check ``tepkit.functions.phonopy.rms.rms_command()``
+    Check ``tepkit.functions.thirdorder.rms.rms_command()``
     """
 
     # Read IFCs
     work_dir: Path = Path(work_dir).resolve()
-    logger.step("(1/4) Reading FORCE_CONSTANTS ...")
-    fc = ForceConstants.from_dir(work_dir, file_name=fc_name)
+    logger.step("(1/4) Reading FORCE_CONSTANTS_3RD ...")
+    fc = ForceConstants3rd.from_dir(work_dir, file_name=fc_name)
 
     # Get RMS
     logger.step("(2/4) Calculating RMS ...")
@@ -105,11 +114,11 @@ def rms(
 
     # Get Distances
     logger.step("(3/4) Calculating distances between atoms...")
+    poscar = Poscar.from_dir(work_dir, file_name=poscar_name)
     sposcar = Poscar.from_dir(work_dir, file_name=sposcar_name)
-    distances = sposcar.get_interatomic_distances()
-    df["distance"] = df.apply(
-        lambda row: distances[row["atom_a"] - 1][row["atom_b"] - 1], axis=1
-    )
+    fc.calculate_ion_positions(poscar)
+    fc.calculate_ion_distances(sposcar)
+    df["distance"] = df[distance]
 
     # Save Results
     logger.step("(4/4) Saving the results ...")
@@ -122,10 +131,19 @@ def rms(
     if save_name.lower() == "auto":
         save_name = "tepkit.RMS_of_3rdIFCs"
     csv_path = save_dir / f"{save_name}.csv"
-    result_df = df[["rms", "distance", "atom_a", "atom_b"]]
+    result_df = df[["rms", "d_ab", "d_ac", "d_bc", "d_min", "d_max", "d_avg"]]
     result_df.to_csv(csv_path, index=False)
     logger.success(f"{save_name}.csv saved to {csv_path}.")
     # Plot
+    match distance:
+        case "d_min":
+            xlabel = "Minimum Distance (Å)"
+        case "d_max":
+            xlabel = "Maximum Distance (Å)"
+        case "d_avg":
+            xlabel = "Average Distance (Å)"
+        case _:
+            xlabel = "Distance (Å)"
     if plot:
         logger.info("Ploting the figure ...")
         RmsPlotter.plot(
@@ -135,12 +153,13 @@ def rms(
             log=log,
             xlim=xlim,
             ylim=ylim,
-            ylabel="RMS of 2nd IFCs",
+            xlabel=xlabel,
+            ylabel="RMS of 3rd IFCs",
             fit=fit,
         )
         if log:
             save_name += "-log"
-        fig_path = save_dir / f"{save_name}.png"
+        fig_path = save_dir / f"{save_name}-{distance}.png"
         plt.savefig(fig_path)
         logger.success(f"{save_name}.png saved to {fig_path}.")
 

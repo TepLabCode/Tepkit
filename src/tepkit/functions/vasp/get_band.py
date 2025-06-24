@@ -5,8 +5,7 @@ from loguru import logger
 from pandas import DataFrame
 
 from tepkit.io.output import save_df
-from tepkit.io.vasp import Eigenval
-from tepkit.io.vasp.outcar import Outcar
+from tepkit.io.vasp import Eigenval, Outcar
 
 
 class KpointsChoices(str, Enum):

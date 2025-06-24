@@ -19,3 +19,4 @@ from ._omega_files import (
     V,
     W,
 )
+from ._force_constants_3rd import ForceConstants3rd

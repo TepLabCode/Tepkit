@@ -3,8 +3,8 @@ from tepkit.io.vasp import Poscar
 from tepkit.utils.mpl_tools import Figure
 
 # Read Files
-condtens = Condtens.from_dir(R".\input-boltztrap2")
-poscar = Poscar.from_dir(R".\input-boltztrap2")
+condtens = Condtens.from_dir("./input-boltztrap2")
+poscar = Poscar.from_dir("./input-boltztrap2")
 # Effective Thickness Correction
 proportion = poscar.thickness_info["effective_thickness_proportion"]
 condtens.effective_thickness_correction(proportion=proportion)

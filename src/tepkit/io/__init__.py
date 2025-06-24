@@ -151,7 +151,7 @@ class TableTextFile(TextFile):
 
     def __init__(self):
         super().__init__()
-        self.df = None
+        self.df: pd.DataFrame | None = None
 
     @classmethod
     def from_file(cls, path: PathLike = None):

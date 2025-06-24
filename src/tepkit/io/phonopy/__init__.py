@@ -1,1 +1,1 @@
-from .force_constants import ForceConstants
+from ._force_constants import ForceConstants

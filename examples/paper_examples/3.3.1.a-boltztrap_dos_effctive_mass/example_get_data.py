@@ -12,3 +12,4 @@ condtens.calculate_average_effective_mass(
     volume=poscar.get_volume(unit="m^3"),
 )
 condtens.df.to_csv("condtens_with_eff_mass.csv")
+print("Done!")

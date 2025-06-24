@@ -15,7 +15,7 @@ from tepkit.utils.colors import tepkit_colors
 from tepkit.utils.mpl_tools import Figure
 
 # Read Files
-job_dir = Path(R"./input-shengbte")
+job_dir = Path("./input-shengbte")
 
 # Effective Thickness Correction
 poscar = Poscar.from_dir(job_dir)
