@@ -18,7 +18,7 @@ Input Files
    * - FORCE_CONSTANTS_2ND
      - :doc:`ForceConstants </autoapi/tepkit/io/phonopy/ForceConstants>`
    * - FORCE_CONSTANTS_3RD
-     - Not yet supported
+     - :doc:`ForceConstants3rd </autoapi/tepkit/io/shengbte/ForceConstants3rd>`
 
 
 Output Files
