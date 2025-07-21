@@ -14,6 +14,7 @@
 the calculation and analysis processes of 
 transport, electronic, and thermoelectric properties of materials.
 
+- GitHub: [Tepkit | GitHub](https://github.com/TepLabCode/Tepkit)
 - Documentation: [Home | Tepkit Documentation](https://teplabcode.github.io/TepkitDoc/)
 - API Reference: [API Reference | Tepkit Documentation](https://teplabcode.github.io/TepkitDoc/others/api_reference_overview.html)
 

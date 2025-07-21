@@ -1,7 +1,24 @@
 Tepkit Documentation
 ====================
 
+
+
+.. raw:: html
+
+   <p align="center">
+     <img src="_static/logo.png" style="height:250px;">
+   </p>
+   <p align="center">
+     <a href="https://pypi.org/project/tepkit/">
+       <img src="https://img.shields.io/pypi/pyversions/tepkit.svg" alt="Python"></a>
+     <a href="https://pypi.org/project/tepkit/">
+       <img src="https://img.shields.io/pypi/v/tepkit.svg" alt="PyPI"></a>
+   </p>
+
 **Welcome to Tepkit Documentation!**
+
+| GitHub Repository: https://github.com/TepLabCode/tepkit
+| PyPI: https://pypi.org/project/tepkit/
 
 .. note::
    The documentation is in the early stages and will be improved over time.
@@ -22,6 +39,7 @@ Tepkit Documentation
    :caption: Tutorials
 
    Installation                  <tutorials/installation>
+   Getting Started               <tutorials/getting_started>
    Work with thirdorder          <tutorials/work_with_thirdorder>
    Plotting Figures              <tutorials/plotting>
    How to Add Custom Functions   <tutorials/custom_functions>
