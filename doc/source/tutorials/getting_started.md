@@ -238,7 +238,7 @@ One of Tepkit's core functions is to parse files from different software.
 
 You can find the supported file formats at [this page](../file/_overview.md),
 
-Here is an example of parsing `vasp` files:
+Here is an example of parsing `boltztrap2` files:
 
 1. Import the class of your desired file format:
 

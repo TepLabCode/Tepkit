@@ -32,7 +32,7 @@ Tepkit Documentation
    :maxdepth: 1
    :caption: Introduction
 
-   Overview <overview>
+   Overview <tutorials/overview>
 
 .. toctree::
    :maxdepth: 1

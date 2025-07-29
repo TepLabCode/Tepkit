@@ -39,32 +39,9 @@ transport, electronic, and thermoelectric properties of materials.
 If you have used Tepkit in your work, please cite our paper
 which indeed helps the Tepkit project to continue:
 
-### BibTeX (As a software)
+- S.-H. Cao, X.-R. Chen, Z.-Y. Zeng, H.-Y. Geng, Tepkit: A toolkit for measuring and visualizing interatomic force constants and accelerating transport-property calculations, Comput. Mater. Sci. 259 (2025) 114151, https://doi.org/10.1016/j.commatsci.2025.114151.
 
-```
-@software{TepLab_Tepkit_2025,
-  shorttitle = {Tepkit},
-  title      = {{Tepkit: A user-friendly program for accelerating
-                 the calculation and analysis processes of
-                 transport and thermoelectric properties of
-                 materials}},
-  author     = {Cao, Shu-Hao and
-                Chen, Xiang-Rong},
-  license    = {GPL-3.0},
-  url        = {https://github.com/TepLabCode/Tepkit},
-  year       = {2025}
-}
-```
-
-How to use it in [Zotero](https://www.zotero.org) :
-
-- Copy the BibTeX text ➜ Open Zotero ➜ Menu Bar ➜ File ➜ Import from Clipboard
-
-### Paper
-
-- *In preparation*
-
-> ✏️ Some examples described in the paper are available in the `examples/paper_examples` directory.
+> ✏️ Examples described in the paper are available in the `examples/paper_examples` directory.
 
 ## Requirements
 
