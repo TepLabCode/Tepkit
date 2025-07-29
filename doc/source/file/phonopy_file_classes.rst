@@ -10,4 +10,4 @@ Supported Files
 .. toctree::
    :maxdepth: 1
 
-   FORCE_CONSTANTS </autoapi/tepkit/io/phonopy/force_constants/ForceConstants>
+   FORCE_CONSTANTS </autoapi/tepkit/io/phonopy/ForceConstants>

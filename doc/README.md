@@ -13,7 +13,7 @@ Re-build all files:
 
 ```bash
 cd doc
-set set SPHINXOPTS=-a
+set SPHINXOPTS=-a
 make html
 ```
 
