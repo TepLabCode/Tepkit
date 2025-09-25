@@ -20,6 +20,19 @@ builtin_groups_data = [
                 "function_name": "get_piezoelectric_stress_tensors",
                 "command_panel": "Get Data",
             },
+            # Tools
+            {
+                "command_names": ["check"],
+                "function_module": "tepkit.functions.vasp.check_state",
+                "function_name": "check_vasp_dir_state_cli",
+                "command_panel": "Tools",
+            },
+            {
+                "command_names": ["checkds", "check-dirs"],
+                "function_module": "tepkit.functions.vasp.check_state",
+                "function_name": "check_vasp_dirs_states_cli",
+                "command_panel": "Tools",
+            },
             # Get Data (2D)
             {
                 "command_names": ["f11", "thickness"],
@@ -93,11 +106,6 @@ builtin_groups_data = [
                 "command_panel": "Tools",
             },
             {
-                "command_names": ["f04", "check"],
-                "function_name": "check_jobs",
-                "command_panel": "Tools",
-            },
-            {
                 "command_names": ["f11", "adjust_cutoff"],
                 "function_name": "adjust_cutoff",
                 "command_panel": "Tools",
@@ -131,11 +139,6 @@ builtin_groups_data = [
             {
                 "command_names": ["f03", "check_dupl"],
                 "function_name": "check_duplicate_jobs",
-                "command_panel": "Tools",
-            },
-            {
-                "command_names": ["f04", "check"],
-                "function_name": "check_jobs",
                 "command_panel": "Tools",
             },
             {
