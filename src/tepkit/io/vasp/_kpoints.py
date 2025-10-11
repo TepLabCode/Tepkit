@@ -314,8 +314,10 @@ class ExplicitKpoints(Kpoints):
 
     def plot(self, ax=None, show=False, save_path=None):
         from matplotlib import pyplot as plt
-        from tepkit.utils.mpl_tools.plotters import (BrillouinZone2DPlotter,
-                                                     ExplicitKpoints2DPlotter)
+        from tepkit.utils.mpl_tools.plotters import (
+            BrillouinZone2DPlotter,
+            ExplicitKpoints2DPlotter,
+        )
 
         if self.b_lattice is None:
             raise ValueError(
@@ -336,6 +338,36 @@ class ExplicitKpoints(Kpoints):
 
     def show(self):
         self.plot(show=True)
+
+
+number = float | int
+
+
+class RegularKpoints(Kpoints):
+
+    def __init__(
+        self,
+        n_abc: tuple[int, int, int] = (1, 1, 1),
+        *,
+        comment: str = "KPOINTS",
+        mode: str | Kpoints.Mode = Kpoints.Mode.Gamma,
+        shift_abc: tuple[number, number, number] = (0, 0, 0),
+    ):
+        super().__init__()
+        self.comment: str = comment
+        self.mode: Kpoints.Mode = Kpoints.Mode(mode)
+        self.n_abc: tuple[int, int, int] = n_abc
+        self.shift_abc: tuple[number, number, number] = shift_abc
+
+    def __str__(self):
+        lines = [
+            self.comment,
+            "0",
+            str(self.mode),
+            " ".join(map(str, self.n_abc)),
+            " ".join(map(str, self.shift_abc)),
+        ]
+        return "\n".join(lines)
 
 
 class Ibzkpt(ExplicitKpoints):

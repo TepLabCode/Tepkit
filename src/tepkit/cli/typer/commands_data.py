@@ -3,6 +3,23 @@ builtin_groups_data = [
         "group_names": ["c01", "vasp"],
         "group_module": "tepkit.functions.vasp",
         "group_help": "VASP tools.",
+        "sub_groups": [
+            {
+                "group_names": ["kpoints"],
+                "group_help": "KPOINTS tools.",
+                "sub_commands": [
+                    {
+                        "command_names": ["plot"],
+                        "function_name": "plot_ibzkpt",
+                    },
+                    {
+                        "command_names": ["auto"],
+                        "function_module": "tepkit.functions.vasp.kpoints_tools",
+                        "function_name": "generate_kpoints_in_vaspkit_style",
+                    },
+                ],
+            }
+        ],
         "sub_commands": [
             # Get Data
             {
@@ -71,11 +88,6 @@ builtin_groups_data = [
                 "function_name": "band_contour",
                 "command_panel": "Plot",
                 "kwargs": {"no_args_is_help": True},
-            },
-            {
-                "command_names": ["f32", "plot-kpoints"],
-                "function_name": "plot_ibzkpt",
-                "command_panel": "Plot",
             },
         ],
     },
@@ -176,20 +188,25 @@ builtin_groups_data = [
         ],
     },
     {
-        "group_names": ["c99", "custom"],
+        "group_names": ["others"],
+        "group_help": "Miscellaneous tools.",
+        "sub_commands": [
+            {
+                "command_names": ["f01", "dp"],
+                "function_module": "tepkit.functions.direct",
+                "function_name": "dp",
+            },
+        ],
+    },
+    {
+        "group_names": ["custom"],
         "group_module": "tepkit.functions.custom",
         "group_help": "Custom functions.",
         "sub_commands": [],
     },
 ]
 
-builtin_commands_data = [
-    {
-        "command_names": ["f01", "dp"],
-        "function_module": "tepkit.functions.direct",
-        "function_name": "dp",
-    },
-]
+builtin_commands_data = []
 
 # example_groups_data = [
 #     {
