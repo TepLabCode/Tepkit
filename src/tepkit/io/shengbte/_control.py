@@ -57,7 +57,7 @@ class Control(StructuredTextFile):
         namelist.float_format = " .16f"
         return namelist
 
-    def __str__(self):
+    def to_string(self):
         return str(self.namelist)
 
     def write(self, path="./CONTROL.nml", force=True):

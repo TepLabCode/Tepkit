@@ -260,7 +260,7 @@ class ExplicitKpoints(Kpoints):
             comment=comment,
         )
 
-    def __str__(self):
+    def to_string(self):
         kpts_lines = []
         for i, kpt in enumerate(self.kpts):
             kpts_line = (
@@ -359,7 +359,7 @@ class RegularKpoints(Kpoints):
         self.n_abc: tuple[int, int, int] = n_abc
         self.shift_abc: tuple[number, number, number] = shift_abc
 
-    def __str__(self):
+    def to_string(self):
         lines = [
             self.comment,
             "0",

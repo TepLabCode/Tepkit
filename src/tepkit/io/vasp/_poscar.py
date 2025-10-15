@@ -156,10 +156,12 @@ class Poscar(StructuredTextFile):
 
         return poscar
 
-    def __str__(self):
+    def to_string(self, decimals: int = 16):
+        d = decimals
+        l = d + 5
         # ion_positions
         position_lines = [
-            array_to_string(position, "%21.16f", prefix="  ")
+            array_to_string(position, f"%{l}.{d}f", prefix="  ")
             for position in self.ion_positions
         ]
 
@@ -177,7 +179,7 @@ class Poscar(StructuredTextFile):
         blocks = [
             self.comment,
             scaling_factor_line,
-            matrix_to_string(self.unscale_lattice, "%21.16f", line_prefix="  "),
+            matrix_to_string(self.unscale_lattice, f"%{l}.{d}f", line_prefix="  "),
             array_to_string(self.species_names, "%4s", prefix="  "),
             array_to_string(self.ions_per_species, "%4s", prefix="  "),
         ]

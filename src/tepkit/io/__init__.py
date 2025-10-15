@@ -134,9 +134,20 @@ class StructuredTextFile(TextFile):
             self._lines = self.content.splitlines()
         return self._lines
 
+    def to_string(self):
+        raise NotImplementedError(
+            "The to_string() method of the file is not implemented now."
+        )
+
     def to_file(self, path) -> None:
         with open(path, "w") as file:
-            file.write(str(self))
+            file.write(self.to_string())
+
+    def __str__(self):
+        try:
+            return self.to_string()
+        except NotImplementedError:
+            return super().__str__()
 
 
 class TableTextFile(TextFile):
