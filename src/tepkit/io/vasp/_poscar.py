@@ -156,7 +156,7 @@ class Poscar(StructuredTextFile):
 
         return poscar
 
-    def to_string(self, decimals: int = 16):
+    def to_string(self, *, decimals: int = 16):
         d = decimals
         l = d + 5
         # ion_positions
@@ -190,6 +190,10 @@ class Poscar(StructuredTextFile):
         ]
         text = "\n".join(blocks)
         return text
+
+    def to_file(self, path, decimals: int = 16) -> None:
+        with open(path, "w") as file:
+            file.write(self.to_string(decimals=decimals))
 
     @staticmethod
     def _translate_selective_dynamics_flag(text: str) -> bool:
