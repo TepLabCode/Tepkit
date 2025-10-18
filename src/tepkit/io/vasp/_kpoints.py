@@ -369,6 +369,26 @@ class RegularKpoints(Kpoints):
         ]
         return "\n".join(lines)
 
+    @classmethod
+    def from_vaspkit_style(cls, poscar_path, spacing=0.02, dim: int = 3):
+        from tepkit.io.vasp import Poscar
+
+        structure = Poscar.from_file(poscar_path)
+        b_lattice = structure.reciprocal_lattice
+        if dim not in [1, 2, 3]:
+            raise ValueError("d must be 1, 2, or 3.")
+        n_abc: list[int] = [1, 1, 1]
+        for i in range(dim):
+            b = b_lattice[i]
+            b_length: float = float(np.linalg.norm(b))
+            n_abc[i] = max(1, round(b_length / (2 * np.pi * spacing)))
+
+        return cls(
+            n_abc=(n_abc[0], n_abc[1], n_abc[2]),
+            mode="Gamma",
+            comment=f"K-Spacing Value to Generate {dim}D K-Mesh: {spacing}",
+        )
+
 
 class Ibzkpt(ExplicitKpoints):
     """

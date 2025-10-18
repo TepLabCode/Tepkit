@@ -124,25 +124,13 @@ def plot_ibzkpt(
 def generate_kpoints_in_vaspkit_style(
     poscar_path: str = "POSCAR",
     spacing: float = 0.02,
-    dimension: int = 3,
+    dim: int = 3,
 ):
-    import numpy as np
-    from tepkit.io.vasp import Poscar, RegularKpoints
+    from tepkit.io.vasp import RegularKpoints
 
-    structure = Poscar.from_file(poscar_path)
-    b_lattice = structure.reciprocal_lattice
-    if dimension not in [1, 2, 3]:
-        raise ValueError("d must be 1, 2, or 3.")
-    n_abc: list[int] = [1, 1, 1]
-    for i in range(dimension):
-        b = b_lattice[i]
-        b_length: float = float(np.linalg.norm(b))
-        n_abc[i] = max(1, round(b_length / (2 * np.pi * spacing)))
-
-    kpoints = RegularKpoints(
-        n_abc=(n_abc[0], n_abc[1], n_abc[2]),
-        mode="Gamma",
-        comment=f"K-Spacing Value to Generate {dimension}D K-Mesh: {spacing}",
+    kpoints = RegularKpoints.from_vaspkit_style(
+        poscar_path=poscar_path,
+        spacing=spacing,
+        dim=dim,
     )
-
     kpoints.to_file("KPOINTS")
