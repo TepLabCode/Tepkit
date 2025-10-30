@@ -18,7 +18,18 @@ builtin_groups_data = [
                         "function_name": "generate_kpoints_in_vaspkit_style",
                     },
                 ],
-            }
+            },
+            {
+                "group_names": ["poscar"],
+                "group_help": "POSCAR tools.",
+                "sub_commands": [
+                    {
+                        "command_names": ["volume"],
+                        "function_module": "tepkit.functions.vasp.poscar_tools",
+                        "function_name": "get_poscar_volume_cli",
+                    },
+                ],
+            },
         ],
         "sub_commands": [
             # Get Data

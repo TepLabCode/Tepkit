@@ -14,6 +14,10 @@
 - **Move:** `tepkit vasp f32|plot-kpoints` ➜ `tepkit vasp kpoints plot`
 
 
+- **Add:** 1 new command group `tepkit vasp poscar`
+- **Add:** 1 new command `tepkit vasp poscar volume`
+
+
 - **Add:** 1 new command group `tepkit vasp others`
 - **Move:** `tepkit f01|dp` ➜ `tepkit others f01|dp`
 
