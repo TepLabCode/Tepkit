@@ -16,6 +16,7 @@
 
 - **Add:** 1 new command group `tepkit vasp poscar`
 - **Add:** 1 new command `tepkit vasp poscar volume`
+- **Move:** `tepkit vasp f21|supercell` ➜ `tepkit vasp poscar supercell`
 
 
 - **Add:** 1 new command group `tepkit vasp others`

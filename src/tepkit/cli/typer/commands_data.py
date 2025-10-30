@@ -21,12 +21,16 @@ builtin_groups_data = [
             },
             {
                 "group_names": ["poscar"],
+                "group_module": "tepkit.functions.vasp.poscar_tools",
                 "group_help": "POSCAR tools.",
                 "sub_commands": [
                     {
                         "command_names": ["volume"],
-                        "function_module": "tepkit.functions.vasp.poscar_tools",
                         "function_name": "get_poscar_volume_cli",
+                    },
+                    {
+                        "command_names": ["supercell"],
+                        "function_name": "supercell_cli",
                     },
                 ],
             },
@@ -73,11 +77,6 @@ builtin_groups_data = [
                 "command_panel": "Get Data (2D)",
             },
             # Action
-            {
-                "command_names": ["f21", "supercell"],
-                "function_name": "supercell",
-                "command_panel": "Action",
-            },
             {
                 "command_names": ["f22", "get-bz-kpoints"],
                 "function_name": "get_bz_kpoints",
