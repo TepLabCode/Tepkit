@@ -1,9 +1,16 @@
 from pathlib import Path
-from tepkit.io.vasp import Poscar
+
 from loguru import logger
 
+from tepkit.io.vasp import Poscar
 
-def supercell(
+
+def get_poscar_volume_cli(poscar="POSCAR"):
+    poscar = Poscar.from_file(poscar)
+    print(poscar.get_volume())
+
+
+def supercell_cli(
     na: int,
     nb: int,
     nc: int,

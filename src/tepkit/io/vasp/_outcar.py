@@ -34,6 +34,13 @@ class Outcar(StructuredTextFile):
         cell_z: Annotated[float, Literal["Ang"]] | None = None,
         only_xy: bool = False,
     ) -> dict:
+        """
+
+
+        :param cell_z: The z-axis length of the unit cell in Angstrom. Only for 2D materials to convert the unit.
+        :param only_xy: Only return the xy-component of the piezoelectric tensor.
+        :return:
+        """
         import pandas as pd
 
         result = dict()

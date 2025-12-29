@@ -3,6 +3,38 @@ builtin_groups_data = [
         "group_names": ["c01", "vasp"],
         "group_module": "tepkit.functions.vasp",
         "group_help": "VASP tools.",
+        "sub_groups": [
+            {
+                "group_names": ["kpoints"],
+                "group_help": "KPOINTS tools.",
+                "sub_commands": [
+                    {
+                        "command_names": ["plot"],
+                        "function_name": "plot_ibzkpt",
+                    },
+                    {
+                        "command_names": ["auto"],
+                        "function_module": "tepkit.functions.vasp.kpoints_tools",
+                        "function_name": "generate_kpoints_in_vaspkit_style",
+                    },
+                ],
+            },
+            {
+                "group_names": ["poscar"],
+                "group_module": "tepkit.functions.vasp.poscar_tools",
+                "group_help": "POSCAR tools.",
+                "sub_commands": [
+                    {
+                        "command_names": ["volume"],
+                        "function_name": "get_poscar_volume_cli",
+                    },
+                    {
+                        "command_names": ["supercell"],
+                        "function_name": "supercell_cli",
+                    },
+                ],
+            },
+        ],
         "sub_commands": [
             # Get Data
             {
@@ -20,6 +52,19 @@ builtin_groups_data = [
                 "function_name": "get_piezoelectric_stress_tensors",
                 "command_panel": "Get Data",
             },
+            # Tools
+            {
+                "command_names": ["check"],
+                "function_module": "tepkit.functions.vasp.check_state",
+                "function_name": "check_vasp_dir_state_cli",
+                "command_panel": "Tools",
+            },
+            {
+                "command_names": ["checkds", "check-dirs"],
+                "function_module": "tepkit.functions.vasp.check_state",
+                "function_name": "check_vasp_dirs_states_cli",
+                "command_panel": "Tools",
+            },
             # Get Data (2D)
             {
                 "command_names": ["f11", "thickness"],
@@ -32,11 +77,6 @@ builtin_groups_data = [
                 "command_panel": "Get Data (2D)",
             },
             # Action
-            {
-                "command_names": ["f21", "supercell"],
-                "function_name": "supercell",
-                "command_panel": "Action",
-            },
             {
                 "command_names": ["f22", "get-bz-kpoints"],
                 "function_name": "get_bz_kpoints",
@@ -58,11 +98,6 @@ builtin_groups_data = [
                 "function_name": "band_contour",
                 "command_panel": "Plot",
                 "kwargs": {"no_args_is_help": True},
-            },
-            {
-                "command_names": ["f32", "plot-kpoints"],
-                "function_name": "plot_ibzkpt",
-                "command_panel": "Plot",
             },
         ],
     },
@@ -90,11 +125,6 @@ builtin_groups_data = [
             {
                 "command_names": ["f03", "check_dupl"],
                 "function_name": "check_duplicate_jobs",
-                "command_panel": "Tools",
-            },
-            {
-                "command_names": ["f04", "check"],
-                "function_name": "check_jobs",
                 "command_panel": "Tools",
             },
             {
@@ -134,11 +164,6 @@ builtin_groups_data = [
                 "command_panel": "Tools",
             },
             {
-                "command_names": ["f04", "check"],
-                "function_name": "check_jobs",
-                "command_panel": "Tools",
-            },
-            {
                 "command_names": ["f11", "adjust_cutoff"],
                 "function_name": "adjust_cutoff",
                 "command_panel": "Tools",
@@ -173,20 +198,25 @@ builtin_groups_data = [
         ],
     },
     {
-        "group_names": ["c99", "custom"],
+        "group_names": ["others"],
+        "group_help": "Miscellaneous tools.",
+        "sub_commands": [
+            {
+                "command_names": ["f01", "dp"],
+                "function_module": "tepkit.functions.direct",
+                "function_name": "dp",
+            },
+        ],
+    },
+    {
+        "group_names": ["custom"],
         "group_module": "tepkit.functions.custom",
         "group_help": "Custom functions.",
         "sub_commands": [],
     },
 ]
 
-builtin_commands_data = [
-    {
-        "command_names": ["f01", "dp"],
-        "function_module": "tepkit.functions.direct",
-        "function_name": "dp",
-    },
-]
+builtin_commands_data = []
 
 # example_groups_data = [
 #     {

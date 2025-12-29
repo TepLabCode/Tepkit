@@ -11,6 +11,9 @@ def get_piezoelectric_stress_tensors(
     """
     Get piezoelectric stress tensors from OUTCAR.
 
+    [zh-CN]
+    从 OUTCAR 获取压电应力张量。
+
     :typer only_xy flag: --only-xy
     """
     from rich import print

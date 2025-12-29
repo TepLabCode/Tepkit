@@ -56,6 +56,18 @@ class File:
         return cls.from_file(file_path)
 
     @classmethod
+    def from_auto(cls, value):
+        if isinstance(value, cls):
+            return value
+        elif isinstance(value, Path):
+            path = value
+            if path.is_file():
+                return cls.from_file(path)
+            elif path.is_dir():
+                return cls.from_dir(path)
+        raise ValueError(f"Can not create {cls.__name__} from {value}")
+
+    @classmethod
     def to_file(cls, path: PathLike):
         """
         Write the data of the object to a file.
@@ -95,6 +107,30 @@ class TextFile(File):
             obj.source_path = Path(path)
         return obj
 
+    def to_string(self):
+        return self.content
+
+    def to_file(self, path, newline="\n") -> None:
+        with open(path, "w", newline=newline) as file:
+            file.write(self.to_string())
+
+    def __str__(self):
+        try:
+            return self.to_string()
+        except NotImplementedError:
+            return super().__str__()
+
+    def tail(self, n=10) -> str:
+        """
+        Return the last n lines of the file.
+        """
+        lines = self.content.splitlines()
+        return "\n".join(lines[-n:])
+
+    def grep(self, string: str) -> list[str]:
+        lines = self.content.splitlines()
+        return [line for line in lines if string in line]
+
 
 class StructuredTextFile(TextFile):
     """
@@ -129,14 +165,15 @@ class StructuredTextFile(TextFile):
         return obj
 
     @property
-    def lines(self):
+    def lines(self) -> list[str]:
         if self._lines is None:
             self._lines = self.content.splitlines()
         return self._lines
 
-    def to_file(self, path) -> None:
-        with open(path, "w") as file:
-            file.write(str(self))
+    def to_string(self):
+        raise NotImplementedError(
+            "The to_string() method of the file is not implemented now."
+        )
 
 
 class TableTextFile(TextFile):

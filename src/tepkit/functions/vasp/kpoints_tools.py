@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Literal
 
 from tepkit.cli import logger
 from tepkit.io.vasp import ExplicitKpoints, Kpoints, Poscar
@@ -8,7 +9,6 @@ from tepkit.utils.typing_tools import PathLike
 
 def _plot_kpoints(
     kpoints: ExplicitKpoints,
-
     save_path: PathLike,
     axis: bool = True,
 ):
@@ -119,3 +119,18 @@ def plot_ibzkpt(
         save_path = Path(f"./{path.stem}.png")
     logger.c.step(f"Ploting...")
     _plot_kpoints(kpoints, save_path, axis=axis)
+
+
+def generate_kpoints_in_vaspkit_style(
+    poscar_path: str = "POSCAR",
+    spacing: float = 0.02,
+    dim: int = 3,
+):
+    from tepkit.io.vasp import RegularKpoints
+
+    kpoints = RegularKpoints.from_vaspkit_style(
+        poscar_path=poscar_path,
+        spacing=spacing,
+        dim=dim,
+    )
+    kpoints.to_file("KPOINTS")

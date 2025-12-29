@@ -65,6 +65,7 @@ logger.add(
     level=config["loguru"]["log_level"],
 )
 logger_color = logger.opt(colors=True)
+logger_raw = logger.opt(raw=True)
 
 # Add New Levels
 for name, level_config in custom_levels.items():
@@ -83,6 +84,12 @@ setattr(
     logger,
     "c",
     logger_color,
+)
+
+setattr(
+    logger,
+    "raw",
+    logger_raw,
 )
 
 # Add Type Hint

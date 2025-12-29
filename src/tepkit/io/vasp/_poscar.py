@@ -156,11 +156,21 @@ class Poscar(StructuredTextFile):
 
         return poscar
 
-    def __str__(self):
+    def to_string(self, *, decimals: int = 16):
+        d = decimals
+        l = d + 5
+
+        # Data Clean
+        unscale_lattice = self.unscale_lattice
+        ion_positions = self.ion_positions
+        unscale_lattice[abs(unscale_lattice) < 1e-15] = 0
+        for value in [0, 1 / 3, 0.5, 2 / 3, 1]:
+            ion_positions[abs(ion_positions - value) < 1e-15] = value
+
         # ion_positions
         position_lines = [
-            array_to_string(position, "%21.16f", prefix="  ")
-            for position in self.ion_positions
+            array_to_string(position, f"%{l}.{d}f", prefix="  ")
+            for position in ion_positions
         ]
 
         if self.has_selective_dynamics:
@@ -177,17 +187,22 @@ class Poscar(StructuredTextFile):
         blocks = [
             self.comment,
             scaling_factor_line,
-            matrix_to_string(self.unscale_lattice, "%21.16f", line_prefix="  "),
-            array_to_string(self.species_names, "%4s", prefix="  "),
-            array_to_string(self.ions_per_species, "%4s", prefix="  "),
+            matrix_to_string(unscale_lattice, f"%{l}.{d}f", line_prefix="  "),
+            array_to_string(self.species_names, "%4s", prefix=" "),
+            array_to_string(self.ions_per_species, "%4s", prefix=" "),
         ]
         blocks += ["Selective dynamics"] if self.has_selective_dynamics else []
         blocks += [
             "Direct",
             *position_lines,
+            "",
         ]
         text = "\n".join(blocks)
         return text
+
+    def to_file(self, path, decimals: int = 16) -> None:
+        with open(path, "w", newline="\n") as file:
+            file.write(self.to_string(decimals=decimals))
 
     @staticmethod
     def _translate_selective_dynamics_flag(text: str) -> bool:
@@ -490,6 +505,18 @@ class Poscar(StructuredTextFile):
         # 将 list[NumpyArray3] 转为 NumpyArrayNx3
         sc.ion_positions = np.vstack(sc_positions)
         return sc
+
+    def translate_ion_positions(
+        self,
+        ion_index: int,
+        target_position: tuple[float, float, float],
+    ):
+        positions = self.ion_positions
+        positions -= positions[ion_index]
+        positions += target_position
+        if self.ion_coordinates_mode == VaspCoordinatesMode.Fractional:
+            positions[positions < 0] += 1
+        self.ion_positions = positions
 
 
 if __name__ == "__main__":

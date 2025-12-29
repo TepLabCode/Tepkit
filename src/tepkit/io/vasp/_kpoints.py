@@ -1,4 +1,5 @@
 from enum import StrEnum
+from pathlib import Path
 
 import numpy as np
 from tepkit.cli import logger
@@ -260,7 +261,7 @@ class ExplicitKpoints(Kpoints):
             comment=comment,
         )
 
-    def __str__(self):
+    def to_string(self):
         kpts_lines = []
         for i, kpt in enumerate(self.kpts):
             kpts_line = (
@@ -314,8 +315,10 @@ class ExplicitKpoints(Kpoints):
 
     def plot(self, ax=None, show=False, save_path=None):
         from matplotlib import pyplot as plt
-        from tepkit.utils.mpl_tools.plotters import (BrillouinZone2DPlotter,
-                                                     ExplicitKpoints2DPlotter)
+        from tepkit.utils.mpl_tools.plotters import (
+            BrillouinZone2DPlotter,
+            ExplicitKpoints2DPlotter,
+        )
 
         if self.b_lattice is None:
             raise ValueError(
@@ -336,6 +339,56 @@ class ExplicitKpoints(Kpoints):
 
     def show(self):
         self.plot(show=True)
+
+
+number = float | int
+
+
+class RegularKpoints(Kpoints):
+
+    def __init__(
+        self,
+        n_abc: tuple[int, int, int] = (1, 1, 1),
+        *,
+        comment: str = "KPOINTS",
+        mode: str | Kpoints.Mode = Kpoints.Mode.Gamma,
+        shift_abc: tuple[number, number, number] = (0, 0, 0),
+    ):
+        super().__init__()
+        self.comment: str = comment
+        self.mode: Kpoints.Mode = Kpoints.Mode(mode)
+        self.n_abc: tuple[int, int, int] = n_abc
+        self.shift_abc: tuple[number, number, number] = shift_abc
+
+    def to_string(self):
+        lines = [
+            self.comment,
+            "0",
+            str(self.mode),
+            " ".join(map(str, self.n_abc)),
+            " ".join(map(str, self.shift_abc)),
+        ]
+        return "\n".join(lines)
+
+    @classmethod
+    def from_vaspkit_style(cls, poscar, spacing=0.02, dim: int = 3):
+        from tepkit.io.vasp import Poscar
+
+        poscar = Poscar.from_auto(poscar)
+        b_lattice = poscar.reciprocal_lattice
+        if dim not in [1, 2, 3]:
+            raise ValueError("dim must be 1, 2, or 3.")
+        n_abc: list[int] = [1, 1, 1]  # Initialize k-mesh
+        for i in range(dim):
+            b = b_lattice[i]
+            b_length: float = float(np.linalg.norm(b))
+            n_abc[i] = max(1, round(b_length / (2 * np.pi * spacing)))
+
+        return cls(
+            n_abc=(n_abc[0], n_abc[1], n_abc[2]),
+            mode="Gamma",
+            comment=f"K-Spacing Value to Generate {dim}D K-Mesh: {spacing}",
+        )
 
 
 class Ibzkpt(ExplicitKpoints):
