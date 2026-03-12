@@ -17,7 +17,6 @@ from click.types import IntParamType
 IntParamType.name = "int"
 
 # 创建 Typer 对象
-app0 = typer.Typer()
 app = typer.Typer(
     cls=AliasGroup,
     context_settings={"help_option_names": ["-h", "--help"]},  # 给帮助增加 -h 选项
@@ -27,24 +26,6 @@ app = typer.Typer(
     pretty_exceptions_show_locals=config["typer"]["pretty_exceptions_show_locals"],
     rich_markup_mode="rich",
 )
-
-
-@docstring_to_typer
-@app0.callback(invoke_without_command=True)
-def app0_callback(
-    # context: typer.Context,
-    test: list[str],
-    version: bool = False,
-    whereis: bool = False,
-    log_level: str = "",
-):
-    """
-    :typer version flag: --version, -v
-    :typer whereis flag: --where, -w
-    :typer test argument:
-    """
-    _ = version, whereis, log_level
-    return test[0]
 
 
 # 主命令接收参数的处理
