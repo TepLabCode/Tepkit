@@ -1,11 +1,16 @@
 def add(a: float, b: float):
     """
-    The simplest example.
-
-    Add two float.
-
+    Add two numbers.
+    
+    [zh-CN]
+    将两个浮点数相加。
+    
+    :param a: First value.
+    :param b: Second value.
+    
     :typer a argument:
     :typer b argument:
+    
     """
     print(f"{a} + {b} = {a+b}")
 

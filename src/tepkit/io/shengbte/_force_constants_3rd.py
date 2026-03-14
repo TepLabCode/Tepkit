@@ -55,7 +55,14 @@ class ForceConstants3rd(StructuredTextFile):
         ) ** 0.5
 
     def calculate_ion_positions(self, poscar) -> None:
-        """计算原子在超胞中的位置"""
+        """
+        Calculate ion positions in the supercell.
+
+        [zh-CN]
+        计算离子在超胞中的位置。
+
+        :param poscar: POSCAR-like object.
+        """
         df = self.df
         positions = poscar.get_cartesian_ion_positions()
         df["a_xyz"] = df.apply(lambda row: positions[row.uc_atom_a - 1], axis=1)
@@ -71,7 +78,13 @@ class ForceConstants3rd(StructuredTextFile):
 
     def calculate_ion_distances(self, sposcar) -> pd.DataFrame:
         """
-        计算任意两原子间的距离
+        Calculate distances between ion pairs.
+
+        [zh-CN]
+        计算任意两离子间的距离。
+
+        :param sposcar: POSCAR-like object.
+        :return: Pairwise distance summary.
         """
         df = self.df
         if "a_xyz" not in df.columns:

@@ -1,3 +1,9 @@
+"""
+Create the main Typer app and root callbacks.
+
+[zh-CN]
+定义主 Typer 应用及根级 CLI 回调。
+"""
 import sys
 
 import typer
@@ -80,10 +86,14 @@ def root(
 @docstring_to_typer
 def custom_warning(ignore: bool = False):
     """
-    Print a warning message when running a custom command.
-
-    :param ignore: ignore the warning message for custom commands.
+    Show a warning before custom commands.
+    
+    [zh-CN]
+    在运行自定义命令前输出警告。
+    
+    :param ignore: Skip the warning.
     :typer ignore flag: --ignore-warning, -i
+    
     """
     if ignore:
         return
