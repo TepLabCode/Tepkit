@@ -25,7 +25,7 @@ def rms_command(
     fit: bool = False,
 ) -> None:
     """
-    Calculate and Plot the root-mean-square (RMS) of FORCE_CONSTANTS.
+    Calculate and Plot the root-mean-square (RMS) of FORCE_CONSTANTS (FORCE_CONSTANTS_2ND).
 
     Required Files:
     | FORCE_CONSTANTS
@@ -120,7 +120,7 @@ def rms(
     else:
         save_dir: Path = Path(save_dir).resolve()
     if save_name.lower() == "auto":
-        save_name = "tepkit.RMS_of_3rdIFCs"
+        save_name = "tepkit.RMS_of_2ndIFCs"
     csv_path = save_dir / f"{save_name}.csv"
     result_df = df[["rms", "distance", "atom_a", "atom_b"]]
     result_df.to_csv(csv_path, index=False)

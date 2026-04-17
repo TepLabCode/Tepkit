@@ -2,6 +2,7 @@
 This package is used to read and write files of various formats.
 """
 
+import shutil
 from pathlib import Path
 
 from tepkit.utils.typing_tools import PathLike, Self
@@ -67,14 +68,22 @@ class File:
                 return cls.from_dir(path)
         raise ValueError(f"Can not create {cls.__name__} from {value}")
 
-    @classmethod
-    def to_file(cls, path: PathLike):
+    def to_file(self, path: PathLike):
         """
         Write the data of the object to a file.
         """
         raise NotImplementedError(
             "The to_file() method of the file is not implemented now."
         )
+
+
+class FileLink(File):
+    def __init__(self, path: PathLike):
+        super().__init__()
+        self.source_path = Path(path)
+
+    def to_file(self, path: PathLike):
+        shutil.copy(str(self.source_path), str(path))
 
 
 class TextFile(File):

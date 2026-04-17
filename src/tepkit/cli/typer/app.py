@@ -1,3 +1,9 @@
+"""
+Create the main Typer app and root callbacks.
+
+[zh-CN]
+定义主 Typer 应用及根级 CLI 回调。
+"""
 import sys
 
 import typer
@@ -17,7 +23,6 @@ from click.types import IntParamType
 IntParamType.name = "int"
 
 # 创建 Typer 对象
-app0 = typer.Typer()
 app = typer.Typer(
     cls=AliasGroup,
     context_settings={"help_option_names": ["-h", "--help"]},  # 给帮助增加 -h 选项
@@ -27,24 +32,6 @@ app = typer.Typer(
     pretty_exceptions_show_locals=config["typer"]["pretty_exceptions_show_locals"],
     rich_markup_mode="rich",
 )
-
-
-@docstring_to_typer
-@app0.callback(invoke_without_command=True)
-def app0_callback(
-    # context: typer.Context,
-    test: list[str],
-    version: bool = False,
-    whereis: bool = False,
-    log_level: str = "",
-):
-    """
-    :typer version flag: --version, -v
-    :typer whereis flag: --where, -w
-    :typer test argument:
-    """
-    _ = version, whereis, log_level
-    return test[0]
 
 
 # 主命令接收参数的处理
@@ -99,10 +86,14 @@ def root(
 @docstring_to_typer
 def custom_warning(ignore: bool = False):
     """
-    Print a warning message when running a custom command.
-
-    :param ignore: ignore the warning message for custom commands.
+    Show a warning before custom commands.
+    
+    [zh-CN]
+    在运行自定义命令前输出警告。
+    
+    :param ignore: Skip the warning.
     :typer ignore flag: --ignore-warning, -i
+    
     """
     if ignore:
         return

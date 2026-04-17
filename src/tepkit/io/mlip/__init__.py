@@ -33,6 +33,13 @@ class MlipCfg(StructuredTextFile):
     def to_string(self) -> str:
         return "\n".join(self.cfgs) + "\n"
 
+    def __add__(self, other):
+        if not isinstance(other, MlipCfg):
+            raise TypeError("Only MlipCfg objects can be added")
+        new_obj = MlipCfg()
+        new_obj.cfgs = self.cfgs + other.cfgs
+        return new_obj
+
 
 if __name__ == "__main__":
     config = MlipCfg.from_file(R"C:\Users\Elnath\Downloads\test.cfg")

@@ -1,7 +1,9 @@
 from enum import StrEnum
 from pathlib import Path
+from typing import Literal
 
 import numpy as np
+
 from tepkit.cli import logger
 from tepkit.core.structure import abc_to_xyz
 from tepkit.io import StructuredTextFile, array_to_string
@@ -57,7 +59,9 @@ class Kpoints(StructuredTextFile):
         density: int = 10,
         edge_density: int = 15,
         scale: float = 1.0 + 1e-5,
-        mode: str = "half",
+        mode: Literal["full", "half"] = "half",
+        unique: bool = False,
+        grid: bool = False,
     ):
         from matplotlib.patches import Polygon
         from tepkit.core.high_symmetry_points import HighSymmetryPoints2D
@@ -97,6 +101,10 @@ class Kpoints(StructuredTextFile):
                     f"density can only be non-negative integer but not {density}."
                 )
         abc = np.array(abc)
+        if grid:
+            a_s = np.linspace(start=min(abc[0]), stop=max(abc[0]), num=2 * n - 1)
+            b_s = np.linspace(start=min(abc[1]), stop=max(abc[1]), num=n)
+            pass
 
         kpoints_fill = ExplicitKpoints(
             comment=f"Fill(density={density})",
@@ -127,6 +135,8 @@ class Kpoints(StructuredTextFile):
 
         # Result
         kpoints = kpoints_fill + kpoints_edge
+        if unique:
+            kpoints = kpoints.unique()
         kpoints.b_lattice = b_lattice
 
         return kpoints
@@ -339,6 +349,133 @@ class ExplicitKpoints(Kpoints):
 
     def show(self):
         self.plot(show=True)
+
+    def unique(self):
+        _, idx = np.unique(self.kpts, axis=0, return_index=True)
+        idx = np.sort(idx)
+        self.kpts = self.kpts[idx]
+        self.kpts_weights = self.kpts_weights[idx]
+        return self
+
+
+class LinemodeKpoints(Kpoints):
+
+    def __init__(
+        self,
+        kpts_per_segment: int,
+        mode: str | Kpoints.Mode,
+        kpts: NumpyArrayNx3[float] | list[list[float]],
+        kpts_comments: list[str] | None = None,
+        comment: str = "KPOINTS",
+    ):
+        super().__init__()
+        self.kpts_per_segment = kpts_per_segment
+        self.comment = comment
+        self.coordinates_mode: Kpoints.Mode = Kpoints.Mode.from_string(mode)
+        """The coordinate mode. Cartesian or Reciprocal."""
+        self.kpts: NumpyArrayNx3[float] = np.array(kpts)
+        if kpts_comments is not None and len(kpts_comments) != len(kpts):
+            raise ValueError("The length of kpts_comments should be the same as kpts.")
+        self.kpts_comments: list[str] | None = kpts_comments
+
+    @classmethod
+    def from_string(cls, string: str) -> Self:
+        """
+        从字符串中读取结构化数据。
+        """
+        lines = [line.strip() for line in string.splitlines()]
+        comment = lines[0]
+        kpts_per_segment = int(lines[1])
+        if kpts_per_segment <= 0:
+            raise ValueError("The number of kpoints per segment should be positive.")
+        if lines[2].lower()[0] != "l":
+            raise ValueError(f"This file is not in line mode: {lines[2]}")
+        match lines[3].lower()[0]:
+            case "c" | "k":
+                mode = cls.Mode.Cartesian
+                raise NotImplementedError("The Cartesian mode is not supported yet.")
+            case "f" | "r":
+                mode = cls.Mode.Fractional
+            case _:
+                logger.warning(
+                    f"Unknown coordinates mode: {lines[2]}, fallback to Reciprocal (Fractional) mode."
+                )
+                mode = cls.Mode.Fractional
+
+        kpts = []
+        kpts_comments = []
+        for line in lines[4:]:
+            data = line.split()
+            match len(data):
+                case 4:
+                    k_a, k_b, k_c = map(float, data[:3])
+                    k_comment = data[3]
+                case 3:
+                    k_a, k_b, k_c = map(float, data[:3])
+                    k_comment = ""
+                case 0:
+                    continue
+                case _:
+                    raise ValueError(f"Invalid line: {line}")
+            kpts.append((k_a, k_b, k_c))
+            kpts_comments.append(k_comment)
+        return cls(
+            kpts_per_segment=kpts_per_segment,
+            mode=mode,
+            kpts=kpts,
+            kpts_comments=kpts_comments,
+            comment=comment,
+        )
+
+
+number = float | int
+
+
+class RegularKpoints(Kpoints):
+
+    def __init__(
+        self,
+        n_abc: tuple[int, int, int] = (1, 1, 1),
+        *,
+        comment: str = "KPOINTS",
+        mode: str | Kpoints.Mode = Kpoints.Mode.Gamma,
+        shift_abc: tuple[number, number, number] = (0, 0, 0),
+    ):
+        super().__init__()
+        self.comment: str = comment
+        self.mode: Kpoints.Mode = Kpoints.Mode(mode)
+        self.n_abc: tuple[int, int, int] = n_abc
+        self.shift_abc: tuple[number, number, number] = shift_abc
+
+    def to_string(self):
+        lines = [
+            self.comment,
+            "0",
+            str(self.mode),
+            " ".join(map(str, self.n_abc)),
+            " ".join(map(str, self.shift_abc)),
+        ]
+        return "\n".join(lines)
+
+    @classmethod
+    def from_vaspkit_style(cls, poscar, spacing=0.02, dim: int = 3):
+        from tepkit.io.vasp import Poscar
+
+        poscar = Poscar.from_auto(poscar)
+        b_lattice = poscar.reciprocal_lattice
+        if dim not in [1, 2, 3]:
+            raise ValueError("dim must be 1, 2, or 3.")
+        n_abc: list[int] = [1, 1, 1]  # Initialize k-mesh
+        for i in range(dim):
+            b = b_lattice[i]
+            b_length: float = float(np.linalg.norm(b))
+            n_abc[i] = max(1, round(b_length / (2 * np.pi * spacing)))
+
+        return cls(
+            n_abc=(n_abc[0], n_abc[1], n_abc[2]),
+            mode="Gamma",
+            comment=f"K-Spacing Value to Generate {dim}D K-Mesh: {spacing}",
+        )
 
 
 number = float | int

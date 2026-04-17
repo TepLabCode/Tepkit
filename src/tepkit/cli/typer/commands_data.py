@@ -198,6 +198,18 @@ builtin_groups_data = [
         ],
     },
     {
+        "group_names": ["c07", "mlip"],
+        "group_module": "tepkit.functions.mlip",
+        "group_help": "MIP tools.",
+        "kwargs": {"hidden": True},
+        "sub_commands": [
+            {
+                "command_names": ["slice"],
+                "function_name": "cfg_slice_cli",
+            },
+        ],
+    },
+    {
         "group_names": ["others"],
         "group_help": "Miscellaneous tools.",
         "sub_commands": [

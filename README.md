@@ -1,7 +1,7 @@
 # Tepkit
 
 <p align="center">
-  <img src="doc/source/_static/logo.png" style="height:250px;">
+  <img src="https://github.com/TepLabCode/Tepkit/blob/main/doc/source/_static/logo.png?raw=true" style="max-height:250px;">
 </p>
 <p align="center">
   <a href="https://pypi.org/project/tepkit/">

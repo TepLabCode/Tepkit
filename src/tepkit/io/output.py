@@ -10,6 +10,20 @@ def save_df(
     to_path: PathLike,
     fmt: str = "auto",
 ):
+    """
+    Save a DataFrame in the selected format.
+    
+    [zh-CN]
+    以指定格式将 DataFrame 保存到文件。
+    
+    :param df: DataFrame to save.
+    :param to_path: Target path or stem.
+    :param fmt: Output format.
+    :return: ``None``.
+    
+    """
+    # Resolve the target file extension.
+    # 根据请求的格式解析目标扩展名。
     match fmt.lower():
         case "auto":
             ext = Path(to_path).suffix

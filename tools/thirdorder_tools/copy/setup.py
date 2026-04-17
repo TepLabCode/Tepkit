@@ -1,6 +1,12 @@
 # Usage:
 # ```bash
-# pip install .
+# python -m pip install .
+# ```
+# If it failed, try:
+# ```bash
+# python setup.py clean --all
+# python setup.py build_ext --inplace
+# python setup.py install
 # ```
 
 from pathlib import Path

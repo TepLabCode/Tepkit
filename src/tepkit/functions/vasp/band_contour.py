@@ -250,6 +250,14 @@ _presets = {
     "none": {},
     # Automatically recognize symmetry
     "auto": {},
+    # Plane group
+    "p2mm": {
+        "xyz_matrices": {
+            "2z": [[-1, 0, 0], [0, -1, 0], [0, 0, 1]],
+            "mx": [[-1, 0, 0], [0, 1, 0], [0, 0, 1]],
+            "my": [[1, 0, 0], [0, -1, 0], [0, 0, 1]],
+        },
+    },
     # Only consider the inversion, work well with Tepkit generated kpoints.
     "basic": {
         "xyz_matrices": {
@@ -504,6 +512,8 @@ def band_contour(
         case "none":
             pass
         case "basic":
+            pass
+        case x if x in _presets.keys():
             pass
         case "auto":
             bravais_lattice_2d = BravaisLattice2D.from_poscar(poscar, sym_prec=sym_prec)

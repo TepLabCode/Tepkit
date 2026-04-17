@@ -4,10 +4,38 @@ from importlib import import_module
 import typer
 from typer import rich_utils
 from tepkit.cli import logger
-from tepkit.cli.typer.app import app, app0
+from tepkit.cli.typer.app import app
 from tepkit.cli.typer.commands_data import builtin_commands_data, builtin_groups_data
 from tepkit.cli.typer.docstring_to_typer import docstring_to_typer
 from tepkit.cli.typer.utils import AliasGroup
+
+ROOT_HELP_FLAGS = {"-h", "--help", "--install-completion", "--show-completion"}
+ROOT_OPTION_FLAGS = {"-v", "--version", "-w", "--where"}
+ROOT_OPTION_FLAGS_WITH_VALUE = {"--log-level"}
+
+
+def get_requested_subcommand(argv: list[str]) -> str | None:
+    """
+    Return the first top-level subcommand.
+    """
+    skip_next = False
+    for arg in argv[1:]:
+        if skip_next:
+            skip_next = False
+            continue
+        if arg in ROOT_HELP_FLAGS:
+            return None
+        if arg.startswith("--log-level="):
+            continue
+        if arg in ROOT_OPTION_FLAGS_WITH_VALUE:
+            skip_next = True
+            continue
+        if arg in ROOT_OPTION_FLAGS:
+            continue
+        if arg.startswith("-"):
+            return None
+        return arg
+    return None
 
 
 def add_commands_to_app(
@@ -40,11 +68,13 @@ def add_groups_to_app(
         group_module = group.get("group_module", None) or parent_group_module
         sub_grouops = group.get("sub_groups", [])
         sub_commands = group.get("sub_commands", [])
+        group_kwargs = group.get("kwargs", {})
         # Create Group
         this_app = typer.Typer(
             cls=AliasGroup,
             no_args_is_help=True,
             invoke_without_command=True,
+            **group_kwargs,
         )
         # Add Group to Parent
         target.add_typer(
@@ -78,8 +108,8 @@ def main():
     if len(sys.argv) == 1:
         skip_add_commands = True
     else:
-        try:
-            subcommand = typer.main.get_command(app0)(standalone_mode=False)
+        subcommand = get_requested_subcommand(sys.argv)
+        if subcommand is not None:
             # print(subcommand)
             for group in groups_data:
                 if subcommand in group["group_names"]:
@@ -89,8 +119,6 @@ def main():
                     break
             else:
                 logger.debug(f"Unknown subcommand: {subcommand}")
-        except Exception as e:
-            logger.debug(f"app0 Exception: {e}")
     sub_apps = add_groups_to_app(app, groups_data, skip_add_commands=skip_add_commands)
     add_commands_to_app(app, commands_data)
     if subcommand in ["c99", "custom"]:
@@ -101,7 +129,7 @@ def main():
         add_commands_to_app(custom_app, custom_commands_data)
         custom_app.callback(invoke_without_command=True)(custom_warning)
     adjust_typer()
-    app()
+    app(windows_expand_args=False)
 
 
 if __name__ == "__main__":

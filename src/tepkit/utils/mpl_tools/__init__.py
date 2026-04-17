@@ -30,6 +30,7 @@ class Figure:
         # Additional Settings
         dpi: float = None,
         font_size=None,
+        font_lang=None,
         # Style
         style="tepkit_basic",
         # Projection
@@ -60,6 +61,8 @@ class Figure:
             self.fig.set_dpi(dpi)
         if font_size is not None:
             plt.rcParams.update({"font.size": font_size})  # 设置字体大小为12
+        if font_lang == "zh":
+            plt.rcParams.update({"font.sans-serif": ["SimHei"]})  # 设置中文字体为黑体
 
     def add_legend(
         self,
@@ -132,6 +135,7 @@ class Figure:
     def adjust_margin(
         *,
         # Border
+        all=None,
         top=None,
         right=None,
         bottom=None,
@@ -148,6 +152,11 @@ class Figure:
         fig = plt.gcf()
         width = fig.get_figwidth() * fig.get_dpi()
         height = fig.get_figheight() * fig.get_dpi()
+        if all is not None:
+            top = all
+            right = all
+            bottom = all
+            left = all
         if left is not None:
             left = left / width
         if right is not None:

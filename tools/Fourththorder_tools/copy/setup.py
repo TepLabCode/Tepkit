@@ -1,6 +1,6 @@
 # Usage:
 # ```bash
-# pip install .
+# python -m pip install .
 # ```
 # If it failed, try:
 # ```bash
@@ -20,7 +20,19 @@ from setuptools import Extension, setup
 # Get the paths of `numpy` and `spglib`
 numpy_include_dir = numpy.get_include()
 spglib_include_dir = str(Path(spglib.__file__).parent / "include")
-spglib_library_dir = str(Path(spglib.__file__).parent / "lib")
+for spglib_subdir in ["lib", "lib64"]:
+    spglib_library_dir = Path(spglib.__file__).parent / spglib_subdir
+    if spglib_library_dir.exists():
+        spglib_library_dir = str(spglib_library_dir)
+        break
+else:
+    raise FileNotFoundError(
+        "Can not find spglib_library_dir, please manually input it in `setup.py`."
+    )
+
+# Manually input
+# spglib_include_dir = "/path/to/spglib.h"
+# spglib_library_dir = "/path/to/symspg.dll_or_libsymspg.so"
 
 # Increase buff_max_dims to avoid Cython error
 Cython.Compiler.Options.buffer_max_dims = 10

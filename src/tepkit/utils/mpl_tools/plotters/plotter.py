@@ -48,8 +48,8 @@ class BasePlotter:
     def update_config(self, config: dict, mode: str = "normal"):
         self.config = update_config(self.config, config, mode=mode)
 
-    def save(self, save_path: str, dpi=300):
-        plt.savefig(save_path, dpi=dpi)
+    def save(self, save_path: str, dpi=300, transparent: bool = False):
+        plt.savefig(save_path, dpi=dpi, transparent=transparent)
 
     def close(self):
         plt.close()

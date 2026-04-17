@@ -32,6 +32,7 @@ def check_vasp_dirs_states_cli(
     pattern: str = "job-*",
     skip_info_file: str = "tepkit.skip.info.toml",
     group: int = 50,
+    list_mode: bool = False,
 ) -> None:
     """
     Check the states of a series of VASP jobs.
@@ -40,13 +41,13 @@ def check_vasp_dirs_states_cli(
     :param pattern: The name pattern of the jobs' directory.
     :param skip_info_file: The name of the skip info file.
     :param group: The number of jobs to display in each line.
+    :param list_mode: List mode
 
     :typer root_dir       flag: --root, -r
     :typer pattern        flag: --pattern, -p
     :typer skip_info_file flag: --skip-info-file, -s
     :typer group          flag: --group, -g
-
-    TODO: List 模式，显示文件夹名和状态
+    :typer list_mode      flag: --list, -l
     """
     from tqdm import tqdm
 
@@ -54,10 +55,12 @@ def check_vasp_dirs_states_cli(
     job_paths = sorted(root_path.glob(pattern))
 
     if len(job_paths) == 0:
-        logger.warning("No directory found, program exit.")
+        logger.warning(
+            f"No job directory found in {root_path} with pattern {pattern}, program exit."
+        )
         exit()
 
-    states = []
+    states = {}
     for job_path in tqdm(
         job_paths,
         bar_format=R"{l_bar}{bar}| [{n_fmt:>3}/{total_fmt:>3} Jobs Checked]",
@@ -65,20 +68,22 @@ def check_vasp_dirs_states_cli(
     ):
         state = check_vasp_dir_state(job_path)
         if state is VaspState.Finished:
-            states.append("#")
+            state_symbol = "#"
         elif (job_path / skip_info_file).exists():
-            states.append("S")
+            state_symbol = "S"
         elif state is VaspState.Uncompleted:
-            states.append("R")
+            state_symbol = "R"
         else:
-            states.append("_")
+            state_symbol = "_"
+        states[job_path] = state_symbol
 
-    status_text = "".join(states)
+    state_symbols = list(states.values())
+    status_text = "".join(state_symbols)
     status_count = {
-        "finished": states.count("#") + states.count("S"),
-        "unfinished": len(status_text) - states.count("#"),
-        "running": states.count("R"),
-        "unstarted": states.count("_"),
+        "finished": state_symbols.count("#") + state_symbols.count("S"),
+        "unfinished": len(status_text) - state_symbols.count("#"),
+        "running": state_symbols.count("R"),
+        "unstarted": state_symbols.count("_"),
     }
 
     def progress_bar(current, maximum, bar_length=50):
@@ -99,5 +104,14 @@ def check_vasp_dirs_states_cli(
 
     print("Total Progress")
     print(progress_bar(status_count["finished"], len(status_text)))
-    print("Detailed Progresses")
-    print(format_text(status_text))
+    if list_mode:
+        print("-" * 12 + " Details " + "-" * 12)
+        i = 1
+        for path, state_symbol in states.items():
+            print(f"{i:4}: [{state_symbol}] {path}")
+            if i % group == 0:
+                print("-" * 33)
+            i += 1
+    else:
+        print("Detailed Progresses")
+        print(format_text(status_text))

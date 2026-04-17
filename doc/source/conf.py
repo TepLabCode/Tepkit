@@ -9,7 +9,7 @@
 project = "Tepkit"
 copyright = "2024–2025, TepLab"
 author = "TepLab"
-release = "1.0"
+release = "0.2.1"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
