@@ -157,3 +157,9 @@ import tepkit
 - It is a **T**ransport and **E**lectronic **P**roperties Tool**kit**.
 
 - It is also a **T**hermo**E**lectric **P**roperties Tool**kit**.
+
+## Bug Reports & Feedback
+
+If you encounter any bugs or have any feedback or suggestions,  
+please feel free to report them by opening an
+[Issue](https://github.com/TepLabCode/Tepkit/issues/new).
