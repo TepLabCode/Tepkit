@@ -123,7 +123,7 @@ class RmsPlotter:
             text = plt.text(
                 x=0.02,
                 y=0.03,
-                s=f"$\ln y = {slope:.2f} \cdot x + {intercept:.2f}$",
+                s=Rf"$\ln y = {slope:.2f} \cdot x + {intercept:.2f}$",
                 fontsize=6,
                 ha="left",
                 va="bottom",
