@@ -8,7 +8,6 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.11"
-# Minimum
 dependencies = [
     "loguru",
     "toml",
@@ -22,7 +21,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# pip install .[full]
 all = [
     "mendeleev",
     "pymatgen",
@@ -30,7 +28,6 @@ all = [
     "rich",
     "spglib",
 ]
-# pip install .[doc]
 doc = [
     "sphinx",
     "sphinx-autoapi",
