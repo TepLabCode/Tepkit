@@ -12,7 +12,7 @@
 
 ### Bug Fixes
 
-- None
+- **Fixed:** Decimal KPOINTS weights.
 
 ### Miscellaneous
 
