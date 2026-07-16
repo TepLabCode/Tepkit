@@ -51,7 +51,7 @@ class Outcar(StructuredTextFile):
         else:
             result["unit"] = "C/m^2"
         # Piezoelectric Stress Coefficient
-        voigt_notation = ["xx", "yy", "zz", "yz", "zx", "xy"]
+        voigt_notation = ["xx", "yy", "zz", "yz", "xz", "xy"]
         for index, line in enumerate(self.lines):
             if (
                 "PIEZOELECTRIC TENSOR" in line
@@ -60,7 +60,7 @@ class Outcar(StructuredTextFile):
             ):
                 df = pd.DataFrame(
                     [line.split() for line in self.lines[index + 3 : index + 6]],
-                    columns=[None, "xx", "yy", "zz", "xy", "yz", "zx"],
+                    columns=[None, "xx", "yy", "zz", "xy", "yz", "xz"],
                 )
                 df.set_index(None, inplace=True)
                 df = df.astype(float)

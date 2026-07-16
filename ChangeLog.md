@@ -9,6 +9,7 @@
 ### Core Changes
 
 - **Update**: Enable EIGENVAL+EIGENVAL.
+- **Add**: Class PiezoelectricTensor.
 
 ### Bug Fixes
 
