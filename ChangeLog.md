@@ -1,6 +1,24 @@
 # Change Log
 
-## 0.2.2 (2026)
+## 0.2.3
+
+### CLI Changes
+
+- None
+
+### Core Changes
+
+- **Update**: Enable EIGENVAL+EIGENVAL.
+
+### Bug Fixes
+
+- None
+
+### Miscellaneous
+
+- None
+
+## 0.2.2 (2026-04-17)
 
 ### CLI Changes
 
