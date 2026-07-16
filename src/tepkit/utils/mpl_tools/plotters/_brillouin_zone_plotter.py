@@ -134,7 +134,8 @@ class BrillouinZone2DPlotter(Plotter):
                 self.plot_point_text(ax)
         if self.plot_base_vectors_step:
             self.plot_base_vectors(ax)
-        ax.axis("equal")
+        # ax.axis("equal")
+        ax.set_aspect("equal", adjustable="box")
 
     def plot_boundary(self, ax):
         """
