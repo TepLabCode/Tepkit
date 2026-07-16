@@ -1,10 +1,5 @@
-from pathlib import Path
-
 import numpy as np
 from matplotlib.patches import Polygon
-
-from crysym2d.example_lattices import example_lattices_2d
-from tepkit.utils.mpl_tools import Figure
 from tepkit.utils.mpl_tools.plotters import Plotter
 
 
@@ -85,50 +80,3 @@ class Lattice2DPlotter(Plotter):
         )
         ax.add_patch(polygon)
         return polygon
-
-
-if __name__ == "__main__":
-    for lattice_name, lattice in example_lattices_2d.items():
-        figure = Figure()
-        ax = figure.ax
-        pltr = Lattice2DPlotter(lattice[0], lattice[1])
-        ax.set_xlim(-2, 2)
-        ax.set_ylim(-2, 2)
-        a_lim = (-4, 4)
-        b_lim = (-4, 4)
-        match lattice_name:
-            case "oc-eq-ac" | "oc-eq-ob":
-                pltr.plot_cell(ax, [(0, 0), (1, 1), (0, 2), (-1, 1)], "#EEDDDDAA")
-                # ax.set_xlim(-1.5, 2.5)
-            case "oc-ne-ac":
-                pltr.plot_cell(ax, [(0, 0), (1, 0), (0, 2), (-1, 2)], "#EEDDDDAA")
-                ax.set_xlim(-1.5, 2.5)
-                ax.set_ylim(-1, 3)
-            case "oc-ne-ob":
-                pltr.plot_cell(ax, [(0, 0), (1, 0), (2, 2), (1, 2)], "#EEDDDDAA")
-                ax.set_xlim(-1.5, 2.5)
-                ax.set_ylim(-1, 3)
-            case "hp-ac":
-                pltr.plot_cell(
-                    ax,
-                    [(0, 0), (1, 0), (1, 1), (0, 2), (-1, 2), (-1, 1)],
-                    "#EEDDDDAA",
-                )
-                ax.set_xlim(-1.5, 2.5)
-                ax.set_ylim(-1, 3)
-            case "hp-ob":
-                pltr.plot_cell(
-                    ax,
-                    [(0, 0), (1, 0), (2, 1), (2, 2), (1, 2), (0, 1)],
-                    "#EEDDDDAA",
-                )
-                ax.set_xlim(-1.5, 2.5)
-                ax.set_ylim(-1, 3)
-
-        pltr.plot_cell(ax)
-        pltr.plot_base_vectors(ax)
-        pltr.plot_lattice_points(ax, a_lim=a_lim, b_lim=b_lim)
-
-        ax.set_title(lattice_name)
-        # pltr.save()
-        pltr.close()

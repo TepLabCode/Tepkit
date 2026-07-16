@@ -16,7 +16,7 @@
 
 ### Miscellaneous
 
-- None
+- Clean some test code.
 
 ## 0.2.2 (2026-04-17)
 
