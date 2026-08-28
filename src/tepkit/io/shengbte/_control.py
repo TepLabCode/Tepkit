@@ -81,6 +81,14 @@ class Control(StructuredTextFile):
         self.data["crystal"]["scell"] = np.array(value)
 
     @property
+    def maxiter(self):
+        return self.data["parameters"]["maxiter"]
+
+    @maxiter.setter
+    def maxiter(self, value: int):
+        self.data["parameters"]["maxiter"] = int(value)
+
+    @property
     def temperature(self):
         return self.data["parameters"].get("T")
 

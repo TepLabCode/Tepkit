@@ -10,6 +10,7 @@
 
 - **Update**: Enable EIGENVAL+EIGENVAL.
 - **Add**: Class PiezoelectricTensor.
+- **Update**: Add `Control.maxiter` property.
 
 ### Bug Fixes
 
