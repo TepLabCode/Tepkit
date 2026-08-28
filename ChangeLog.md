@@ -1,5 +1,25 @@
 # Change Log
 
+## 0.2.3
+
+### CLI Changes
+
+- None
+
+### Core Changes
+
+- **Update**: Enable EIGENVAL+EIGENVAL.
+- **Add**: Class PiezoelectricTensor.
+- **Update**: Add `Control.maxiter` property.
+
+### Bug Fixes
+
+- **Fixed:** Decimal KPOINTS weights.
+
+### Miscellaneous
+
+- Clean some test code.
+
 ## 0.2.2 (2026-04-17)
 
 ### CLI Changes

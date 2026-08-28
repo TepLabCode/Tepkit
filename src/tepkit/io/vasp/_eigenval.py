@@ -1,3 +1,5 @@
+import warnings
+
 import pandas as pd
 from tepkit.io import StructuredTextFile
 from tepkit.utils.typing_tools import Self
@@ -177,6 +179,22 @@ class Eigenval(StructuredTextFile):
             )
         # Return
         return result
+
+    def __add__(self, other):
+        result = Eigenval()
+        result.data = self.data.copy()
+        for key, value in other.data.items():
+            if result.data[key] != value:
+                warnings.warn(
+                    f"Unmatched {key}: {result.data[key]} and {value}, use the first."
+                )
+        result.extra_data = self.extra_data.copy()
+        for key, value in other.extra_data.items():
+            if result.extra_data[key] != value:
+                warnings.warn(
+                    f"Unmatched {key}: {result.extra_data[key]} and {value}, use the first."
+                )
+        result.df = pd.concat([result.df, other.df])
 
 
 if __name__ == "__main__":

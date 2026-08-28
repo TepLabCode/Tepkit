@@ -153,10 +153,10 @@ class Figure:
         width = fig.get_figwidth() * fig.get_dpi()
         height = fig.get_figheight() * fig.get_dpi()
         if all is not None:
-            top = all
-            right = all
-            bottom = all
-            left = all
+            top = top or all
+            right = right or all
+            bottom = bottom or all
+            left = left or all
         if left is not None:
             left = left / width
         if right is not None:

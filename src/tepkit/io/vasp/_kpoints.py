@@ -274,10 +274,12 @@ class ExplicitKpoints(Kpoints):
     def to_string(self):
         kpts_lines = []
         for i, kpt in enumerate(self.kpts):
+            weight = self.kpts_weights[i]
+            weight_str = str(int(weight)) if weight.is_integer() else str(weight)
             kpts_line = (
                 array_to_string(kpt, fmt="% 20.14f", delimiter="")
                 + " " * 13
-                + str(self.kpts_weights[i])
+                + weight_str
             )
             kpts_lines.append(kpts_line)
         blocks = [

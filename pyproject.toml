@@ -1,14 +1,19 @@
 [project]
 name = "tepkit"
-version = "0.2.2"
+version = "0.2.3"
 description = """A user-friendly program for accelerating the calculation and analysis processes of \
 transport, electronic, and thermoelectric properties of materials."""
 authors = [
     {name = "Shu-Hao Cao", email = "csh.academic@gmail.com"}
 ]
 readme = "README.md"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
-# Minimum
+keywords = [
+    "first-principles",
+    "thermoelectricity",
+]
 dependencies = [
     "loguru",
     "toml",
@@ -21,8 +26,13 @@ dependencies = [
     "tqdm",
 ]
 
+[project.urls]
+Homepage = "https://github.com/TepLabCode/Tepkit"
+Repository = "https://github.com/TepLabCode/Tepkit"
+Issues = "https://github.com/TepLabCode/Tepkit/issues"
+Changelog = "https://github.com/TepLabCode/Tepkit/blob/main/ChangeLog.md"
+
 [project.optional-dependencies]
-# pip install .[full]
 all = [
     "mendeleev",
     "pymatgen",
@@ -30,7 +40,6 @@ all = [
     "rich",
     "spglib",
 ]
-# pip install .[doc]
 doc = [
     "sphinx",
     "sphinx-autoapi",

@@ -19,7 +19,7 @@ def get_piezoelectric_stress_tensors(
     from rich import print
     from rich.rule import Rule
 
-    outcar = Outcar.from_file(outcar)
+    outcar: Outcar = Outcar.from_file(outcar)
     result = outcar.get_piezoelectric_stress_tensors(cell_z=cell_z, only_xy=only_xy)
     unit = result["unit"]
     # logger.log(
