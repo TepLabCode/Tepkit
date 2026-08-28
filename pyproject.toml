@@ -7,7 +7,13 @@ authors = [
     {name = "Shu-Hao Cao", email = "csh.academic@gmail.com"}
 ]
 readme = "README.md"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
+keywords = [
+    "first-principles",
+    "thermoelectricity",
+]
 dependencies = [
     "loguru",
     "toml",
@@ -19,6 +25,12 @@ dependencies = [
     "matplotlib",
     "tqdm",
 ]
+
+[project.urls]
+Homepage = "https://github.com/TepLabCode/Tepkit"
+Repository = "https://github.com/TepLabCode/Tepkit"
+Issues = "https://github.com/TepLabCode/Tepkit/issues"
+Changelog = "https://github.com/TepLabCode/Tepkit/blob/main/ChangeLog.md"
 
 [project.optional-dependencies]
 all = [
